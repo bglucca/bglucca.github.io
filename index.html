@@ -13,9 +13,10 @@
 
       This should be the same across all pages.
      -->
-    <link rel="icon" href="./assets/images/1311.png" />
-		<title>Unemployables Portfolio</title>
-    <meta name="description" content="A portfolio template for the Unemployables community.">
+    <!--link rel="icon" href="./assets/images/1311.png" /-->
+		<title>Lucca Bevilacqua - Data Scientist</title>
+
+    <!--meta name="description" content="A portfolio template for the Unemployables community."-->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<link rel="stylesheet" href="./css/layout.css">
@@ -29,10 +30,10 @@
     <div class="navbar">
       <a class="nav-title-link" href="./index.html">
         <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
-        <span class="nav-title">Portfolio Title</span>
+        <span class="nav-title">Lucca Bevilacqua</span>
          <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
-        <a class="button" href="mailto:whitevans.eth@gmail.com">
-          <span class="button-text">Contact Me</span>
+        <a class="button" href="https://www.linkedin.com/in/luccabgomes/" target="_blank" rel="noopener noreferrer">
+          <span class="button-text">Contact Me (LinkedIn)</span>
         </a>
       </a>
     </div>
@@ -50,10 +51,7 @@
             - Change the number to point to your Unemployable & replace the OpenSea link with your own
             - If you aren't using an Unemployable as your image, remove the entire "a" element
           -->
-          <img src="./assets/images/1311.png" class="portfolio-header-image">
-          <a class="no-underline" target="_blank" href="https://opensea.io/assets/0xe0be388ab81c47b0f098d2030a1c9ef190691a8a/1311">
-            <span class="image-caption">Unemployables #1311</span>
-          </a>
+          <img src="./assets/images/FotoProf_QNorm_cropped.jpg" class="portfolio-header-image">
         </div>
 
           <!-- 
@@ -65,11 +63,16 @@
           -->
         <div id="portfolio-header-text-container">
             <div class="header-text">
-              <span class="main-title">Hey, I'm @ndoherty_eth.</span>
-              <div class="body-text">I’m a freelance designer and developer who aims to help other creatives build out their portfolios, skillset, and businesses.</div>
+              <span class="main-title">Hi there, I'm Lucca.</span>
+              <div class="body-text">I’m a Data Scientist with 4 years experience working with data, who just moved to Paris. I've worked in consulting across multiple industries, taking part and leading Data Teams<br>
+                I'm now looking for new opportunities in the Paris Region</div>
             </div>
             <a class="button" id="my-work-link">
-              <span class="button-text">Check out my projects</span> 
+              <span class="button-text">See my projects</span> 
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+            <a class="button" id="experience-section-link">
+              <span class="button-text">See my experiences</span> 
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
         </div>
@@ -83,17 +86,34 @@
         - Add paragraphs using the <div class="body-text"></div> elements in the "about-section-content"
       -->
       <div id="about-section">
-        <span class="subheader-text">My Background / About Me</span>
+        <span class="subheader-text">About Me</span>
         <div class="about-section-content">
-          <div class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique risus nec feugiat in fermentum. Sed id semper risus in hendrerit gravida. Placerat duis ultricies lacus sed. Id neque aliquam vestibulum morbi blandit cursus risus. Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium lectus quam id leo. Vitae congue mauris rhoncus aenean vel elit.</div>
-          <div class="body-text">Vitae justo eget magna fermentum. Imperdiet nulla malesuada pellentesque elit eget gravida. Aliquet nec ullamcorper sit amet. Aliquet sagittis id consectetur purus. Ac tortor dignissim convallis aenean. Enim neque volutpat ac tincidunt vitae. Lobortis feugiat vivamus at augue. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Viverra orci sagittis eu volutpat. Massa tincidunt nunc pulvinar sapien et ligula. Donec enim diam vulputate ut.</div>
+          <div class="body-text">
+            I'm a Data Scientist with a recent background mainly in consulting, but with experiences in the Industry and Startups. I've recently relocated to Paris following my wife and I'm seeking new opportunities.
+            My educational background includes a comprehensive <b>five-year program in Industrial Engineering</b>, completed at Universidade Federal Fluminense (UFF), in Brazil.<br><br>
+            I am proficient in <b>Python (scientific / data stack), SQL, and PySpark.</b> I can handle diverse data sets (Big or Small data) and perform <b>statistical/mathematical modelling and applying Machine Learning to business problems</b>. I also have experience with platforms like DataBricks, AWS and Power BI.<br><br>
+            Additionally, I gained valuable international experience as an Exchange Student at Ruhr Universität Bochum and later as an intern in Lufthansa Cargo, both in Germany.  I have a double italian-brazilian citizenship. I'm fluent in Portuguese, English, German
+            </div>
         </div>
       </div>
-
+      <div id="skills-section">
+        <span class="subheader-text">My Skills</span>
+          <div id='skills-section-content'>
+            <div class = 'column1' style = 'float:left; margin:0; width:33%'>
+              <h2>Technical Skills</h2>
+            </div>
+            <div class = 'column2' style = 'float:left; margin:0; width:33%'>
+              <h2>Soft Skills</h2>
+            </div>
+            <div class = 'column3' style = 'float:left; margin:0; width:33%'>
+              <h2>Languages</h2>
+            </div>
+          </div>
+      </div>
       <!-- PROJECTS / MY WORK SECTION -->
       <div id="my-work-section">
         <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
-        <span class="subheader-text">My Work / My Projects</span>
+        <span class="subheader-text">My Projects</span>
 
         <div class="projects-container">
           <!-- 
@@ -119,41 +139,100 @@
                 - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
           -->
           <div class="project-card">
-            <img src="./assets/images/desktop.jpeg" class="project-image">
+            <img src="./assets/images/Segmentation.jpg" class="project-image">
             <div class="project-card-text-container">
-              <div class="subheader-text project-title">Project Name</div>
-              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+              <div class="subheader-text project-title">Customer Segmentation</div>
+              <div class="body-text project-card-text">Customer Segmentation for a mail-order company. Uses unsupervised methods to look for segments and uses supervised methods to predict new clients.</div>
             </div>
-            <a class="button" href="./project-pages/project-template.html">
-              <span class="button-text">Read More</span>
+            <a class="button" href="https://medium.com/@luccagomes/youve-got-mail-machine-learning-for-customer-segmentation-2c90d9b9d58d" target="_blank" rel="noopener noreferrer">
+              <span class="button-text">Read on Medium</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+            <a class="button" href="https://github.com/bglucca/ArvatoCustomerSegmentation" target="_blank" rel="noopener noreferrer">
+              <span class="button-text">Repo on Github</span>
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
           </div>
           <div class="project-card">
-            <img src="./assets/images/code.jpeg" class="project-image">
+            <img src="./assets/images/Rio.jpg" class="project-image">
             <div class="project-card-text-container">
-              <div class="subheader-text project-title">Project Name</div>
-              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+              <div class="subheader-text project-title">Rio AirBnB</div>
+              <div class="body-text project-card-text">Using AirBnB data to provide insights into ways to make navigation easier for users by applying Data Analysis and unsupervised methods</div>
             </div>
-            <a class="button" href="./project-pages/project-template.html">
-              <span class="button-text">Read More</span>
+            <a class="button" href="https://medium.com/@luccagomes/making-browsing-airbnb-easier-through-data-science-bf96e2a72e0c" target="_blank" rel="noopener noreferrer">
+              <span class="button-text">Read on Medium</span>
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
-          </div>
-          <div class="project-card">
-            <img src="./assets/images/sketchbook.jpeg" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Super Long Project Name That Should be Hidden</div>
-              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
-            </div>
-            <a class="button" href="./project-pages/project-template.html">
-              <span class="button-text">Read More</span>
+            <a class="button" href="https://github.com/bglucca/RioAirBnb" target="_blank" rel="noopener noreferrer">
+              <span class="button-text">Repo on Github</span>
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
           </div>
         </div>
       </div>
+
+      <div id='experience-section'>
+        <span class="subheader-text">My Experience</span>
+        <div class="row"><br><br><br></div>
+        <div class="timeline">
+          <div class="container left">
+            <div class="content">
+              <h2>Jun 2023 - Jun 2021</h2>
+              <h3>Consulting - Elogroup</h3>
+              <p>
+                I starded as a Data Analyst. After 6 months I was promoted to the Data Scientist grade (entry level). The next year I was promoted to mid-level.<br><br>
+                Over the course of the years I had the opportunity to work accross 6 projects in various sectors and handling all kinds of data, in Small and Big Data contexts as well.<br><br>
+                I had also the opportunity to lead Data Science endeavors in our clients, taking a face-to-face position as a translator to business stakeholders and managing the project execution and team. 
+              </p>
+            </div>
+          </div>
+          <div class='container right'>
+            <div class="content">
+              <h2>Jun 2021 - Jun 2020</h2>
+              <h3>Governança Brasil</h3>
+              <p>
+                I worked as a Data Analyst. My tasks involved sourcing public data, building its ETL process to SQL, developing Dashboards in Power BI with the cleaned data and analyzing the dashboards to generate insights for management.<br><br>
+                I had the opportunity to join the Product team, being responsible for the development of a screen (using Python + SQL + Power BI) of the product for COVID-19 vaccination tracking. This came to be the most accessed Dash in the Product at the time.
+              </p>
+            </div>
+          </div>
+          <div class='container left'>
+            <div class="content">
+              <h2>Jun 2020 - Aug 2019</h2>
+              <h3>MAiS Resultados - Startup</h3>
+              <p>
+              Here I worked as an intern accross multiple functions, but always in touch with data. The objective of the startup was to develop a product for the public sector.<br><br>
+              My assignments involved analyzing client data in Excel, building business rule logic and algorithms to implement on the product. <br><br>
+              I occaisonaly took part in cold-calling for customer acquisition. This made me more communicative and aware of how to communicate effectively.
+              </p>
+            </div>
+          </div>
+          <div class='container right'>
+            <div class="content">
+              <h2>Feb 2019 - Aug 2019</h2>
+              <h3>Focus-time on University</h3>
+              <p>
+                After my Exchange program and subsequent internship at Germany, I had to take some time to focus on my studies.
+              </p>
+            </div>
+          </div>
+          <div class='container left'>
+              <div class="content">
+                <h2>Aug 2018 - Feb 2019</h2>
+                <h3>Lufthansa Cargo - Internship - Frankfurt am Main, Germany</h3>
+                <p>
+                  At my team in Lufthansa Cargo, it was our job to propose process innovations based on station data collected all around the world.<br><br>
+                  My job was to generate numbers and propose KPIs on a new shipment flow we were building. This experience was mainly in Excel and SQL.<br><br>
+                  I started the internship right after completing my exchange program at Ruhr Universität Bochum
+                </p>
+              </div>
+          </div>
+        </div>
+      </div>
+
     </div>
+
+ 
 
     <!-- FOOTER -->
     <div id="footer">
