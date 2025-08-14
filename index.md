@@ -14,7 +14,7 @@ I've worked in many different sectors ranging from software companies to consult
 
 Welcome to my blog. Here is where I share some of my views on data and some of the projects I've built.  
 
-If you want to get in contact with me, feel free to reach out over [LinkedIn](https://linkedin.com/in/luccabgomes) or [GitHub](https://github.com/bglucca)
+If you want to get in contact with me, feel free to reach out over [**LinkedIn**](https://linkedin.com/in/luccabgomes) or [**GitHub**](https://github.com/bglucca)
 
 ## Pages
 
