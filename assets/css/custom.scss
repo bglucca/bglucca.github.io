@@ -2,3 +2,20 @@
 ---
 @charset "utf-8";
 // Your custom css /scss here
+
+a {
+  color: #2a2a2a;  // default text color for theme. The same as the body text color.
+}
+
+a:link {
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
