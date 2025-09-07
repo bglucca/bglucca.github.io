@@ -1,25 +1,40 @@
 ---
 layout: default
-title: Chulapa on remote
+title: My DS Journal
 header_type: hero
-subtitle: Starter pack
+header_img: assets/img/site/new_banner.jpg
+subtitle: My learnings and experiences as a Data Scientist
 ---
 
-Click [**Use this template**](https://github.com/dieghernan/chulapa-101/generate) button above for cloning this repo and get started with [Chulapa Jekyll theme](https://github.com/dieghernan/chulapa).
+## Welcome!
 
-Contains basic configuration to get you a site with:
+I'm glad you're here. I'm Lucca and I've been a Data Scientist for some time now. I've started my journey in Brazil (where I'm originally from) but eventually life brought me to France, where I am today.  
 
-- Sample posts and [paginated blog index](./blog/).
-- Sample collection with Markdown and kramdown cheatsheets and [collection index](./cheatsheets).
-- Archive pages for posts grouped by year, category, and tag.
-- Github Action for deploying the site.
-- Demo page with the different Bootstrap components and how they look with the actual skin settings.
-- Sample 404 page.
-- Site search with Lunr.
-- Sample `_config` with minimal configuration. `primary` color is set to <span class="text-primary">LightSkyBlue</span> and `autothemer` is enabled. [Learn how to customize your site](https://dieghernan.github.io/chulapa/docs/03-theming).
-- Sample `algolia-search.yml` for using Algolia+GitHub Actions.
-- Sample files for extending the theme with your own scripts and css.
+I've worked in many different sectors ranging from software companies to consulting, so I have some experience on a broad amount of topics. Today, I work in a software company building data solutions for retail.  
 
-On addition, `jekyll-sitemap` generates your sitemap on [./sitemap.xml](./sitemap.xml), and Chulapa generates an Atom feed on [./atom.xml](./atom.xml) and a RSS 2.0 feed on [./rss.xml](./rss.xml).
+Welcome to my blog. Here is where I share some of my views on data and some of the projects I've built.  
 
-[Configure as necessary](https://dieghernan.github.io/chulapa/docs/02-config) and replace sample content with your own.
+If you want to get in contact with me, feel free to reach out over [**LinkedIn**](https://linkedin.com/in/luccabgomes) or [**GitHub**](https://github.com/bglucca)
+
+## Pages
+
+<div class="card-deck">
+
+<div class="card">
+<a href='/aboutme/'>
+<div class="card-body">
+<h5 class="card-title">About Me</h5>
+    <p class="card-text">More details about myself and my experiences.</p>
+</div>
+</a>
+</div>
+
+<div class="card">
+<a href='/blog/'>
+<div class="card-body">
+<h5 class="card-title">Blog</h5>
+    <p class="card-text">My texts, projects and thoughts.</p>
+</div>
+</a>
+</div>
+</div>
