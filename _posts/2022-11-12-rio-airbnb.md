@@ -3,6 +3,14 @@ title: Browsing AirBnb using Data Science
 tags: [Unsupervised Learning, EDA, Data Analysis, Data Science, Case Study]
 header_img: "/assets/img/rio_airbnb/cover-image.jpg"
 header_type: post
+author:
+  name: Lucca Bevilacqua
+  avatar: /assets/img/site/headshot.jpg
+  links:                
+    - url: https://github.com/bglucca
+      icon: "fab fa-github"
+    - url: https://www.linkedin.com/in/luccabgomes/
+      icon: "fab fa-linkedin"
 ---
 I consider myself somewhat of a regular traveler. That's why I often look for places to stay in AirBnb. But, when I fire it up, the options are countless.
 Don't get me wrong, the filters on the site are great and I always liked it. But as a Data Scientist, I wonder if even with some simple Data Analysis navigating AirBnB could be made easier.  
