@@ -14,9 +14,9 @@ author:
       icon: "fab fa-linkedin"
 ---
 
-## Projects, experiments & Spreadsheets
 If you’ve been working with Data Science I’m sure that at some point you needed to try a lot of different things to solve a problem. At the same time, you also needed to keep track of the performance of what you tried to do.
 
+## Projects, experiments & Spreadsheets
 Probably at some point you, like me, fired up an Excel spreadsheet and tried to manually keep track of things. This often results in chaotic organization both in the project folder as well as the spreadsheet itself.
 
 It is hard to keep track of all possible things that can run differently in an experiement. Preprocessing steps for specific models, the models themselves, the parameters,…
