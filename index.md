@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Lucca's Blog
+title: My DS Journal
 header_type: hero
-header_img: assets/img/site/banner.jpg
-subtitle: My views and experiences as a Data Scientist
+header_img: assets/img/site/new_banner.jpg
+subtitle: My learnings and experiences as a Data Scientist
 ---
 
 ## Welcome!
@@ -24,18 +24,16 @@ If you want to get in contact with me, feel free to reach out over [**LinkedIn**
 <a href='/aboutme/'>
 <div class="card-body">
 <h5 class="card-title">About Me</h5>
-    <p class="card-text">I present myself in more detail and share all my working history here.</p>
+    <p class="card-text">More details about myself and my experiences.</p>
 </div>
 </a>
 </div>
-
-
 
 <div class="card">
 <a href='/blog/'>
 <div class="card-body">
 <h5 class="card-title">Blog</h5>
-    <p class="card-text">All my texts and projects are here.</p>
+    <p class="card-text">My texts, projects and thoughts.</p>
 </div>
 </a>
 </div>

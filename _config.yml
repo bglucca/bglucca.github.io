@@ -10,9 +10,9 @@ remote_theme: dieghernan/chulapa
 # Overall options for your site, would affect your site SEO
 # Default values are explained
 locale                  :     #default["en-US"] format language-TERRITORY , e.g fr, en-GB, es-MX, pt-BR
-title                   : Lucca Bevilacqua's Blog    #default["repository_name"]
+title                   : My DS Journey    #default["repository_name"]
 title_separator         :     #default [" | "]
-subtitle                : Data Science and Machine Learning from my perspective    #default [your-repository-tagline]  
+subtitle                : My learnings and experiences as a Data Scientist    #default [your-repository-tagline]  
 description             : Sharing my experiences and opinions as a data professional #default [your-repository-tagline]
 url                     :     #See baseurl - On Github Pages you may leave it blank - If you use CNAME use your domain
 baseurl                 :     #On Github Pages you may leave it blank. Have a look to: https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/
@@ -100,7 +100,7 @@ navbar:
   style     :  #default is the classical top navbar, set "fab" for a floating action button navbar or "dual"
   expand    :  # At which device size expand the navbar menu. default[md] https://getbootstrap.com/docs/4.5/layout/overview/
   brand:
-    title   :  Home # Title in navbar
+    title   :   Lucca Bevilacqua's Blog
     url     :  # default["url/baseurl"]
     img     :  # An small image, try 30x30px
   nav:
@@ -143,7 +143,9 @@ footer:
       icon: "fab fa-medium"
       url:  "https://medium.com/@luccagomes"
 
-  copyright: © 2025 Lucca Bevilacqua  # default is © <year> <name> 
+  copyright: '© 2025 Lucca Bevilacqua <br> Cover photo by <a href="https://unsplash.com/pt-br/@jontyson?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jon Tyson</a> at <a href="https://unsplash.com/pt-br/fotografias/cabo-revestido-branco-FnaXzE_wEwU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
+      
+    # default is © <year> <name> 
   
 # C. Theme Settings
 # Google Fonts https://fonts.google.com/, add as many as you need
@@ -156,7 +158,7 @@ chulapa-skin:
   skin         :  towards # Optional predefined skins
   autothemer    :  true # Bool: Use autotheming
   vars          :    
-    primary     : ["#377E47"] #default ["#007bff"] - Bootstrap blue
+    primary     : ["#31534A"] #default ["#007bff"] - Bootstrap blue
     
 # D. Jekyll Defaults and collections: see https://jekyllrb.com/
 
