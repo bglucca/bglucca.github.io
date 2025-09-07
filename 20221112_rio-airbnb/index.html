@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en-US"><head>
+   <meta charset="utf-8">
+    <!-- Chulapa Jekyll Theme - v2.0.1.0001 -->
+    <!--  MIT License-->
+    <!-- Docs: https://dieghernan.github.io/chulapa -->
+    <!-- Repo: https://github.com/dieghernan/chulapa -->
+    <!-- Page build 2025-09-07 -->
+     <!-- Jekyll Version 4.4.1 -->
+    <!--Google Structured Data-->
+    <script type="application/ld+json">
+        {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://bglucca.github.io/20221112_rio-airbnb/"
+      },
+      "headline": "Browsing AirBnb using Data Science",
+      "image": "https://bglucca.github.io/assets/img/rio_airbnb/cover-image.jpg",
+      "datePublished": "2022-11-12T00:00:00+00:00",
+      "dateModified": "2022-11-12T00:00:00+00:00",
+      "author": {
+        "@type": "Person",
+        "name": "Lucca Bevilacqua"
+        , "url": "https://github.com/bglucca"
+        ,  "sameAs" : [
+             "https://www.linkedin.com/in/luccabgomes/"
+            ]
+      },
+       "publisher": {
+        "@type": "Organization",
+        "name": "Lucca Bevilacqua",
+        "url": "https://bglucca.github.io/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": ""
+        }
+      }
+    }
+    </script>
+        <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Blog",
+        "item": "https://bglucca.github.io/blog/"
+      },
+    {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Browsing AirBnb using Data Science"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "name": "Browsing AirBnb using Data Science",
+    "description": "I consider myself somewhat of a regular traveler. That’s why I often look for places to stay in AirBnb. But, when I fire it up, the options are countless.
+Don’t get me wrong, the filters on the site are great and I always liked it. But as a Data Scientist, I wonder if even with some simple Data Analysis navigating AirBnB could be made easier."
+    }
+}
+</script><script type="application/ld+json">
+{
+  "@context" : "https://schema.org",
+  "@type" : "Person",
+  "homeLocation": {
+    "@type": "Place",
+    "name": "Paris, France"
+    },
+  "description": "Publisher",
+  "name" : "Lucca Bevilacqua",
+  "url" : "https://bglucca.github.io/"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context" : "https://schema.org",
+  "@type" : "Person",
+  "image": "https://bglucca.github.io/assets/img/site/headshot.jpg",
+  "description": "Collaborator",
+  "name" : "Lucca Bevilacqua"
+  , "url": "https://github.com/bglucca"
+      ,  "sameAs" : [
+      "https://www.linkedin.com/in/luccabgomes/"
+        ]
+}
+</script>
+   <title>Browsing AirBnb using Data Science | My DS Journey</title>
+  <link rel="canonical" href="https://bglucca.github.io/20221112_rio-airbnb/">
+    <!-- Atom feed -->
+  <link href="https://bglucca.github.io/atom.xml" type="application/atom+xml" rel="alternate" title="Atom feed My DS Journey" >
+    <!-- RSS 2.0 feed -->
+  <link href="https://bglucca.github.io/rss.xml" type="application/rss+xml" rel="alternate" title="RSS 2.0 feed My DS Journey" >
+    <!-- Meta tags -->
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="author" content="Lucca Bevilacqua" >
+   <meta name="copyright" content="Lucca Bevilacqua" >
+   <meta name="description" content="I consider myself somewhat of a regular traveler. That’s why I often look for places to stay in AirBnb. But, when I fire it up, the options are countless.
+Do...">
+   <meta name="thumbnail" content="https://bglucca.github.io/assets/img/rio_airbnb/cover-image.jpg" >
+   <meta name="robots" content="index, follow"><meta name="keywords" content="">
+    <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#31534A">
+    <!-- OpenGraph -->
+   <meta property="og:title" content="Browsing AirBnb using Data Science | My DS Journey" >
+   <meta property="og:site_name" content="My DS Journey | My learnings and experiences as a Data Scientist" >
+   <meta property="og:url" content="https://bglucca.github.io/20221112_rio-airbnb/" >
+   <meta property="og:type" content="website" >
+   <meta property="og:description" content="I consider myself somewhat of a regular traveler. That’s why I often look for places to stay in AirBnb. But,..." >
+   <meta property="og:locale" content="en-US" >
+   <meta property="og:image" content="https://bglucca.github.io/assets/img/rio_airbnb/cover-image.jpg" >
+    <!-- Twitter/X Cards -->
+   <meta name="twitter:card" content="summary_large_image"><!-- start custom head snippets -->
+<!-- this script is inserted before the css stylesheet -->
+<!-- end custom head snippets -->
+<!-- CSS -->
+    <!-- Preconnect with Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fontawesome-->
+    <!-- v6 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css">
+    <link rel="preload" href="https://cdn.jsdelivr.net/gh/dieghernan/chulapa@master/assets/js/chulapa_script.js" as="script" >
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/dieghernan/chulapa@master/assets/fonts/Chulapa/Chulapa-Bold_vmod.otf" as="font" type="font/otf" crossorigin>
+    <!-- Theme css (Bootstrap included) -->
+  <link rel="stylesheet" id="maincss" href="https://bglucca.github.io/assets/css/main.css" >
+    <!-- Highlighter -->
+  <link id="csshigh" rel="stylesheet" href="https://bglucca.github.io/assets/css/highlighter.css" >
+    <!-- Custom css -->
+  <link rel="stylesheet" href="https://bglucca.github.io/assets/css/custom.css" >
+      <!-- start custom head snippets -->
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-96x96.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+<!--<link rel="manifest" href="/assets/site.webmanifest"> -->
+<link rel="shortcut icon" href="/assets/favicon/favicon.ico">
+<!-- end custom head snippets -->
+</head>
+<body class="d-flex flex-column h-entry" id="body">
+	<a class="u-url d-none" href="https://bglucca.github.io/20221112_rio-airbnb/">Invisible link to canonical for Microformats</a>
+	<nav class="navbar navbar-expand-md sticky-top navbar-chulapa" aria-label="primary-navigation">
+	<div class="container-fluid mx-md-2">
+			<a class="navbar-brand font-weight-bold" href="https://bglucca.github.io/">Lucca Bevilacqua's Blog</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarToggler">
+				<ul class="navbar-nav ml-auto"><li class="nav-item">
+						<a class="nav-link " href="https://bglucca.github.io/aboutme/">About me</a>
+					</li><li class="nav-item">
+						<a class="nav-link " href="https://bglucca.github.io/blog/">Blog</a>
+					</li><li class="nav-item">
+						<a class="nav-link " href="https://bglucca.github.io/search">
+							<span class="d-md-none p-0 pr-1">Search</span><i class="fa fa-search" aria-hidden="true"></i><span class="sr-only">Search</span>
+						</a>
+					</li></ul>
+			</div></div>
+</nav>	<header class="header-chulapa"><div class="container-fluid header-chulapa-img w-100" style="background-image: url('https://bglucca.github.io/assets/img/rio_airbnb/cover-image.jpg')">
+     </div><div class="container-lg mt-2">
+       <div class="row">
+           <div class="col-lg-8 offset-lg-2">
+           <h1 class="p-name">Browsing AirBnb using Data Science</h1>
+           <hr class="mb-0">
+			</div>
+		</div>
+	</div>
+</header>
+	<main class="container-lg pb-3 flex-fill">
+<div class="row my-1">
+<div class="col-lg-5 offset-lg-2 col small">
+ <nav aria-label="breadcrumb">
+  <ol class="breadcrumb my-0 py-0 chulapa-bg-transparent pl-0" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li class="breadcrumb-item" itemprop="itemListElement" itemscope
+          itemtype="https://schema.org/ListItem"><a href="https://bglucca.github.io/blog/" itemprop="item"><span itemprop="name">Blog</span></a>
+         <meta itemprop="position" content="1" ></li>
+      <li class="breadcrumb-item active" aria-current="page" itemprop="itemListElement" itemscope
+          itemtype="https://schema.org/ListItem">
+        <span itemprop="name">Browsing AirBnb using Data Science</span>
+       <meta itemprop="position" content="2" >
+     </li>
+ </ol>
+ </nav>
+ <div class="chulapaDateSocial">
+            <time datetime="2022-11-12T00:00:00+00:00" class="dt-published" >12 nov 2022</time>
+        </div></div>
+         <div class="col-lg-3 col-sm-4 col-3 text-right lead chulapaDateSocial">
+            <a  href="https://twitter.com/intent/tweet?url=https://bglucca.github.io/20221112_rio-airbnb/&text=Browsing+AirBnb+using+Data%C2%A0Science&hashtags=UnsupervisedLearning,EDA,DataAnalysis,DataScience,CaseStudy" title="Share on X" aria-label="Share on X" ><i class="fab fa-square-x-twitter fa-lg" aria-hidden="true"></i></a>
+            <a href="https://bsky.app/intent/compose?text=Browsing%20AirBnb%20using%20Data%C2%A0Science%20https://bglucca.github.io/20221112_rio-airbnb/%20%23UnsupervisedLearning%20%23EDA%20%23DataAnalysis%20%23DataScience%20%23CaseStudy" title="Share on Bluesky" aria-label="Share on Bluesky"><i class="fa-brands fa-square-bluesky fa-lg" aria-hidden="true"></i></a>
+            <a  class="d-none d-sm-inline" href="https://www.facebook.com/sharer.php?u=https://bglucca.github.io/20221112_rio-airbnb/" title="Share on Facebook" aria-label="Share on Facebook" ><i class="fab fa-facebook-square fa-lg" aria-hidden="true"></i></a>
+             <a  class="d-none d-sm-inline" href="https://api.whatsapp.com/send?&text=Browsing+AirBnb+using+Data%C2%A0Science%20https://bglucca.github.io/20221112_rio-airbnb/" title="Share on Whatsapp" aria-label="Share on Whatsapp" ><i class="fab fa-whatsapp-square fa-lg" aria-hidden="true"></i></a>
+         <a  class="d-none d-sm-inline" href="https://www.linkedin.com/shareArticle?url=https://bglucca.github.io/20221112_rio-airbnb/&title=Browsing+AirBnb+using+Data%C2%A0Science" title="Share on LinkedIn" aria-label="Share on LinkedIn"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a>
+         </div></div>
+		<div class="row pt-2">
+			<aside class="col-lg-2 mt-lg-3 small"><div rel="author" class="h-card p-author">
+				<div class="row d-flex align-items-center mb-2"><img src="https://bglucca.github.io/assets/img/site/headshot.jpg" alt="Lucca Bevilacqua" class="ml-3 mr-0 mx-lg-auto mb-lg-1 chulapa-avatar-size u-photo"><div class="col-9 col-lg-12 text-lg-center p-name">
+						Lucca Bevilacqua
+					</div>
+				</div>
+				<div class="row mb-2 mb-lg-0">
+					<div class="col text-lg-center"><div class="d-inline my-1 mx-lg-0 chulapa-links-hover-only"><a class="mr-2 mx-lg-1 u-url" rel="me" href="https://github.com/bglucca" title="fab fa-github" aria-label="fab fa-github" ><i class="fab fa-github fa-lg" aria-hidden="true"></i></a><a class="mr-2 mx-lg-1 u-url" rel="me" href="https://www.linkedin.com/in/luccabgomes/" title="fab fa-linkedin" aria-label="fab fa-linkedin" ><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></div></div>
+				</div>
+				</div>
+</aside>
+			<article id="maincontent" class="col-lg-8 mt-3 e-content">
+			<p>I consider myself somewhat of a regular traveler. That’s why I often look for places to stay in AirBnb. But, when I fire it up, the options are countless.
+Don’t get me wrong, the filters on the site are great and I always liked it. But as a Data Scientist, I wonder if even with some simple Data Analysis navigating AirBnB could be made easier.</p>
+<p>That’s why I asked myself if I could use Rio de Janeiro’s (my hometown and a popular tourist city) AirBnB data to:</p>
+<ol>
+ <li>Find out if I could narrow my search by looking directly into the cheapest zones and cheapest neighbourhoods into each zone.</li>
+ <li>Discover natural listing groups (i.e., clusters) based on their declared characteristics so that, if I wanted to, I could look into the group that suited me the most for a trip.</li>
+ <li>Find out which are the most (and least) common ammenities I should expect when looking into listings in Rio.</li>
+</ol>
+<p>Let’s get into it.</p>
+<p><em>Quick stop before we move forward, you can read this on <a href="https://medium.com/@luccagomes/making-browsing-airbnb-easier-through-data-science-bf96e2a72e0c"><strong>Medium</strong></a> as well</em></p>
+<h2 id="sometimes-i-dont-want-to-spend-thatmuch">Sometimes I don’t want to spend that much</h2>
+<p>Price is an easy go-to filter. But that isn’t the only factor to take into consideration in a travel. You might wonder about distance to touristical spots, public transportation or even if you are cutting a good deal for that region… Location matters.</p>
+<p>So to get a glimpse of that, we can try check out the prices by neighbourhood and even by city zone and see if they vary and, if so, we can rank them from cheapest to most expensive.</p>
+<p>The data I had at hand didn’t contain city zone information. But we won’t let that stop us. With an easy scrape using Pandas <code class="language-plaintext highlighter-rouge">read_html</code> method on this <a href="https://pt.wikipedia.org/wiki/Lista_de_bairros_da_cidade_do_Rio_de_Janeiro">Wikipedia page</a>, we can get the city zone data to populate our table.</p>
+<p>So first let’s take a look into the price distribution for each city zone:</p>
+<p class="caption"><img src="/assets/img/rio_airbnb/price-distribution-by-region.png" alt="Price Distribution per Zone" />
+This is a caption</p>
+<p><em>Note: y-axes are not shared between plots</em></p>
+<p>We can see that generally price is a right-skewed distribution and that zones have effective differences in their distribution behaviour. For instance the south zone peaks more to the left then the north zone. West zone has a fatter tail.</p>
+<p>This gives us two informations: We can group regions and use a comparison metric since it most probably will wield different results. Given the distribution, the median will be used. This results in:</p>
+<p><img src="/assets/img/rio_airbnb/price-median-by-zone.png" alt="Zone Medians" /></p>
+<p>So when looking for a place to stay, listings on the North and Central regions might be more price-friendly.</p>
+<p>We can dig a little bit deeper and even, for each zone, list the neighbourhoods within each region that have the cheapest prices:</p>
+<p><img src="/assets/img/rio_airbnb/price-median-detail.png" alt="Neighbourhood Medians" /></p>
+<p>This is where some domain knowledge kicks in, though. Especially on the West Zone, the cheapest lisitings are really far away from the downtown or touristical spots.</p>
+<p>But we have considerable price differences even within the cheapest/ expensive regions. So bringing this geographical layer on top of prices (and vice-versa) might facilitate users navigating through listings.</p>
+<h2 id="but-what-if-im-looking-for-something-in-specific">But what if I’m looking for something in specific?</h2>
+<p>Maybe location doesn’t matter as much if your priority is to first find listings suitable to your needs. That’s where clustering comes in. We can find natural groups of listings with similar features for someone can look into without the need to filter variable by variable.</p>
+<p>The variables that describe a listing can be interpreted essentially as categorical. It can be argued that something like the amount of bathrooms a listing has is continuous/numerical, but on the sample it was rare to have more than 3 bathrooms in an AirBnb listing, for example.</p>
+<p class="caption"><img src="/assets/img/rio_airbnb/bathroom-var-count.png" alt="Bathrooms Count" />
+Count of listings for the bathroom variable. Note that from 3 bathrooms onward, there are few listings that contain more baths. There are even listings with no bathrooms!</p>
+<p>What we see for bathrooms happens generally for the other variables that describe listings as well.<br />
+This limits our approach to categorical variable clustering methods. For this one, I will be using KModes. But you could use some variation like Gower Distance + Hierarchical Clustering.</p>
+<p>After selecting our desired variables: Room Type, Number of Persons Accomodated, Bathrooms, Bedrooms and minimum accepted nights we can use our methods’ cost-function to set up an elbow-method plot and define our n for our clusters.</p>
+<p><img src="/assets/img/rio_airbnb/elbow-plot.png" alt="Elbow Plot" /></p>
+<p>It looks like n = 8 is a nice enough amount of clusters. The rate in which the cost falls after that slows down heavily. When we run it we get the following clusters (using their centroid as reference):</p>
+<p class="caption"><img src="/assets/img/rio_airbnb/cluster-centroids.png" alt="Cluster Centroid" />
+Clusters</p>
+<p>Centroids, in this case, are the most-frequent value for each feature.<br />
+It is normal that most clusters are centered around Entire rooms/ apts in Entire Rental Units. These values dominate the dataset, having more than 50% of listing associated to them.</p>
+<p>The biggest differences come from the “size” of the listings and the minimum nights. With size I want to express how many people they accommodate and the amount of bathrooms, bedrooms, etc. that a listing has.</p>
+<p>If users were to search for listings in a city, the clusters could be a good starting point for showing them listings more aligned with their needs.</p>
+<h2 id="what-if-i-want-wifi-in-myroom">What if I want WiFi in my room?</h2>
+<p>Sometimes you want certain amenities. Sometimes you expect a room to have some basic things. So, it is only natural to try to find out what are the most common and rare amenities in listings. That way, users could know what to expect (or not to) for the listings in the city.</p>
+<p>To start off answering our final question, we look into the the amenities field available in the dataset. It is a somewhat tricky feature. It is a whole string that should’ve been a list. So it is a list contained within a string and a simple .split() won’t cut it.</p>
+<p>With a little bit of RegEx and text cleaning, we get our data to a list format. The only thing left to do is some text cleaning especially for WiFi. Since it’s is an important aspect nowadays, we do some special cleaning for it. WiFi values have multiple values like:</p>
+<p><img src="/assets/img/rio_airbnb/wifi-writing.png" alt="WiFi writing" /></p>
+<p class="caption">Multiple different forms to write that a listing has WiFi</p>
+<p>With the cleaning handled, we can use the <code class="language-plaintext highlighter-rouge">.explode()</code> method to turn our lists into rows and make our analysis easier.</p>
+<p>We get a total of 2788 unique amenities. But, considering each amenity is only listed once per listing, we can use <code class="language-plaintext highlighter-rouge">.value_counts()</code> on top of our exploded dataset to get the number of listings each amenity was cited in. This allows us to approach the problem using a Pareto logic. That is, a low number of amenities will show up with high frequency.</p>
+<p><img src="/assets/img/rio_airbnb/amenities-pareto.png" alt="Ammenities Pareto" /></p>
+<p>We can see that even by making a cut as small as 10% on the proportion of listings an amenity shows up in, we already reduce the amount of amenities from 2788 to 56.</p>
+<p>I chose to work with this this 56 amenities subset. Considering that there might be a lot of amenities that will show up sparsely or are super specific, we cannot simply select the overall least cited amenities. This could lead to unnecessary/ wrong information.</p>
+<p>For instance, it is safe to assume that a refrigerator from a specific brand (which exists on the data) is not an amenity someone would actively look for. Even the least common amenities must be contained in a group within reason.</p>
+<p>With that in mind we get that:</p>
+<p><img src="/assets/img/rio_airbnb/amenities-ranking-top.png" alt="Top Ammenities" /></p>
+<p>Are the most common amenities, so you can expect them to occur in a lot of the listings. Need WiFi? You’ll probably have it covered. No need to worry about it.</p>
+<p>On the other hand:
+<img src="/assets/img/rio_airbnb/amenities-ranking-bottom.png" alt="Bottom Ammenities" /></p>
+<p>Are the least common amenities within that subset. So if for instance a beachfront view is a must for you when coming to Rio, you might only have more niched options available.</p>
+<hr />
+<h2 id="conclusions">Conclusions</h2>
+<p>All things considered, all 3 analyses show relatively simple ways data could be incorporated to facilitate decision-making within the platform for the users. If we get back to our starting questions:</p>
+<ol>
+ <li>We can narrow our search for cheap listings by adding a geographical layer to our data. This could be even further explored if we incorporated more data like proximity to tourist sights or restaurants concentration , for instance.</li>
+ <li>It is possible to segregate listings based on their declared characteristics like amount of beds, rooms, etc. using a relatively simple clustering algorithm. This might be helpful to present to users more focused listing groups in-line with their needs without the need to manually set filters.</li>
+ <li>From more than 2000 amenities we can get a subset of 56 significant amenities that could allow a user to catch a glimpse of what they could expect in a lot of the listings or not. That way, expectations can easily be set.</li>
+</ol>
+<p>Naturally, all three paths could be enhanced with more work put into them. But the conclusions show how already on the current state we can create value to an user by answering key-questions and focusing of efficient analysis methods.</p>
+<hr />
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p>The full notebook and data can be found on my <a href="https://github.com/bglucca/RioAirBnb?tab=readme-ov-file"><strong>GitHub</strong></a>.<br />
+Data for AirBnB was collected from <a href="https://insideairbnb.com/explore/"><strong>Inside AirBnb</strong></a>.<br />
+For more references into K-Modes, I recommend visiting <a href="https://github.com/nicodv/kmodes"><strong>nicodv’s GitHub</strong></a> that contains not only the implementation of the algorithm but references to the Theory behind it.<br />
+This work was done as a submission to Udacity’s Data Science Nanodegree Program.</p>
+</article>
+		</div>
+	</main><nav aria-label="Navigation" class="container-lg chulapa-pagination  ">
+ <ul class="col-lg-8 offset-lg-2 pagination chulapa-pagination-round px-0 ">
+   <li class="page-item text-left mr-0 invisible">
+      <a class="page-link border-0 px-4" href="#" tabindex="-1">
+	  <i class="fa fa-chevron-left" aria-hidden="true"></i><span class="sr-only">Previous</span>
+	  </a>
+   </li>
+   <li class="page-item border-0 disabled text-left ml-0 mr-auto d-none d-md-inline invisible">
+     <p class="page-link chulapa-label"></p>
+   </li>
+   <li class="page-item border-0 disabled text-left ml-0 mr-auto d-none d-sm-inline d-md-none invisible">
+     <p class="page-link chulapa-label"></p>
+   </li>
+	 <li class="page-item disabled mx-auto invisible">
+	  <p class="page-link">|</p>
+	 </li>	
+	 <li class="page-item border-0 disabled text-right mr-0 ml-auto d-none d-sm-inline d-md-none ">
+	   <p class="page-link chulapa-label">You’ve got mai...</p>
+	 </li>
+	 <li class="page-item border-0 disabled text-right mr-0 ml-auto d-none d-md-inline ">
+	   <p class="page-link chulapa-label">You’ve got mail! Machine Le...</p>
+	 </li>
+   <li class="page-item text-right ml-0 ">
+      <a class="page-link border-0 px-4" href="https://bglucca.github.io/20230807_customer-segmentation/">
+	  <i class="fa fa-chevron-right" aria-hidden="true"></i><span class="sr-only">Next</span></a>
+   </li>
+ </ul>
+</nav>
+<div class="container-lg my-1">
+ <div class="row">
+   <div class="col-lg-8 offset-lg-2 col">
+      <i class="fas fa-tag mr-1 fa-xs" aria-hidden="true"></i>
+      <a href="https://bglucca.github.io/tags#Unsupervised-Learning" class="badge chulapa-pill-bg-primary p-category" rel="tag" >Unsupervised Learning</a>
+      <a href="https://bglucca.github.io/tags#EDA" class="badge chulapa-pill-bg-primary p-category" rel="tag" >EDA</a>
+      <a href="https://bglucca.github.io/tags#Data-Analysis" class="badge chulapa-pill-bg-primary p-category" rel="tag" >Data Analysis</a>
+      <a href="https://bglucca.github.io/tags#Data-Science" class="badge chulapa-pill-bg-primary p-category" rel="tag" >Data Science</a>
+      <a href="https://bglucca.github.io/tags#Case-Study" class="badge chulapa-pill-bg-primary p-category" rel="tag" >Case Study</a>
+     </div>
+   </div>
+</div>
+<!-- Compatible with Jekyll v3 and v4, pure Jekyll group by -->
+       <div class="container-lg mt-1 mb-2">
+         <div class="row">
+           <div class="col-lg-8 offset-lg-2">
+             <hr>
+             <nav class="card-group" aria-label="related-articles"><div class="card  border chulapa-related">
+       <div class="card-body">
+         <p class="card-title chulapa-headingfont">
+            <a href="https://bglucca.github.io/20230807_customer-segmentation/" class="chulapa-text-body-color">
+              You’ve got mail! Machine Learning for Customer Segmentation.
+            </a>
+         </p>
+           <p class="card-text">
+              <small>Using Data Science to better understand the customers for a mail-order company and predicting their marketing actions’ response.</small>
+           </p></div>
+       <div class="card-footer bg-transparent">
+            <small>
+              <i class="far fa-calendar" aria-hidden="true"></i>
+              <time datetime="2023-08-07T00:00:00+00:00">
+                august 07, 2023
+              </time>
+            </small>
+       </div>
+     </div></nav>
+           </div>
+         </div>
+       </div><!-- Footer -->
+ <footer class="footer-chulapa text-center mt-0 pt-3">
+   <div class="container">
+     <div class="row">
+       <div class="col-xl-10 offset-xl-1"><div role="navigation" class="d-flex flex-wrap justify-content-center"><a href="https://github.com/dieghernan/bglucca" title="footerGithub" class="chulapa-footer-sociallink lead"><span class="fa-stack fa-lg" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span><span class="sr-only">Github</span>
+            </a><a href="https://www.linkedin.com/in/luccabgomes/" title="footerLinkedIn" class="chulapa-footer-sociallink lead"><span class="fa-stack fa-lg" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span><span class="sr-only">LinkedIn</span>
+            </a><a href="https://medium.com/@luccagomes" title="footerMedium" class="chulapa-footer-sociallink lead"><span class="fa-stack fa-lg" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fab fa-medium fa-stack-1x fa-inverse"></i>
+              </span><span class="sr-only">Medium</span>
+            </a></div><p class="mt-2 mb-3">© 2025 Lucca Bevilacqua <br> Cover photo by <a href="https://unsplash.com/pt-br/@jontyson?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jon Tyson</a> at <a href="https://unsplash.com/pt-br/fotografias/cabo-revestido-branco-FnaXzE_wEwU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+          <!-- Do not remove this in order to give  attributions -->
+         <p class="chulapa-footer-brand">Powered by <a href="https://dieghernan.github.io/chulapa"> <span class="chulapa">Chulapa</span> Jekyll Theme</a><br><b>Towards</b> skin by <a href="https://github.com/dieghernan">dieghernan</a></p>
+          <!-- End  attributions -->
+       </div>
+     </div>
+ </div>
+</footer>
+<!-- Footer -->
+<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/gh/dieghernan/chulapa@master/assets/js/chulapa_script.js"></script>
+	<!-- start custom scripts to be placed at the bottom of the page -->
+<!-- end custom bottom scripts -->
+	</body>
+</html>

@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="en-US"><head>
+   <meta charset="utf-8">
+    <!-- Chulapa Jekyll Theme - v2.0.1.0001 -->
+    <!--  MIT License-->
+    <!-- Docs: https://dieghernan.github.io/chulapa -->
+    <!-- Repo: https://github.com/dieghernan/chulapa -->
+    <!-- Page build 2025-09-07 -->
+     <!-- Jekyll Version 4.4.1 -->
+    <!--Google Structured Data-->
+    <script type="application/ld+json">
+        {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://bglucca.github.io/20230807_customer-segmentation/"
+      },
+      "headline": "You’ve got mail! Machine Learning for Customer Segmentation.",
+      "image": "https://bglucca.github.io/assets/img/customer-segmentation/cover-image.webp",
+      "datePublished": "2023-08-07T00:00:00+00:00",
+      "dateModified": "2023-08-07T00:00:00+00:00",
+      "author": {
+        "@type": "Person",
+        "name": "Lucca Bevilacqua"
+        , "url": "https://github.com/bglucca"
+        ,  "sameAs" : [
+             "https://www.linkedin.com/in/luccabgomes/"
+            ]
+      },
+       "publisher": {
+        "@type": "Organization",
+        "name": "Lucca Bevilacqua",
+        "url": "https://bglucca.github.io/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": ""
+        }
+      }
+    }
+    </script>
+        <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Blog",
+        "item": "https://bglucca.github.io/blog/"
+      },
+    {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "You’ve got mail! Machine Learning for Customer Segmentation."
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "name": "You’ve got mail! Machine Learning for Customer Segmentation.",
+    "description": "Using Data Science to better understand the customers for a mail-order company and predicting their marketing actions’ response. - Table of Contents"
+    }
+}
+</script><script type="application/ld+json">
+{
+  "@context" : "https://schema.org",
+  "@type" : "Person",
+  "homeLocation": {
+    "@type": "Place",
+    "name": "Paris, France"
+    },
+  "description": "Publisher",
+  "name" : "Lucca Bevilacqua",
+  "url" : "https://bglucca.github.io/"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context" : "https://schema.org",
+  "@type" : "Person",
+  "image": "https://bglucca.github.io/assets/img/site/headshot.jpg",
+  "description": "Collaborator",
+  "name" : "Lucca Bevilacqua"
+  , "url": "https://github.com/bglucca"
+      ,  "sameAs" : [
+      "https://www.linkedin.com/in/luccabgomes/"
+        ]
+}
+</script>
+   <title>You’ve got mail! Machine Learning for Customer Segmentation. | My DS Journey</title>
+  <link rel="canonical" href="https://bglucca.github.io/20230807_customer-segmentation/">
+    <!-- Atom feed -->
+  <link href="https://bglucca.github.io/atom.xml" type="application/atom+xml" rel="alternate" title="Atom feed My DS Journey" >
+    <!-- RSS 2.0 feed -->
+  <link href="https://bglucca.github.io/rss.xml" type="application/rss+xml" rel="alternate" title="RSS 2.0 feed My DS Journey" >
+    <!-- Meta tags -->
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="author" content="Lucca Bevilacqua" >
+   <meta name="copyright" content="Lucca Bevilacqua" >
+   <meta name="description" content="Using Data Science to better understand the customers for a mail-order company and predicting their marketing actions’ response. - Table of Contents">
+   <meta name="thumbnail" content="https://bglucca.github.io/assets/img/customer-segmentation/cover-image.webp" >
+   <meta name="robots" content="index, follow"><meta name="keywords" content="">
+    <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#31534A">
+    <!-- OpenGraph -->
+   <meta property="og:title" content="You’ve got mail! Machine Learning for Customer Segmentation. | My DS Journey" >
+   <meta property="og:site_name" content="My DS Journey | My learnings and experiences as a Data Scientist" >
+   <meta property="og:url" content="https://bglucca.github.io/20230807_customer-segmentation/" >
+   <meta property="og:type" content="website" >
+   <meta property="og:description" content="Using Data Science to better understand the customers for a mail-order company and predicting their marketing actions’ response. - Table..." >
+   <meta property="og:locale" content="en-US" >
+   <meta property="og:image" content="https://bglucca.github.io/assets/img/customer-segmentation/cover-image.webp" >
+    <!-- Twitter/X Cards -->
+   <meta name="twitter:card" content="summary_large_image"><!-- start custom head snippets -->
+<!-- this script is inserted before the css stylesheet -->
+<!-- end custom head snippets -->
+<!-- CSS -->
+    <!-- Preconnect with Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fontawesome-->
+    <!-- v6 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css">
+    <link rel="preload" href="https://cdn.jsdelivr.net/gh/dieghernan/chulapa@master/assets/js/chulapa_script.js" as="script" >
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/dieghernan/chulapa@master/assets/fonts/Chulapa/Chulapa-Bold_vmod.otf" as="font" type="font/otf" crossorigin>
+    <!-- Theme css (Bootstrap included) -->
+  <link rel="stylesheet" id="maincss" href="https://bglucca.github.io/assets/css/main.css" >
+    <!-- Highlighter -->
+  <link id="csshigh" rel="stylesheet" href="https://bglucca.github.io/assets/css/highlighter.css" >
+    <!-- Custom css -->
+  <link rel="stylesheet" href="https://bglucca.github.io/assets/css/custom.css" >
+      <!-- start custom head snippets -->
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-96x96.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+<!--<link rel="manifest" href="/assets/site.webmanifest"> -->
+<link rel="shortcut icon" href="/assets/favicon/favicon.ico">
+<!-- end custom head snippets -->
+</head>
+<body class="d-flex flex-column h-entry" id="body">
+	<a class="u-url d-none" href="https://bglucca.github.io/20230807_customer-segmentation/">Invisible link to canonical for Microformats</a>
+	<nav class="navbar navbar-expand-md sticky-top navbar-chulapa" aria-label="primary-navigation">
+	<div class="container-fluid mx-md-2">
+			<a class="navbar-brand font-weight-bold" href="https://bglucca.github.io/">Lucca Bevilacqua's Blog</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarToggler">
+				<ul class="navbar-nav ml-auto"><li class="nav-item">
+						<a class="nav-link " href="https://bglucca.github.io/aboutme/">About me</a>
+					</li><li class="nav-item">
+						<a class="nav-link " href="https://bglucca.github.io/blog/">Blog</a>
+					</li><li class="nav-item">
+						<a class="nav-link " href="https://bglucca.github.io/search">
+							<span class="d-md-none p-0 pr-1">Search</span><i class="fa fa-search" aria-hidden="true"></i><span class="sr-only">Search</span>
+						</a>
+					</li></ul>
+			</div></div>
+</nav>	<header class="header-chulapa"><div class="container-fluid header-chulapa-img w-100" style="background-image: url('https://bglucca.github.io/assets/img/customer-segmentation/cover-image.webp')">
+     </div><div class="container-lg mt-2">
+       <div class="row">
+           <div class="col-lg-8 offset-lg-2">
+           <h1 class="p-name">You’ve got mail! Machine Learning for Customer Segmentation.</h1><p class="lead chulapa-subtitle p-summary">Using Data Science to better understand the customers for a mail-order company and predicting their marketing actions’ response.</p>
+           <hr class="mb-0">
+			</div>
+		</div>
+	</div>
+</header>
+	<main class="container-lg pb-3 flex-fill">
+<div class="row my-1">
+<div class="col-lg-5 offset-lg-2 col small">
+ <nav aria-label="breadcrumb">
+  <ol class="breadcrumb my-0 py-0 chulapa-bg-transparent pl-0" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li class="breadcrumb-item" itemprop="itemListElement" itemscope
+          itemtype="https://schema.org/ListItem"><a href="https://bglucca.github.io/blog/" itemprop="item"><span itemprop="name">Blog</span></a>
+         <meta itemprop="position" content="1" ></li>
+      <li class="breadcrumb-item active" aria-current="page" itemprop="itemListElement" itemscope
+          itemtype="https://schema.org/ListItem">
+        <span itemprop="name">You’ve got mail! Machine Learning for Customer Segmentation.</span>
+       <meta itemprop="position" content="2" >
+     </li>
+ </ol>
+ </nav>
+ <div class="chulapaDateSocial">
+            <time datetime="2023-08-07T00:00:00+00:00" class="dt-published" >07 aug 2023</time>
+        </div></div>
+         <div class="col-lg-3 col-sm-4 col-3 text-right lead chulapaDateSocial">
+            <a  href="https://twitter.com/intent/tweet?url=https://bglucca.github.io/20230807_customer-segmentation/&text=You%E2%80%99ve+got+mail%21+Machine+Learning+for+Customer+Segmentation.&hashtags=MachineLearning,CustomerSegmentation,SupervisedLearning,UnsupervisedLearning,CaseStudy" title="Share on X" aria-label="Share on X" ><i class="fab fa-square-x-twitter fa-lg" aria-hidden="true"></i></a>
+            <a href="https://bsky.app/intent/compose?text=You%E2%80%99ve%20got%20mail!%20Machine%20Learning%20for%20Customer%20Segmentation.%20https://bglucca.github.io/20230807_customer-segmentation/%20%23MachineLearning%20%23CustomerSegmentation%20%23SupervisedLearning%20%23UnsupervisedLearning%20%23CaseStudy" title="Share on Bluesky" aria-label="Share on Bluesky"><i class="fa-brands fa-square-bluesky fa-lg" aria-hidden="true"></i></a>
+            <a  class="d-none d-sm-inline" href="https://www.facebook.com/sharer.php?u=https://bglucca.github.io/20230807_customer-segmentation/" title="Share on Facebook" aria-label="Share on Facebook" ><i class="fab fa-facebook-square fa-lg" aria-hidden="true"></i></a>
+             <a  class="d-none d-sm-inline" href="https://api.whatsapp.com/send?&text=You%E2%80%99ve+got+mail%21+Machine+Learning+for+Customer+Segmentation.%20https://bglucca.github.io/20230807_customer-segmentation/" title="Share on Whatsapp" aria-label="Share on Whatsapp" ><i class="fab fa-whatsapp-square fa-lg" aria-hidden="true"></i></a>
+         <a  class="d-none d-sm-inline" href="https://www.linkedin.com/shareArticle?url=https://bglucca.github.io/20230807_customer-segmentation/&title=You%E2%80%99ve+got+mail%21+Machine+Learning+for+Customer+Segmentation." title="Share on LinkedIn" aria-label="Share on LinkedIn"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a>
+         </div></div>
+		<div class="row pt-2">
+			<aside class="col-lg-2 mt-lg-3 small"><div rel="author" class="h-card p-author">
+				<div class="row d-flex align-items-center mb-2"><img src="https://bglucca.github.io/assets/img/site/headshot.jpg" alt="Lucca Bevilacqua" class="ml-3 mr-0 mx-lg-auto mb-lg-1 chulapa-avatar-size u-photo"><div class="col-9 col-lg-12 text-lg-center p-name">
+						Lucca Bevilacqua
+					</div>
+				</div>
+				<div class="row mb-2 mb-lg-0">
+					<div class="col text-lg-center"><div class="d-inline my-1 mx-lg-0 chulapa-links-hover-only"><a class="mr-2 mx-lg-1 u-url" rel="me" href="https://github.com/bglucca" title="fab fa-github" aria-label="fab fa-github" ><i class="fab fa-github fa-lg" aria-hidden="true"></i></a><a class="mr-2 mx-lg-1 u-url" rel="me" href="https://www.linkedin.com/in/luccabgomes/" title="fab fa-linkedin" aria-label="fab fa-linkedin" ><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></div></div>
+				</div>
+				</div>
+</aside>
+			<article id="maincontent" class="col-lg-8 mt-3 e-content">
+			<h1 id="table-of-contents">Table of Contents</h1>
+<ul id="markdown-toc">
+ <li><a href="#who-should-i-reach-out-to-and-where-arethey" id="markdown-toc-who-should-i-reach-out-to-and-where-arethey">Who should I reach out to? And where are they?</a></li>
+ <li><a href="#initial-eda" id="markdown-toc-initial-eda">Initial EDA</a></li>
+ <li><a href="#building-customer-segmentation" id="markdown-toc-building-customer-segmentation">Building Customer Segmentation</a></li>
+ <li><a href="#predicting-customerresponse" id="markdown-toc-predicting-customerresponse">Predicting Customer Response</a></li>
+ <li><a href="#conclusions" id="markdown-toc-conclusions">Conclusions</a></li>
+</ul>
+<p><strong>Disclaimer: This article and data for the development of the code are part of my submission Udacity’s Data Science Nanodegree program.</strong></p>
+<h2 id="who-should-i-reach-out-to-and-where-arethey">Who should I reach out to? And where are they?</h2>
+<p>These are common questions to every sort of business. Especially B2C companies that reach out directly to consumers. Thankfully, Data Science can help us better pinpoint the niches within possible markets/ population.</p>
+<p>In this specific article, we will be covering data for Arvato-Bertelsmann. The data provided belongs to a mix of german general population demographic data and data from one of the company’s clients: an organics mail-order comapny.</p>
+<p>This is a two-part analysis. The first part will be an unsupervised cluster generation and interpretation of the census data vs current customers. This helps us understand <strong>which characteristics better define our customer base.</strong></p>
+<p>The second part will be a supervised learning problem to predict responses to marketing actions. This can help us predict which people have the highest probability of becoming customers after marketing efforts.</p>
+<p>To answer these questions, we have 4 tables:</p>
+<ul>
+ <li>2 .csv files with demographic data. One is the general population data, the other is the customer base.</li>
+ <li>2 other .csv files with the Mailout information. One is the training data and the other was supposed to be the test data. But for this article, only the training data will be used.</li>
+</ul>
+<p><strong><em>Note: The test data for mailout information was supposed to be used as part of a Kaggle competition entry that no longer exists. This is why only the training data was used, since it has labels for scoring and model evaluation.</em></strong></p>
+<p>There were also 2 auxiliary tables that represented a documentation regarding the available variables and how to interpret the encodings of categorical variables.</p>
+<p>All files use “;” as the separator between values.</p>
+<p>An observation at stage is necessary: Due to terms and conditions of the data, the data cannot be shared and thus will not be found anywhere except within the Udacity Data Science Nanodegree context.</p>
+<p>With all the context set, lets get into the analyses. The methodology is the following: We first do an Exploratory Analysis of the Data and check for its consistency. This way, we can define any preprocessing steps to get the best out of our data.</p>
+<p>Then, we go to the unsupervised stage, where we try to build segments that might help us understand the companies customer base.</p>
+<p>At last, we move to the modelling, where we attempt to build a model to predict wether a person answers to a mailout campaign or not.</p>
+<p><em>Before we continue, this article is also available on my <a href="https://medium.com/@luccagomes/youve-got-mail-machine-learning-for-customer-segmentation-2c90d9b9d58d"><strong>Medium</strong></a>, if you like it better</em></p>
+<h2 id="initial-eda">Initial EDA</h2>
+<p>The general census data contains 891221 rows by 366 columns. The variables are divided into different groups, where each one means a different thing. For instance there is a group regarding automobile ownership information, other blocks regard the surroundings of the respondent.</p>
+<p>The rows represent one respondent’s responses. Each respondent is represented by an anonym ID called “LNR” in the database.</p>
+<h3 class="no_toc" id="fixing-cameo_columns">Fixing CAMEO_ columns</h3>
+<p>There are 3 columns in the data (<em>CAMEO_DEUG_2015, CAMEO_INTL_2015 and CAMEO_DEU_2015</em>) that raise a warning about mixed types in Data. This happens because the values “X” or “XX” show up on them, when they should be numeric types (<em>int</em> or <em>float</em>). Since there is no description on the documentation of what these values are supposed to be and since they are different to the possible values in the columns, they were replaced as NaNs.</p>
+<h3 class="no_toc" id="fixing-documentation-removing-undocumented-columns">Fixing Documentation - Removing undocumented columns</h3>
+<p>Another problem found was that not all columns were in the documentation, on either of the two auxiliary files. This generated 3 scenarios:</p>
+<ul>
+ <li>The naming of the column was incorrect, but it was in fact documented (salvageable);</li>
+ <li>The column name was self-explanatory enough to be associated to other columns that had similar encodings and names (salvageable);</li>
+ <li>The column was, effectively, missing from the documentation (unsalvageable).</li>
+</ul>
+<p>The most critical case would be the last one. When we don’t have a clear meaning to the feature we can’t assure its usefullness. Therefore, columns considered unsalvageable were dropped.</p>
+<p>The steps taken to set the not found columns were:</p>
+<ol>
+ <li>Get column names not in the documentation</li>
+ <li>A first automatic attempt to match columns by appending common strings to the names</li>
+ <li>A second manual verification to see if the names coincide heavily with other columns in the docs and, therefore, we can infer the meaning of the not found columns.</li>
+ <li>The columns not found after these two steps, were dropped.</li>
+</ol>
+<p>31 columns were dropped by this process.</p>
+<p>Also, with the documentation now fully representing the data, the files could be used to:</p>
+<ul>
+ <li>Correlate the column names to their data types (float, int,…) and variable type (numeric, interval, nominal or binary)</li>
+ <li>Correlate the column names to the variable group they belonged to</li>
+ <li>Correlate the column names to their respective NaN values that could be encoded differently</li>
+</ul>
+<p>To build these correlations, especially variable type, changes were made manually to the files or new files were created in a format that made fetching the documentation’s information in an easier manner.</p>
+<h3 class="no_toc" id="nan-handling">NaN Handling</h3>
+<p>Given the (now fixed) documentation on the value of the columns, we can extract information from the documentation to replace values that map from “unknown” to NaN.</p>
+<p>By ingesting this information and considering that strings that contain “unknown” in the meaning of the encoding represent NaNs, we can build a dictionary for each column to map its corresponding NaN values using pandas’ <code class="language-plaintext highlighter-rouge">.replace()</code> method:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df_attributes</span><span class="p">[[</span><span class="sh">'</span><span class="s">Attribute</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">Description</span><span class="sh">'</span><span class="p">]]</span> <span class="o">=</span> <span class="n">df_attributes</span><span class="p">[[</span><span class="sh">'</span><span class="s">Attribute</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">Description</span><span class="sh">'</span><span class="p">]].</span><span class="nf">fillna</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="sh">'</span><span class="s">ffill</span><span class="sh">'</span><span class="p">)</span>
+
+<span class="c1"># Assuming, from manual inspection from the 'Values' Spreadsheet, that NaNs are represented with substrings in Meaning col
+</span><span class="n">nan_val_df</span> <span class="o">=</span> <span class="n">df_attributes</span><span class="p">[</span><span class="n">df_attributes</span><span class="p">[</span><span class="sh">'</span><span class="s">Meaning</span><span class="sh">'</span><span class="p">].</span><span class="nb">str</span><span class="p">.</span><span class="nf">contains</span><span class="p">(</span><span class="sh">'</span><span class="s">unknown</span><span class="sh">'</span><span class="p">,</span><span class="n">regex</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span><span class="n">na</span>  <span class="o">=</span> <span class="bp">False</span><span class="p">)].</span><span class="nf">copy</span><span class="p">()</span>
+
+<span class="n">nan_val_df</span><span class="p">[</span><span class="sh">'</span><span class="s">Value</span><span class="sh">'</span><span class="p">]</span> <span class="o">=</span> <span class="n">nan_val_df</span><span class="p">[</span><span class="sh">'</span><span class="s">Value</span><span class="sh">'</span><span class="p">].</span><span class="nb">str</span><span class="p">.</span><span class="nf">replace</span><span class="p">(</span><span class="sh">'</span><span class="s">\s</span><span class="sh">'</span><span class="p">,</span><span class="sh">''</span><span class="p">,</span> <span class="n">regex</span> <span class="o">=</span> <span class="bp">True</span><span class="p">)</span>
+
+<span class="n">nan_val_df</span><span class="p">[</span><span class="sh">'</span><span class="s">Value</span><span class="sh">'</span><span class="p">]</span> <span class="o">=</span> <span class="n">nan_val_df</span><span class="p">[</span><span class="sh">'</span><span class="s">Value</span><span class="sh">'</span><span class="p">].</span><span class="nb">str</span><span class="p">.</span><span class="nf">split</span><span class="p">(</span><span class="sh">'</span><span class="s">,</span><span class="sh">'</span><span class="p">)</span>
+
+<span class="n">nan_val_map</span> <span class="o">=</span> <span class="nf">dict</span><span class="p">(</span><span class="nf">zip</span><span class="p">(</span><span class="n">nan_val_df</span><span class="p">[</span><span class="sh">'</span><span class="s">Attribute</span><span class="sh">'</span><span class="p">],</span> <span class="n">nan_val_df</span><span class="p">[</span><span class="sh">'</span><span class="s">Value</span><span class="sh">'</span><span class="p">]))</span>
+
+<span class="c1"># Reshaping the dictionary for .replace
+</span><span class="n">nested_nan_map</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">nan_val_map</span><span class="p">.</span><span class="nf">items</span><span class="p">():</span>
+    <span class="n">nested_nan_map</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="nf">int</span><span class="p">(</span><span class="n">val</span><span class="p">):</span><span class="n">np</span><span class="p">.</span><span class="n">nan</span> <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">v</span><span class="p">}</span>
+
+<span class="c1"># Mapping values to NaN
+</span><span class="n">census</span> <span class="o">=</span> <span class="n">census</span><span class="p">.</span><span class="nf">replace</span><span class="p">(</span><span class="n">nested_nan_map</span><span class="p">)</span>
+</code></pre></div></div>
+<h3 class="no_toc" id="column-elimination-nan-proportion">Column Elimination - NaN Proportion</h3>
+<p>After mapping the NaNs to each column, we can check for high incidence of NaNs column-wise.</p>
+<p>Columns with a high percentage of NaN values can be discarted because they probably do not provide any sort of valuable information regarding the general properties of the population, which makes building inferences/ insights around them risky.</p>
+<p class="caption"><img src="/assets/img/customer-segmentation/column-nan-proportion.webp" alt="NaN Proportion" />
+Columns with a proportion of NaNs above the threshold, would be dropped.</p>
+<p>Columns with a proportion of NaNs above the threshold, would be dropped.The proportion threshold is a somewhat arbitrary definition. The plot above helps us understand the reasoning to why select 30% as the maximum threshold to drop a column.</p>
+<p>If a threshold of proportion of NaNs ≤ 30% is chosen, we drop 9 columns that do not meet this criterion and manage to retain other columns in which we can impute values. Having in mind that the amount of columns that would be dropped if a 50% threshold was selected is 8 and that the cut for 20% might be too conservative, 30% was deemed as an appropriate cut.</p>
+<h3 class="no_toc" id="numeric-variables-distributions">Numeric Variables Distributions</h3>
+<p>With unused columns dropped and types appropriately fixed, we can look into some of the distributions to get some insight on the variables.</p>
+<p>Broadly speaking, the numerical variables either needed no transformations or required to be binarized. One variable needed to be dropped.</p>
+<p class="caption">In general, numerical variables are left-skewed as shown below:
+<img src="/assets/img/customer-segmentation/box-plot.webp" alt="NaN Proportion" />
+Box-Plot of numerical distributions’ examples</p>
+<p><em>Note: The fliers (dots beyond whiskers) were ommitted to help the visualization</em></p>
+<p>Two variables needed to be binarized: ANZ_HH_TITEL and ANZ_KINDER. This was because they had, respectively, <strong>86.43%</strong> and <strong>82.05% of zeroes in them</strong>. On top of that, both of them showed a dominance in low discrete values. These aspects makes it really hard to consider these variables as numeric when approaching any problem. Therefore, they were binarized to represent wether or not they had that attribute.</p>
+<p>GEBURTSJAHR was the dropped variable. It had 44.02% of YoB as 0. Therefore, from every 10 answers, 4 wouldn’t have a YoB. Since we also have a variable that represents the age category of the respondents (ALTERSKATEGORIE). This variable was dropped.</p>
+<p>The binarization occurred on the preprocess stage, which will be covered in the coming section.</p>
+<h3 class="no_toc" id="categorical-variables-distributions">Categorical Variables Distributions</h3>
+<p>Categorical variables were more looked into especially for the interval variables. Some variables presented too many categories that not necessairly were informative, such as below:</p>
+<p><img src="/assets/img/customer-segmentation/cat-var-plot.webp" alt="Categorical variable distribution example" /></p>
+<p>Taking the example above, the consumption variable for banking shows how the answers gravitate between the 0, 3 and 6 values. Accounting other categories could make the space of options too sparse and the combinations of variables would make it even sparser. Keep in mind that there are 36 columns like the one showed above just for its group.</p>
+<p>So the next step was to identify the columns that showed this sparsity and reduce it by reducing the number of bins. This affected mainly columns from 2 groups:</p>
+<ul>
+ <li>125 x 125 Grid columns (case illustrated above): from 7 categories, reduced to 4</li>
+ <li>D19 columns in the “Household” group: 3 types of columns were identified which had respectively 10, 7 and 10 groups that were reducet to 3, 4 and 3 possible values</li>
+</ul>
+<p>The specifics of these alterations will be covered below in the “Preprocessing” stage</p>
+<h3 class="no_toc" id="cleaning-the-data-defining-preprocessing-steps">Cleaning the Data - Defining Preprocessing Steps</h3>
+<p>The approach for defining the preprocessing will use as baseline the general population demographic data. This is to ensure that no bias from the customer base or mailout base affect the conclusions or steps taken to clean the data.</p>
+<p>The idea is that cleaning steps that apply to the general population, should apply to its subsets since the same variables are present across all files and that all the files are technically a subset of the general population.</p>
+<h4 class="no_toc" id="dropping-emptyrows">Dropping empty rows</h4>
+<p>Rows that are filled with too many NaNs mean that they might be rows with a lot of imputation. What this results is that we will have rows in which a person might be described a lot by general values of the variables (mean, median, mode, etc.). This automatically might deliver bias to our analysis.</p>
+<p>The individuals with highly imputed responses will actually be an “average” (or other imputed value of choice) of all variables. This assumption is not reasonable if most of the data of that response isn’t from that person. We would end up having some “average” individuals</p>
+<p>The graph below shows a distribution of amount of rows by proportion of data missing in them. Notice how approximately 10% of the data (orange shaded area) has more than half of their information compromised by NaN values.</p>
+<p class="caption"><img src="/assets/img/customer-segmentation/distribution-nan-proportion.webp" alt="Distribution NaN Proportion" />
+Distribution of proportion of NaN values in the data’s rows</p>
+<p>Considering the information the graph displays, rows with more than 30% of its data missing will be discarted.</p>
+<h4 class="no_toc" id="re-encoding-the-relevant-numerical-variables-tobinary">Re-encoding the relevant numerical variables to binary</h4>
+<p>As noted in the ETL, some numerical variables had to be encoded to binary. Using a simple <code class="language-plaintext highlighter-rouge">np.where</code> is enough to encode the variables the way we need them to.</p>
+<h4 class="no_toc" id="fixing-objectcolumns">Fixing Object columns</h4>
+<p>Some columns are in the <code class="language-plaintext highlighter-rouge">object</code> format. This is not inherently a problem. But some columns could benefit from not being <code class="language-plaintext highlighter-rouge">object</code>:</p>
+<ul>
+ <li>The OST_WEST_KZ is actually a binary column</li>
+ <li>The CAMEO_DEU_2015 column could be interpreted as an interval variable.</li>
+</ul>
+<p>The fix to OST_WEST_KZ is straightfoward, the column values were mapped to 0 and 1. The CAMEO_DEU_2015 column had 1 integer value mapped to each one of the columns’ possible values. The smaller integer values account for the higher income classifications, the higher account for the lower incomes.</p>
+<h4 class="no_toc" id="imputations">Imputations</h4>
+<p>The imputation strategy used was separated in two:</p>
+<ul>
+ <li>Mode for any categorical variable (interval, nominal or binary variables)</li>
+ <li>Mean for numerical</li>
+</ul>
+<h4 class="no_toc" id="reencoding-d19columns">Reencoding D19 Columns</h4>
+<p>As mentioned in the ETL stage, some columns that start with the “D19” prefix could be reencoded after inspecting their distributions to reduce sparsity in the categories. This led to 4 reencodes:</p>
+<ul>
+ <li>Columns from the “125 x 125 Grid” that refered to consumption frequency of a group of goods. They were re-encoded into 4 groups: No transactions, consumed within 12 months, consumed within 24 months and Prospects (&gt; 24 months)</li>
+ <li>Columns from the “Household” that refered to the actuality of the last transaction: Activity within the last 12 months, activity older than 12 months, no activity</li>
+ <li>Columns from the “Household” that refered to the transaction activity in the last months (12 or 24): No transactions, low activity, increased activity, high activity</li>
+ <li>Columns from the “Household” that refered to the percentage of transactions made online: 0% online, 100% online, mixed online-offline (values between 0% and 100%)</li>
+</ul>
+<p>All re-encodes were made assigning an int value to each category but always mantaining the logical order of the variable. This was made so that the variables could be interpreted as interval and not simple nominal variables, since they contain an inherent order.</p>
+<p>After the ETL and Preprocessing notebooks, all relevant steps were turned into a .py file so that all steps could be equally applied across all files.</p>
+<h2 id="building-customer-segmentation">Building Customer Segmentation</h2>
+<p>With the data now cleaned and preprocessed, we can start building our segmentation. This part uses the general census data and the consumer census data. The question we want to answer at this stage is:</p>
+<p><strong>Do the possible consumers find themselves in specific segments of the general population?</strong></p>
+<p>In a more technical fashion: <strong>Given the existance of clusters in the general public data, can the consumers be found more often in specific clusters?</strong></p>
+<h3 class="no_toc" id="strategy-approaching-theproblem">Strategy - Approaching the problem</h3>
+<p>Given the main question at this stage, the approach had to cover (mainly):</p>
+<ol>
+ <li>A Dataset with a high amount of features (300+, possibly more after One-hot encoding the nominal variables);</li>
+ <li>A Dataset with mixed-typed data (categorical and numerical);</li>
+ <li>A Dataset with a high amount of rows (~800.000 on the general population data);</li>
+ <li>Establish a comparison between general population and consumers, given the clusters formed around general population data. Consumer data should not “leak” to form the clusters, since we aim to build clusters around the general population and see how the consumer data “fits” into this reality.</li>
+</ol>
+<p>To solve the 1. topic, we would usually go with using a dimensionality reduction method such as PCA. However, given the constraint of the mixed data (topic 2.), <strong>we should not use PCA</strong>. Using PCA directly on a mixed-data context, would not generate mathematically correct (and thus interpretable) results.</p>
+<p>We can look use alternative approaches such as Factorial Analysis of Mixed Data (FAMD). This approach is a form of generalizing Factorial Analysis to a mixed-data setting. The result is similar to PCA. For a more technical and in-depth look into the strategy <a href="https://towardsdatascience.com/famd-how-to-generalize-pca-to-categorical-and-numerical-data-2ddbeb2b9210/"><strong>this article</strong></a> explains the theory and implementation of the method.</p>
+<p>FAMD outputs something similar to PCA. This covers the first two main points, handling the amount of features and mixed data. Now for the last two, the solution is pretty straightfoward.</p>
+<p>To enable our model to train clusters on the general population and to assign them to the consumer base, we can use clustering methods that will generate centroids. This makes it possible to assign customers to the nearest centroids of the general population. This works because customer data will have the same features as the general population table.</p>
+<p>Considering the output of FAMD is a fully numerical table, we can use the well-known K-Means algorithm. But since we need to process 800k + rows across hundreds of columns (which might make some setups runs a little slow), we can use sklearn’s <code class="language-plaintext highlighter-rouge">cluster.MiniBatchKMeans</code> that handles confortably the amount of data to give us the results we need.</p>
+<h3 class="no_toc" id="famd">FAMD</h3>
+<p>To get the data ready for the FAMD, we create a function to basically One-Hot Encode nominal variables, and weigh these variables accordingly. We also use sklearn’s <code class="language-plaintext highlighter-rouge">StandardScaler</code> to handle the numerical attributes accordingly. For this work, interval variables will be considered as numerical attributes and will be handled like numericals.</p>
+<p>The FAMD approach used is a manual one (find more about it in the article linked in the previous section). This means that after applying these transformations, we use PCA on the transformed data. The preprocessed data for FAMD, in the end, ends up with 396 features.</p>
+<p>So to select the amount of Components we will have, we define an acceptable threshold for the amount of variance we want to keep and then make the transformations. The graph below shows that for a threshold of 95% of variance, selecting 225 components satisfy this criterion.</p>
+<p><img src="/assets/img/customer-segmentation/explained-variance.webp" alt="Explained Variance by Number of Components" /></p>
+<p>Starting from a higher amount of components and following with bigger steps was a deliberate approach to save processing time.</p>
+<h3 class="no_toc" id="mini-batchk-means">Mini Batch K-Means</h3>
+<p>With the transformed data after the FAMD process, we can train the Mini Batch K-Means algorithm and use the elbow method to choose an appropriate amount of clusters:</p>
+<p><img src="/assets/img/customer-segmentation/elbow-plot.webp" alt="Elbow plot" /></p>
+<p>From the graph above, we could select k = 14 as a reasonable amount of clusters for our problem.
+With the trained FAMD and K-Means objects trained on the overall census data, we now use them on the customer data to then classify data from both files to clusters.</p>
+<h3 class="no_toc" id="adjusting-customerdata">Adjusting Customer Data</h3>
+<p>To use customer data as intended, we run the same preprocessing we did for the general data and then we will simply use the <code class="language-plaintext highlighter-rouge">.transform()</code> from the PCA object and <code class="language-plaintext highlighter-rouge">.predict()</code> from the model, both fitted on general population data, to use the customer data.</p>
+<p>Neither the PCA or model are re-fitted on customer data to avoid that the customer’s characteristics, which could be differently distributed than the general population, affect the estimates of the cluster centroids or generates Components different from the general population. We want to classify customers according to general population groups and not to consider them jointly.</p>
+<p>The code to reuse the customer data with the objects trained on general data will look, generally, like this:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">customers</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="nf">read_parquet</span><span class="p">(</span><span class="n">CUSTOMER_PATH</span><span class="p">)</span>
+
+<span class="c1"># Preprocessing function
+</span><span class="n">customers</span> <span class="o">=</span> <span class="nf">prep_data_famd</span><span class="p">(</span><span class="n">customers</span><span class="p">,</span> <span class="n">nominal_vars</span><span class="p">,</span> <span class="n">binary_vars</span><span class="p">,</span> <span class="n">num_cols</span><span class="p">)</span>
+
+<span class="c1"># Dropping specific columns that aren't used in clustering
+</span><span class="n">X_cust</span> <span class="o">=</span> <span class="n">customers</span><span class="p">.</span><span class="nf">drop</span><span class="p">(</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="sh">'</span><span class="s">LNR</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">CUSTOMER_GROUP</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">ONLINE_PURCHASE</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">PRODUCT_GROUP</span><span class="sh">'</span><span class="p">])</span>
+
+<span class="c1"># Are there columns that do not match between the frames?
+</span><span class="n">na_cols</span> <span class="o">=</span> <span class="nf">set</span><span class="p">(</span><span class="n">census</span><span class="p">.</span><span class="n">columns</span><span class="p">)</span> <span class="o">-</span> <span class="nf">set</span><span class="p">(</span><span class="n">customers</span><span class="p">.</span><span class="n">columns</span><span class="p">)</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">Categories not in customer data but are in census: </span><span class="si">{</span><span class="n">na_cols</span><span class="si">}</span><span class="sh">'</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">na_cols</span><span class="p">:</span>
+    
+    <span class="n">X_cust</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">assert</span> <span class="nf">set</span><span class="p">(</span><span class="n">census</span><span class="p">.</span><span class="n">columns</span><span class="p">.</span><span class="nf">drop</span><span class="p">(</span><span class="sh">'</span><span class="s">LNR</span><span class="sh">'</span><span class="p">))</span> <span class="o">==</span> <span class="nf">set</span><span class="p">(</span><span class="n">X_cust</span><span class="p">.</span><span class="n">columns</span><span class="p">)</span>
+
+<span class="n">X_cust</span> <span class="o">=</span> <span class="n">pca</span><span class="p">.</span><span class="nf">transform</span><span class="p">(</span><span class="n">X_cust</span><span class="p">[</span><span class="n">census</span><span class="p">.</span><span class="n">columns</span><span class="p">.</span><span class="nf">drop</span><span class="p">(</span><span class="sh">'</span><span class="s">LNR</span><span class="sh">'</span><span class="p">)])</span> <span class="c1"># Order needs to be the same
+</span>
+<span class="c1"># Assigning clusters to responses
+</span><span class="n">customers</span><span class="p">[</span><span class="sh">'</span><span class="s">cluster</span><span class="sh">'</span><span class="p">]</span> <span class="o">=</span> <span class="n">kmeans_model</span><span class="p">.</span><span class="nf">predict</span><span class="p">(</span><span class="n">X_cust</span><span class="p">)</span>
+
+<span class="n">census</span><span class="p">[</span><span class="sh">'</span><span class="s">cluster</span><span class="sh">'</span><span class="p">]</span> <span class="o">=</span> <span class="n">kmeans_model</span><span class="p">.</span><span class="nf">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+</code></pre></div></div>
+<h3 class="no_toc" id="results">Results</h3>
+<p>This process gives us the following distribution in each dataset of responses for k = 14 clusters:
+<img src="/assets/img/customer-segmentation/customer-clustering-results.webp" alt="Customer Clustering" /></p>
+<p>There are clear differences in some clusters! We can see clusters that clearly contain more customer responses than general population responses. Especially the 1, 6, 8, 9 and 11 clusters are clusters that contain a higher proportion of customers.</p>
+<p>This already gives us an insight: <strong>If we want to find new customers similar to the current customer base, we should target the clusters with a notably larger proportion of responses then the general population. I.e. the clusters mentioned above.</strong></p>
+<p>We can go one step further and dig a little bit deeper on the interpretation of the clusters. We will first understand around which components the cluster is more heavily centered around and then look a little into some of the main variables that compose the component.</p>
+<p>Let’s take the cluster 11 as an example, since it contains the highest overall proportion of customers in it. More specifically, let’s look into the 3 main components of the cluster.</p>
+<p class="caption"><img src="/assets/img/customer-segmentation/cluster-11-components.webp" alt="Cluster 11 main components" />
+Main components for cluster 11</p>
+<p>The cluster is heavily centered at high values in the 0 component, backed up by other components. Here, only the 3 top components will be shown for brevity and as to draw a concrete example of interpretation of the information. But, this analysis could be extended to how many components we would like and all clusters.</p>
+<p>Let’s look at the top 10 features in each component 0, 3 and 1:</p>
+<h4 class="no_toc" id="component-0">Component 0</h4>
+<p class="caption"><img src="/assets/img/customer-segmentation/comp-0-main-feat.webp" alt="Component 0 main features" />
+Main features in Component 0</p>
+<p>For component 0 we can draw that it has a heavy weight on Economic Class (CAMEO_DEUG_2015, CAMEO_DEU_2015) and distance to nearest city centre (BALLRAUM). Both indicators are <strong>inversely proportional</strong> to the weight of the component.</p>
+<p>These features are interval variables. They have an interpretation that the bigger their value, the <strong>lower the income</strong> (for CAMEO_… columns) or the <strong>farther from the center</strong> the respondent is (BALLRAUM).
+In, general, this component could refer to:</p>
+<ul>
+ <li><strong>indiviual income</strong></li>
+ <li><strong>distance to urban centers.</strong></li>
+</ul>
+<h4 class="no_toc" id="component-3">Component 3</h4>
+<p class="caption"><img src="/assets/img/customer-segmentation/comp-3-main-feat.webp" alt="Component 3 main features" />
+Main features in Component 3</p>
+<p>Component 3 seems more balanced in terms of feature impact that component 0. However, a lot of the variables in the component are from the same group (<em>SEMIO_…</em>) and we have a big contribution of the <em>KONSUMNAEHE</em> variable. The component is proportional to this variable. The bigger its value, the further the respondent is from Point of Sale (PoS).</p>
+<p>The <em>SEMIO_</em> variables refer to the mindset of the respondent. Note that the <em>SEMIO_FAM</em> variable has an opposite signal on the effect than the other <em>SEMIO_</em> variables. This means in practice that the component grows proportionally to <em>SEMIO_FAM</em>, but grows inversely proportionally to the others.</p>
+<p>The <em>SEMIO</em> variables have highest affinities (stronger mindset) on lower values. So, for this component, the higher the family mindset, more positive is the component. But, the higher the other mindsets, the more negative it is.</p>
+<p>There are also the <em>RELAT_AB</em> and <em>MOBI_REGIO</em> variables, that are about unemployment rates on the surroundings of the respondents and mobility profile of the respondent.</p>
+<p>Therefore, we can say that this component refers to:</p>
+<ul>
+ <li><strong>The geographical distance of the respondent to a PoS, and;</strong></li>
+ <li><strong>The mindset (affinities) of the respondent, towards some themes.</strong></li>
+ <li><strong>And has some relation to the respondents’ surroudings employment rates and their mobility profile</strong></li>
+</ul>
+<h4 class="no_toc" id="component-1">Component 1</h4>
+<p class="caption"><img src="/assets/img/customer-segmentation/comp-1-main-feat.webp" alt="Component 1 main features" />
+Main features in Component 1</p>
+<p>Component 1 shows a heavy contribution of the <em>PLZ_HHZ</em> variable, being inversely proportional to it. We can also see that other <em>SEMIO_</em> Features contribute to the component, as well as <em>FINANZ_</em> and <em>CJT_</em> variables.</p>
+<p><em>HHZ</em> is about housing density on the surroundings of the respondents. The higher the variable’s value, more dense is the region.</p>
+<p>The <em>FINANZ_</em> variables are about how the respondent handles money (finances)</p>
+<p>CJT is about Customer Journey Tipology. This means how the customer behaves regarding advertisement consumption and types of Channels used for purchases.</p>
+<p>Therefore, we can infer that this component is about:</p>
+<ul>
+ <li><strong>If the respondent lives in densly populated regions;</strong></li>
+ <li><strong>How the respondents handle their finances (some attributes);</strong></li>
+ <li><strong>How the respondents see the world (different themes than Component 3)</strong></li>
+ <li><strong>And how they consume ads and which channels they use.</strong></li>
+</ul>
+<p>These examples are to illustrate how we could interpret these results towards understanding what is that drives certain clusters. Of course that transformation processes such as FAMD and PCA will add a complexity layer to the interpretation of these informations, since we will have compositions of original features being used.</p>
+<p>However, even so we can grasp to some extent what is that drives the components and, consequently, the clusters.
+After the clustering, we move on the prediction of responses (interaction) to marketing campaigns.</p>
+<h2 id="predicting-customerresponse">Predicting Customer Response</h2>
+<p>At this stage we have a different question then that one posed in the segmentation stage:</p>
+<p><strong>Can we predict better then a naïve approach the customers that might or might not respond to marketing campaigns?</strong></p>
+<p>For this task we will actually use the Test mailout dataset only. This is because its the only dataset that contains labels for predictions.</p>
+<h3 class="no_toc" id="strategy-approaching-theproblem-1">Strategy - Approaching the problem</h3>
+<p>Differently from the segmentation phase, when we were handling with an unsupervised problem, now we have a Supervised Classification Machine Learning problem. This means we have labels that we can match correct predictions to. However, the dataset at hand has its specifities.</p>
+<p>The labels we are trying to predict come from a column named <em>RESPONSE</em>. It is a binary target. 0 stands for no response, where 1 stands for a response by that individual.</p>
+<p>We need to keep in mind that we are dealing with an <strong>unbalaced target</strong>. This means that the response variable is heavily populated by one of the values. This case, 0. The graph belows illustrates the situation:</p>
+<p><img src="/assets/img/customer-segmentation/dataset-unbalance.webp" alt="Dataset unbalance plot" /></p>
+<p>In total, after preprocessing, we are left with 435 positive responses versus approx. 34.5k of negative (absence) responses. This means we have about a 1.2% response rate. The remaining 98.8% are people that didn’t respond to the campaign.</p>
+<p>It is important to keep in mind that for such an extreme unbalance <strong>accuracy is not an option for a good metric in this case.</strong> It is a biased metric when we are handling unbalanced datasets.</p>
+<p>In short, it is very easy to get a good result for accuracy in an unbalanced setting, since <strong>it accounts both True Positives (TP) and True Negatives (TN) as successes</strong>. For a more detailed explanation check <a href="https://machinelearningmastery.com/failure-of-accuracy-for-imbalanced-class-distributions/">this article</a>.</p>
+<p>So we need a strategy that:</p>
+<ol>
+ <li>Handles unbalanced data;</li>
+ <li>Uses a metric that quantifies effectively the success of the model;</li>
+ <li>Performs better than a baseline naïve approach.</li>
+</ol>
+<p>As to topic 1. we have some options. We can use methods that weigh the response variable according to its occurance or we can use artificial sampling methods like SMOTE or Downsampling, both available in <code class="language-plaintext highlighter-rouge">imblearn</code>.</p>
+<p>Working always from the least to the most complex, testing with methods that weighed the response variable worked well. So this approach was selected.</p>
+<p>About topic 2. the solution proposed is using the well known <strong>Area Under the Curve for the ROC Operator (ROC-AUC score)</strong>. This will take into consideration the occurance of the Recall (how many relevant instances we classified correctly) versus the False Positive Rate (how often we misclassified an instance as being a respondent, when it wasn’t).</p>
+<p>The third and final topic can only be known for certain known after modelling and comparing results to the test data. So, let’s get into it.</p>
+<h3 class="no_toc" id="modelling">Modelling</h3>
+<p>To avoid Data Leakage (i.e. test data being used in training) and thus preventing that the model gets information from data it should not have, sklearn’s <code class="language-plaintext highlighter-rouge">Pipeline</code> will be used.</p>
+<p>The approach selected for better handling the data unbalance was hyperparameter tuning. By default, a lot of algorithms have options to handle this kind of problem.</p>
+<p>For the problem at hand, 4 models were used:</p>
+<ul>
+ <li>Logistic Regression - Baseline value for comparison (simplest model)</li>
+ <li>Decision Tree</li>
+ <li>Random Forest</li>
+ <li>XGBoost</li>
+</ul>
+<p>For the first 3 models, there is the <code class="language-plaintext highlighter-rouge">class_weight</code> parameter that sklearn has available for usage. For XGBoost, the <code class="language-plaintext highlighter-rouge">scale_pos_weight</code> was used to achieve a similar effect on the XGBoost API.</p>
+<p>Also, given that the problem had interval variables (categorical variables with an ordinal relationship) they were approached in two different ways: first, using them as numerical variables; second, using them as ordinal variables. For the first case, these variables were handled as numeric. For the second, they were handled by an <code class="language-plaintext highlighter-rouge">OneHotEncoder</code>.</p>
+<p>In general, the numerical variables were Standardized because, although not needed by the methods, we would be able to test the models with regularization.</p>
+<p>Also, considering the unbalance, all Cross Validations for results were made with <code class="language-plaintext highlighter-rouge">StratifiedKFold</code> to assure target balance.</p>
+<h3 class="no_toc" id="results-testdata">Results - Test Data</h3>
+<p>We want to first compare what strategy we will use: encode or not the interval variables. This is because variables of this type are the majority of the data. How we use them can impact the results.</p>
+<p>Secondly, we want to see if the models we choose will have results good enough to justify Hyperparameter Tuning. We will compare the results from the other models to Logistic Regression performance.</p>
+<p>To start we split the train and test data. Then, setting up the pipelines with initial versions of the models, we run them <strong>only using the training data</strong> inside cross_validation and evaluate the comparative performance of the models. The results are the following:</p>
+<p><strong>For the interval variables being used as numeric:</strong>
+<img src="/assets/img/customer-segmentation/model-perf-graph-case-1.webp" alt="Model Performance Across folds - Interval variable are numeric" /></p>
+<p><img src="/assets/img/customer-segmentation/model-perf-avg-case-1.webp" alt="Average model performance - Interval variable are numeric" /></p>
+<p><strong>For the interval variables being one-hot encoded</strong>:
+<img src="/assets/img/customer-segmentation/model-perf-graph-case-2.webp" alt="Model Performance Across folds - Interval variable are categorical" /></p>
+<p><img src="/assets/img/customer-segmentation/model-perf-avg-case-2.webp" alt="Average model performance - Interval variable are categorical" /></p>
+<p>On a first glance, the models seem to overfit. However, we must consider we have a heavy unbalance at hand. So, what can actually be happening is that we don’t have enough samples to generalize well to test data. This means that this heavy difference of results could be result of the amount of available information.</p>
+<p>Also, on this first run, the models aren’t with any sort of hyperparameter tuning. This can heavily affect the results. Tree depth or regularization, for instance, are parameters that affect a lot these kinds of models.</p>
+<p>All the models outperform the Logistic Regression on test data.</p>
+<p>Also, the strategy of using interval variables as One Hot Encoded features seem to wield better results. However, the results are only slightly better. So, as a counterproof, we will run both strategies for all models to tune hyperparameters.</p>
+<p><em>IMPORTANT: In this past section “test data” refers to a subset of training data!</em></p>
+<p>When we run the final models against the actual test data, we can assess if they actually overfit or yield bad results.</p>
+<h3 class="no_toc" id="hyperparameter-tuning">Hyperparameter Tuning</h3>
+<p>With the results from before, we will do hyperparameter tuning for the Decision Tree, Random Forest and XGBoost in both cases of usage of the interval variables. The tuning took place with the following parameters:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">dt_params</span> <span class="o">=</span> <span class="p">{</span><span class="sh">'</span><span class="s">DT__max_depth</span><span class="sh">'</span><span class="p">:[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">],</span>
+             <span class="sh">'</span><span class="s">DT__min_samples_split</span><span class="sh">'</span><span class="p">:[</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">10</span><span class="p">],</span>
+             <span class="sh">'</span><span class="s">DT__min_samples_leaf</span><span class="sh">'</span><span class="p">:[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">]}</span>
+
+<span class="n">rf_params</span> <span class="o">=</span> <span class="p">{</span><span class="sh">'</span><span class="s">RF__n_estimators</span><span class="sh">'</span><span class="p">:[</span><span class="mi">100</span><span class="p">,</span><span class="mi">200</span><span class="p">],</span>
+             <span class="sh">'</span><span class="s">RF__max_depth</span><span class="sh">'</span><span class="p">:[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]}</span>
+
+<span class="n">xgb_params</span> <span class="o">=</span> <span class="p">{</span><span class="sh">'</span><span class="s">XGB__n_estimators</span><span class="sh">'</span><span class="p">:[</span><span class="mi">100</span><span class="p">,</span><span class="mi">150</span><span class="p">],</span>
+              <span class="sh">'</span><span class="s">XGB__max_depth</span><span class="sh">'</span><span class="p">:[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span>
+              <span class="sh">'</span><span class="s">XGB__learning_rate</span><span class="sh">'</span><span class="p">:[</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.2</span><span class="p">],</span>
+              <span class="sh">'</span><span class="s">XGB__alpha</span><span class="sh">'</span><span class="p">:[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mf">2.5</span><span class="p">]}</span>
+</code></pre></div></div>
+<p>For the tuning, only training data was used and the Stratified K-fold cross validation was kept.</p>
+<p>Mean AUC-Score results for the interval variables used as numerical:
+<img src="/assets/img/customer-segmentation/hyper-tuning-results-case-1.webp" alt="Hyperparameter tuning results - Interval variable are categorical" /></p>
+<p>Mean AUC-Score results for the interval variables used as categorical:
+<img src="/assets/img/customer-segmentation/hyper-tuning-results-case-2.webp" alt="Hyperparameter tuning results - Interval variable are categorical" /></p>
+<p>From the scores, we get that in general the variables used as categorical (One-Hot Encoded) yielded better results. However, the difference in results are still really close. To assure we don’t discard useful models, they will be tested on the test data to see their generalization power.</p>
+<h3 class="no_toc" id="final-run-results-on-testdata">Final Run: Results on test data</h3>
+<p>Now, running the models with data never seen we can actually assess if there is indeed overfitting taking place or not. If the results on test data never seen is a lot lower than on the training stages, then overfiitting might be a possibility.
+Results for the interval variables used as numerical:
+<img src="/assets/img/customer-segmentation/results-case-1.webp" alt="Final Results - Interval variable are categorical" /></p>
+<p>Results for the interval variables used as categorical:
+<img src="/assets/img/customer-segmentation/results-case-2.webp" alt="Final Results - Interval variable are categorical" /></p>
+<p>From the results the model that best generalizes to the test data is the <strong>Random Forest with One-Hot Encoded interval variables</strong>. We can also see that the results are similar to those obtained on the predictions over the training data. This points that the difference might not be necessarily overfitting, but actually the model’s capability to generalize well to the data at hand.</p>
+<p>However, the results point to a better performance when comparing any model to a naïve Logistic Regression.</p>
+<h2 id="conclusions">Conclusions</h2>
+<p>We can see that <strong>it was possible to predict the respondents using ML approaches successfully</strong>. All models outperformed a naïve Logistic Regression baseline.</p>
+<p>The best model had the following variables as the most important for predicting results:
+<img src="/assets/img/customer-segmentation/feat-importance-preds.webp" alt="Feature importance for predictions" /></p>
+<p>We can notice that informations regarding car ownership (KBA13<em>…) and some general counts of the households (ANZ</em>…) appear often.</p>
+<p>From these results, we could potentially <strong>use this model to pinpoint which customers could be targeted by future marketing endeavors.</strong></p>
+<p>Some improvements could be thought of for future development cycles such as:</p>
+<ul>
+ <li>Feature selection, removing highly correlated features to increase perfomance and reduce any redundancies the models might capture.</li>
+ <li>Rerunning the clustering with selected features. This might enable us to cluster without recurring to FAMD method and thus making the interpretation of the cluster easier.</li>
+ <li>Rerunning the models with more data available: given the unbalance, to improve the models generalization capabilities, using more data would be optimal to achieve substantially better results.</li>
+</ul>
+<hr />
+<h1 id="thanks-forreading">Thanks for reading!</h1>
+<p>Here is the <a href="https://github.com/bglucca/ArvatoCustomerSegmentation/tree/main"><strong>repo</strong></a> for the project.<br />
+This article is also available on <a href="https://medium.com/@luccagomes/youve-got-mail-machine-learning-for-customer-segmentation-2c90d9b9d58d"><strong>Medium</strong></a>.<br />
+If you have any feedback or just want to get in touch, DM on LinkedIn.</p>
+</article>
+		</div>
+	</main><nav aria-label="Navigation" class="container-lg chulapa-pagination  ">
+ <ul class="col-lg-8 offset-lg-2 pagination chulapa-pagination-round px-0 ">
+   <li class="page-item text-left mr-0 ">
+      <a class="page-link border-0 px-4" href="https://bglucca.github.io/20221112_rio-airbnb/" tabindex="-1">
+	  <i class="fa fa-chevron-left" aria-hidden="true"></i><span class="sr-only">Previous</span>
+	  </a>
+   </li>
+   <li class="page-item border-0 disabled text-left ml-0 mr-auto d-none d-md-inline ">
+     <p class="page-link chulapa-label">Browsing AirBnb using Data ...</p>
+   </li>
+   <li class="page-item border-0 disabled text-left ml-0 mr-auto d-none d-sm-inline d-md-none ">
+     <p class="page-link chulapa-label">Browsing AirBn...</p>
+   </li>
+	 <li class="page-item disabled mx-auto invisible">
+	  <p class="page-link">|</p>
+	 </li>	
+	 <li class="page-item border-0 disabled text-right mr-0 ml-auto d-none d-sm-inline d-md-none ">
+	   <p class="page-link chulapa-label">MLflow 101 - M...</p>
+	 </li>
+	 <li class="page-item border-0 disabled text-right mr-0 ml-auto d-none d-md-inline ">
+	   <p class="page-link chulapa-label">MLflow 101 - My Quickstart</p>
+	 </li>
+   <li class="page-item text-right ml-0 ">
+      <a class="page-link border-0 px-4" href="https://bglucca.github.io/20231012_mlflow-quickstart/">
+	  <i class="fa fa-chevron-right" aria-hidden="true"></i><span class="sr-only">Next</span></a>
+   </li>
+ </ul>
+</nav>
+<div class="container-lg my-1">
+ <div class="row">
+   <div class="col-lg-8 offset-lg-2 col">
+      <i class="fas fa-tag mr-1 fa-xs" aria-hidden="true"></i>
+      <a href="https://bglucca.github.io/tags#Machine-Learning" class="badge chulapa-pill-bg-primary p-category" rel="tag" >Machine Learning</a>
+      <a href="https://bglucca.github.io/tags#Customer-Segmentation" class="badge chulapa-pill-bg-primary p-category" rel="tag" >Customer Segmentation</a>
+      <a href="https://bglucca.github.io/tags#Supervised-Learning" class="badge chulapa-pill-bg-primary p-category" rel="tag" >Supervised Learning</a>
+      <a href="https://bglucca.github.io/tags#Unsupervised-Learning" class="badge chulapa-pill-bg-primary p-category" rel="tag" >Unsupervised Learning</a>
+      <a href="https://bglucca.github.io/tags#Case-Study" class="badge chulapa-pill-bg-primary p-category" rel="tag" >Case Study</a>
+     </div>
+   </div>
+</div>
+<!-- Compatible with Jekyll v3 and v4, pure Jekyll group by -->
+       <div class="container-lg mt-1 mb-2">
+         <div class="row">
+           <div class="col-lg-8 offset-lg-2">
+             <hr>
+             <nav class="card-group" aria-label="related-articles"><div class="card  border chulapa-related">
+       <div class="card-body">
+         <p class="card-title chulapa-headingfont">
+            <a href="https://bglucca.github.io/20221112_rio-airbnb/" class="chulapa-text-body-color">
+              Browsing AirBnb using Data Science
+            </a>
+         </p>
+         </div>
+       <div class="card-footer bg-transparent">
+            <small>
+              <i class="far fa-calendar" aria-hidden="true"></i>
+              <time datetime="2022-11-12T00:00:00+00:00">
+                november 12, 2022
+              </time>
+            </small>
+       </div>
+     </div></nav>
+           </div>
+         </div>
+       </div><!-- Footer -->
+ <footer class="footer-chulapa text-center mt-0 pt-3">
+   <div class="container">
+     <div class="row">
+       <div class="col-xl-10 offset-xl-1"><div role="navigation" class="d-flex flex-wrap justify-content-center"><a href="https://github.com/dieghernan/bglucca" title="footerGithub" class="chulapa-footer-sociallink lead"><span class="fa-stack fa-lg" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span><span class="sr-only">Github</span>
+            </a><a href="https://www.linkedin.com/in/luccabgomes/" title="footerLinkedIn" class="chulapa-footer-sociallink lead"><span class="fa-stack fa-lg" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span><span class="sr-only">LinkedIn</span>
+            </a><a href="https://medium.com/@luccagomes" title="footerMedium" class="chulapa-footer-sociallink lead"><span class="fa-stack fa-lg" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fab fa-medium fa-stack-1x fa-inverse"></i>
+              </span><span class="sr-only">Medium</span>
+            </a></div><p class="mt-2 mb-3">© 2025 Lucca Bevilacqua <br> Cover photo by <a href="https://unsplash.com/pt-br/@jontyson?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jon Tyson</a> at <a href="https://unsplash.com/pt-br/fotografias/cabo-revestido-branco-FnaXzE_wEwU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+          <!-- Do not remove this in order to give  attributions -->
+         <p class="chulapa-footer-brand">Powered by <a href="https://dieghernan.github.io/chulapa"> <span class="chulapa">Chulapa</span> Jekyll Theme</a><br><b>Towards</b> skin by <a href="https://github.com/dieghernan">dieghernan</a></p>
+          <!-- End  attributions -->
+       </div>
+     </div>
+ </div>
+</footer>
+<!-- Footer -->
+<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/gh/dieghernan/chulapa@master/assets/js/chulapa_script.js"></script>
+	<!-- start custom scripts to be placed at the bottom of the page -->
+<!-- end custom bottom scripts -->
+	</body>
+</html>

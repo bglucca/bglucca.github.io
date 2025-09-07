@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en-US"><head>
+   <meta charset="utf-8">
+    <!-- Chulapa Jekyll Theme - v2.0.1.0001 -->
+    <!--  MIT License-->
+    <!-- Docs: https://dieghernan.github.io/chulapa -->
+    <!-- Repo: https://github.com/dieghernan/chulapa -->
+    <!-- Page build 2025-09-07 -->
+     <!-- Jekyll Version 4.4.1 -->
+    <!--Google Structured Data-->
+    <script type="application/ld+json">
+        {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://bglucca.github.io/20231012_mlflow-quickstart/"
+      },
+      "headline": "MLflow 101 - My Quickstart",
+      "image": "https://bglucca.github.io/assets/img/mlflow-quickstart/cover-image.jpg",
+      "datePublished": "2023-10-12T00:00:00+00:00",
+      "dateModified": "2023-10-12T00:00:00+00:00",
+      "author": {
+        "@type": "Person",
+        "name": "Lucca Bevilacqua"
+        , "url": "https://github.com/bglucca"
+        ,  "sameAs" : [
+             "https://www.linkedin.com/in/luccabgomes/"
+            ]
+      },
+       "publisher": {
+        "@type": "Organization",
+        "name": "Lucca Bevilacqua",
+        "url": "https://bglucca.github.io/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": ""
+        }
+      }
+    }
+    </script>
+        <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Blog",
+        "item": "https://bglucca.github.io/blog/"
+      },
+    {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "MLflow 101 - My Quickstart"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "name": "MLflow 101 - My Quickstart",
+    "description": "A gentle introduction to MLFlow and its applications with Hyperparameter tuning - If you’ve been working with Data Science I’m sure that at some point you needed to try a lot of different things to solve a problem. At the same time, you also needed to keep track of the performance of what you tried to do."
+    }
+}
+</script><script type="application/ld+json">
+{
+  "@context" : "https://schema.org",
+  "@type" : "Person",
+  "homeLocation": {
+    "@type": "Place",
+    "name": "Paris, France"
+    },
+  "description": "Publisher",
+  "name" : "Lucca Bevilacqua",
+  "url" : "https://bglucca.github.io/"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context" : "https://schema.org",
+  "@type" : "Person",
+  "image": "https://bglucca.github.io/assets/img/site/headshot.jpg",
+  "description": "Collaborator",
+  "name" : "Lucca Bevilacqua"
+  , "url": "https://github.com/bglucca"
+      ,  "sameAs" : [
+      "https://www.linkedin.com/in/luccabgomes/"
+        ]
+}
+</script>
+   <title>MLflow 101 - My Quickstart | My DS Journey</title>
+  <link rel="canonical" href="https://bglucca.github.io/20231012_mlflow-quickstart/">
+    <!-- Atom feed -->
+  <link href="https://bglucca.github.io/atom.xml" type="application/atom+xml" rel="alternate" title="Atom feed My DS Journey" >
+    <!-- RSS 2.0 feed -->
+  <link href="https://bglucca.github.io/rss.xml" type="application/rss+xml" rel="alternate" title="RSS 2.0 feed My DS Journey" >
+    <!-- Meta tags -->
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="author" content="Lucca Bevilacqua" >
+   <meta name="copyright" content="Lucca Bevilacqua" >
+   <meta name="description" content="A gentle introduction to MLFlow and its applications with Hyperparameter tuning - If you’ve been working with Data Science I’m sure that at some point you ne...">
+   <meta name="thumbnail" content="https://bglucca.github.io/assets/img/mlflow-quickstart/cover-image.jpg" >
+   <meta name="robots" content="index, follow"><meta name="keywords" content="">
+    <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#31534A">
+    <!-- OpenGraph -->
+   <meta property="og:title" content="MLflow 101 - My Quickstart | My DS Journey" >
+   <meta property="og:site_name" content="My DS Journey | My learnings and experiences as a Data Scientist" >
+   <meta property="og:url" content="https://bglucca.github.io/20231012_mlflow-quickstart/" >
+   <meta property="og:type" content="website" >
+   <meta property="og:description" content="A gentle introduction to MLFlow and its applications with Hyperparameter tuning - If you’ve been working with Data Science I’m..." >
+   <meta property="og:locale" content="en-US" >
+   <meta property="og:image" content="https://bglucca.github.io/assets/img/mlflow-quickstart/cover-image.jpg" >
+    <!-- Twitter/X Cards -->
+   <meta name="twitter:card" content="summary_large_image"><!-- start custom head snippets -->
+<!-- this script is inserted before the css stylesheet -->
+<!-- end custom head snippets -->
+<!-- CSS -->
+    <!-- Preconnect with Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fontawesome-->
+    <!-- v6 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css">
+    <link rel="preload" href="https://cdn.jsdelivr.net/gh/dieghernan/chulapa@master/assets/js/chulapa_script.js" as="script" >
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/dieghernan/chulapa@master/assets/fonts/Chulapa/Chulapa-Bold_vmod.otf" as="font" type="font/otf" crossorigin>
+    <!-- Theme css (Bootstrap included) -->
+  <link rel="stylesheet" id="maincss" href="https://bglucca.github.io/assets/css/main.css" >
+    <!-- Highlighter -->
+  <link id="csshigh" rel="stylesheet" href="https://bglucca.github.io/assets/css/highlighter.css" >
+    <!-- Custom css -->
+  <link rel="stylesheet" href="https://bglucca.github.io/assets/css/custom.css" >
+      <!-- start custom head snippets -->
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-96x96.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+<!--<link rel="manifest" href="/assets/site.webmanifest"> -->
+<link rel="shortcut icon" href="/assets/favicon/favicon.ico">
+<!-- end custom head snippets -->
+</head>
+<body class="d-flex flex-column h-entry" id="body">
+	<a class="u-url d-none" href="https://bglucca.github.io/20231012_mlflow-quickstart/">Invisible link to canonical for Microformats</a>
+	<nav class="navbar navbar-expand-md sticky-top navbar-chulapa" aria-label="primary-navigation">
+	<div class="container-fluid mx-md-2">
+			<a class="navbar-brand font-weight-bold" href="https://bglucca.github.io/">Lucca Bevilacqua's Blog</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarToggler">
+				<ul class="navbar-nav ml-auto"><li class="nav-item">
+						<a class="nav-link " href="https://bglucca.github.io/aboutme/">About me</a>
+					</li><li class="nav-item">
+						<a class="nav-link " href="https://bglucca.github.io/blog/">Blog</a>
+					</li><li class="nav-item">
+						<a class="nav-link " href="https://bglucca.github.io/search">
+							<span class="d-md-none p-0 pr-1">Search</span><i class="fa fa-search" aria-hidden="true"></i><span class="sr-only">Search</span>
+						</a>
+					</li></ul>
+			</div></div>
+</nav>	<header class="header-chulapa"><div class="container-fluid header-chulapa-img w-100" style="background-image: url('https://bglucca.github.io/assets/img/mlflow-quickstart/cover-image.jpg')">
+     </div><div class="container-lg mt-2">
+       <div class="row">
+           <div class="col-lg-8 offset-lg-2">
+           <h1 class="p-name">MLflow 101 - My Quickstart</h1><p class="lead chulapa-subtitle p-summary">A gentle introduction to MLFlow and its applications with Hyperparameter tuning</p>
+           <hr class="mb-0">
+			</div>
+		</div>
+	</div>
+</header>
+	<main class="container-lg pb-3 flex-fill">
+<div class="row my-1">
+<div class="col-lg-5 offset-lg-2 col small">
+ <nav aria-label="breadcrumb">
+  <ol class="breadcrumb my-0 py-0 chulapa-bg-transparent pl-0" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li class="breadcrumb-item" itemprop="itemListElement" itemscope
+          itemtype="https://schema.org/ListItem"><a href="https://bglucca.github.io/blog/" itemprop="item"><span itemprop="name">Blog</span></a>
+         <meta itemprop="position" content="1" ></li>
+      <li class="breadcrumb-item active" aria-current="page" itemprop="itemListElement" itemscope
+          itemtype="https://schema.org/ListItem">
+        <span itemprop="name">MLflow 101 - My Quickstart</span>
+       <meta itemprop="position" content="2" >
+     </li>
+ </ol>
+ </nav>
+ <div class="chulapaDateSocial">
+            <time datetime="2023-10-12T00:00:00+00:00" class="dt-published" >12 oct 2023</time>
+        </div></div>
+         <div class="col-lg-3 col-sm-4 col-3 text-right lead chulapaDateSocial">
+            <a  href="https://twitter.com/intent/tweet?url=https://bglucca.github.io/20231012_mlflow-quickstart/&text=MLflow+101+-+My+Quickstart&hashtags=MLOps,MLFlow,Monitoring" title="Share on X" aria-label="Share on X" ><i class="fab fa-square-x-twitter fa-lg" aria-hidden="true"></i></a>
+            <a href="https://bsky.app/intent/compose?text=MLflow%20101%20-%20My%20Quickstart%20https://bglucca.github.io/20231012_mlflow-quickstart/%20%23MLOps%20%23MLFlow%20%23Monitoring" title="Share on Bluesky" aria-label="Share on Bluesky"><i class="fa-brands fa-square-bluesky fa-lg" aria-hidden="true"></i></a>
+            <a  class="d-none d-sm-inline" href="https://www.facebook.com/sharer.php?u=https://bglucca.github.io/20231012_mlflow-quickstart/" title="Share on Facebook" aria-label="Share on Facebook" ><i class="fab fa-facebook-square fa-lg" aria-hidden="true"></i></a>
+             <a  class="d-none d-sm-inline" href="https://api.whatsapp.com/send?&text=MLflow+101+-+My+Quickstart%20https://bglucca.github.io/20231012_mlflow-quickstart/" title="Share on Whatsapp" aria-label="Share on Whatsapp" ><i class="fab fa-whatsapp-square fa-lg" aria-hidden="true"></i></a>
+         <a  class="d-none d-sm-inline" href="https://www.linkedin.com/shareArticle?url=https://bglucca.github.io/20231012_mlflow-quickstart/&title=MLflow+101+-+My+Quickstart" title="Share on LinkedIn" aria-label="Share on LinkedIn"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a>
+         </div></div>
+		<div class="row pt-2">
+			<aside class="col-lg-2 mt-lg-3 small"><div rel="author" class="h-card p-author">
+				<div class="row d-flex align-items-center mb-2"><img src="https://bglucca.github.io/assets/img/site/headshot.jpg" alt="Lucca Bevilacqua" class="ml-3 mr-0 mx-lg-auto mb-lg-1 chulapa-avatar-size u-photo"><div class="col-9 col-lg-12 text-lg-center p-name">
+						Lucca Bevilacqua
+					</div>
+				</div>
+				<div class="row mb-2 mb-lg-0">
+					<div class="col text-lg-center"><div class="d-inline my-1 mx-lg-0 chulapa-links-hover-only"><a class="mr-2 mx-lg-1 u-url" rel="me" href="https://github.com/bglucca" title="fab fa-github" aria-label="fab fa-github" ><i class="fab fa-github fa-lg" aria-hidden="true"></i></a><a class="mr-2 mx-lg-1 u-url" rel="me" href="https://www.linkedin.com/in/luccabgomes/" title="fab fa-linkedin" aria-label="fab fa-linkedin" ><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></div></div>
+				</div>
+				</div>
+</aside>
+			<article id="maincontent" class="col-lg-8 mt-3 e-content">
+			<p>If you’ve been working with Data Science I’m sure that at some point you needed to try a lot of different things to solve a problem. At the same time, you also needed to keep track of the performance of what you tried to do.</p>
+<h2 id="projects-experiments--spreadsheets">Projects, experiments &amp; Spreadsheets</h2>
+<p>Probably at some point you, like me, fired up an Excel spreadsheet and tried to manually keep track of things. This often results in chaotic organization both in the project folder as well as the spreadsheet itself.</p>
+<p>It is hard to keep track of all possible things that can run differently in an experiement. Preprocessing steps for specific models, the models themselves, the parameters,…</p>
+<p>MLflow comes in to help sort this kind of thing. It is a platform built to organize, facilitate experimentation, streamline and serve models to production. Basically a platform to manage ML lifecycle.</p>
+<p><em>Quick stop before we move forward, you can read this on <a href="https://medium.com/@luccagomes/making-browsing-airbnb-easier-through-data-science-bf96e2a72e0c"><strong>Medium</strong></a> as well</em></p>
+<h2 id="a-brief-intro-to-ml-flow">A (Brief) Intro to ML Flow</h2>
+<p>As of this writing, MLflow has 5 components in total. For this quick guide I’ll use only a few of the available ones (highlighted below), which are:</p>
+<ul>
+ <li><strong>Tracking</strong></li>
+ <li><strong>Models</strong></li>
+ <li><strong>Model Registry</strong></li>
+ <li>Projects</li>
+ <li>Recipes</li>
+</ul>
+<p>The <strong>Tracking</strong> module acts pretty much as a logger, but for everything model related: What model is being used, which parameters are configured in the run, outputs (even tabular and images), etc.</p>
+<p>Tracking has many “flavors” — how common ML/AI libraries such as sklearn, Keras, H2O are named — to help store important data and metadata of commonly used libs.</p>
+<p><strong>Models</strong> is a form of wrapping a model after training. It encapsulates a model in such a way the model can be saved, containerized or accessed easily to be ran in other environments or easily called.</p>
+<p><strong>Model Registry</strong> is the logical next step of the Models wrapper. It enables to register models that are useful and will be used in production. By registering the models, we can perform version management to them. This makes it easier to organize and register the production pipeline of a model.</p>
+<p>MLflow tracks, throughout the components, basically 3 things:</p>
+<ol>
+ <li>Models: model objects that can be agnostic or belong to a certain flavor of ML/AI library;</li>
+ <li>Parameters: Constant values related to the models (e.g. the weights of a Neural Network);</li>
+ <li>Artifacts: Every sort of file generated in a run. You can, for instance, save an image (like the plot of a DecisionTree) or a table.</li>
+</ol>
+<p>These objects are tracked in a <em>run</em> level within an <em>experiment</em>. An <em>experiment</em> is a general environment for MLflow to store information. A run happens within an environment. A run is pretty much the name MLflow gives to an algorithm execution.</p>
+<p>To centralize all components and facilitate usage, MLflow has a really intuitive UI that can be easily started from the terminal.</p>
+<p>MLflow can store all its files and artifacts locally. But, you can use a DB such as PostgreSQL to log the artifacts. For my tests I left it saving the data locally. In this case, MLflow generates a <code class="language-plaintext highlighter-rouge">mlruns</code> folder in the directory of the project that I supress in the repo using <code class="language-plaintext highlighter-rouge">.gitignore</code>.</p>
+<h2 id="a-quick-problem-for-a-quick-start">A Quick Problem for a Quick Start</h2>
+<p>To try out MLflow in practice I used a basic dataset to solve a straightfoward problem. I’ve used data sourced from Amazon made available in Kaggle to <strong>predict the sales</strong> amount for certain groceries in the UK. You can find the data <a href="https://www.kaggle.com/datasets/dalmacyali1905/amazon-uk-grocery-dataset-unsupervised-learning/data">here</a>.</p>
+<p>The main focus of this test is to understand and use MLflow. So, for this purpose, only basic data cleaning was performed. Let’s get into it.</p>
+<p>First things first, let’s get a sense of the data at hand. We have data for over 6.000 products that contain some features regarding the product itself as well as its performance in the marketplace (e.g. price, sales, revenue, …). See an example below:</p>
+<p><img src="/assets/img/mlflow-quickstart/data-excerpt.webp" alt="Raw Data Excerpt" /></p>
+<p>We fetch the raw data and after some cleaning, feature engineering and subsetting we end up with a little over 5.000 products with the following features:</p>
+<p><img src="/assets/img/mlflow-quickstart/processed-data-excerpt.webp" alt="Processed Data Excerpt" /></p>
+<p>With this data, we can start running models for the sales column. Keep in mind not all the features in the picture above will be used. I’ll be using a simple Linear Regression as a baseline for comparison with other models (and to help show the power of MLflow down the road).</p>
+<h2 id="using-mlflow">Using MLflow</h2>
+<p>MLflow can be installed as a library in your pip or conda environment. So you can bring up a terminal and run:</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>mlflow
+
+<span class="c"># or, if using Anaconda/Miniconda:</span>
+
+conda <span class="nb">install</span> <span class="nt">-c</span> conda-forge 
+</code></pre></div></div>
+<p>I’ll be using sklearn. I can simply import mlflow to use it in my code. With it imported I can use the following logic to track my models:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Other imports #
+</span><span class="kn">import</span> <span class="n">mlflow</span>
+
+<span class="n">mlflow</span><span class="p">.</span><span class="nf">autolog</span><span class="p">()</span>
+
+<span class="c1">### Data ingestion ###
+### Sklearn stuff ###
+</span>
+<span class="c1"># Baseline Model
+</span><span class="k">with</span> <span class="n">mlflow</span><span class="p">.</span><span class="nf">start_run</span><span class="p">()</span> <span class="k">as</span> <span class="n">run</span><span class="p">:</span>
+
+    <span class="n">lr</span><span class="p">.</span><span class="nf">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+    <span class="n">y_pred</span> <span class="o">=</span> <span class="n">lr</span><span class="p">.</span><span class="nf">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+    <span class="n">mse</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span> <span class="o">*</span> <span class="nf">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">squared</span> <span class="o">=</span> <span class="bp">False</span><span class="p">)</span>
+    <span class="n">mae</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span> <span class="o">*</span> <span class="nf">mean_absolute_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+    <span class="n">r2</span> <span class="o">=</span> <span class="nf">r2_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+
+    <span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">Logging Baseline Linear Regression Results</span><span class="sh">'</span><span class="p">)</span>
+    <span class="n">mlflow</span><span class="p">.</span><span class="nf">log_metrics</span><span class="p">({</span><span class="sh">'</span><span class="s">Neg. RMSE</span><span class="sh">'</span><span class="p">:</span><span class="n">mse</span><span class="p">,</span>
+                        <span class="sh">'</span><span class="s">Neg. MAE</span><span class="sh">'</span><span class="p">:</span><span class="n">mae</span><span class="p">,</span>
+                        <span class="sh">'</span><span class="s">R2</span><span class="sh">'</span><span class="p">:</span><span class="n">r2</span><span class="p">})</span>
+</code></pre></div></div>
+<p><em>Note: keep in mind that MLflow has .autolog() methods for common flavors, but they work best up to certain versions. Check if your lib version is fully supported by autolog, if you’re going to use it. It won’t break your code necessairly, but it can lead to problems.</em></p>
+<p>I associate the code to my experiment with my <code class="language-plaintext highlighter-rouge">mlflow.autolog()</code> call. It automatically identifies I’m using sklearn (but I could use <code class="language-plaintext highlighter-rouge">mlflow.sklearn.autolog()</code>).</p>
+<p>Then, I use a context to call <code class="language-plaintext highlighter-rouge">mlflow.start_run()</code> to start a run in the experiment. The run in the snippet above is for the baseline <code class="language-plaintext highlighter-rouge">LinearRegression()</code>.</p>
+<p>If you opt to start a run outside of a context, just make sure you end the run explicitly after.</p>
+<p>By calling <code class="language-plaintext highlighter-rouge">.fit()</code>, MLflow automatically identifies the command and logs training metrics. I will also manually log using <code class="language-plaintext highlighter-rouge">mlflow.log_metrics()</code>. Within that run the Negative RMSE, Negative MAE and R2 scores are logged. This is done to enable comparison with test performance with other models.</p>
+<p>The reason to use Negative RMSE and MAE and not their positive (and most usual) counterparts is that I want to perform Hyperparameter Tuning with <code class="language-plaintext highlighter-rouge">GridSearchCV</code>. To work within the search, these metrics need to be negative.</p>
+<p>For the GridSearch, we use the same block used for the Linear Regression. The only change is to call the Cross Validation object instead of the model when we run <code class="language-plaintext highlighter-rouge">.fit()</code> and <code class="language-plaintext highlighter-rouge">.predict()</code>. MLflow will automatically handle what happens on the backend and will log the runs apropriately for the CV case.</p>
+<h2 id="tracker">Tracker</h2>
+<p>Now, let’s see how this looks after running in the mlflow UI. To start it just bring up a terminal window in the environment you have it installed and type:</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mlflow ui
+</code></pre></div></div>
+<p>This will prompt you with a local IP adress where the UI was served to. You can open it in your browser to find the following page:</p>
+<p class="caption"><img src="/assets/img/mlflow-quickstart/mlflow-ui.webp" alt="MLFlow UI" />
+Initial screen of MLflow</p>
+<p>After running the models this is what we have. On the left, we have a list with all experiments. In this case we only have one called “Default” (automatic name assigned by MLflow, you can change it).</p>
+<p>Using mlflow with autolog out of the gate will associate the runs to this experiment. You can build different experiments in the ui or through the API within the code.</p>
+<p>On the right, we have a list of all of our runs. Each run gets one of the assigned names. One for the baseline model (ambitious-carp), one for the 3 other models I’ve used, these with Hyperparameter Tuning.</p>
+<p>Notice how the <code class="language-plaintext highlighter-rouge">GridSearchCV</code> objects will have a “+” to their left. If we expand, we will have the <strong>5 best performing combinations in the GridSearch!</strong> The top-level run, that encapsulates all the other runs, will be the best estimator. This would be equivalent to a <code class="language-plaintext highlighter-rouge">.best_estimator_</code> call within sklearn.</p>
+<p>Now with the models tracked, using the chart tab, we can can visually answer 2 questions:</p>
+<ul>
+ <li>Do the models outperform the baseline?</li>
+ <li>Which model performed the best?</li>
+</ul>
+<p class="caption"><img src="/assets/img/mlflow-quickstart/metric-graph.webp" alt="Metric Graph" />
+Example of Metric Graph by Run in MLflow</p>
+<p>Using the Negative MAE as example, we can see one of the strenghts of MLflow. All of our models, even the ones with tuned hyperparameters, can be easily compared side by side for any of the metrics we logged.</p>
+<p>This view enables us to answer both questions above. We do actually outperform de baseline (last deep-red bar), and we see that the second model (name: unequaled-horse) is the one that performs the best. This is true for all 3 metrics we’ve tracked.</p>
+<p>Let’s then take a deeper look into the best model by simply clicking on its name on the list. We will this way access the second component.</p>
+<h2 id="model">Model</h2>
+<p class="caption"><img src="/assets/img/mlflow-quickstart/model-page.webp" alt="Metric Graph" />
+Detail of a run</p>
+<p>This is the page that describes a run, that contains a model object. Notice how it has a lot of attributes: The data used to train and evaluate it, the parameters, the metrics tracked and the artifacts.</p>
+<p>The “artifacts” section is what actually holds the model container. MLflow shows us how is the schema for the data used in the model and how we call the model to make predictions, with code snippets. We will do that just in a bit.</p>
+<p>First, I will register the model to see how the <strong>Model Registry</strong> works. We can register a model by simply clicking on the “Register Model” button and giving it a name. After it’s registered, we can access the “Models” tab in the UI.</p>
+<h2 id="registry">Registry</h2>
+<p class="caption"><img src="/assets/img/mlflow-quickstart/registry-page.webp" alt="Registry Page" />
+Details of a registered model</p>
+<p>The initial screen of the registry will be a list of the <strong>registered</strong> models and their names. By clicking on a model, the screen above pops up.</p>
+<p>Notice how a model will have versions. The first version we generate is, naturally, Version 1. To generate a second version of a model, just log a model with the same name it has in the registry.</p>
+<p>We can also add a description and information about who generated it. But what is really interesting here, along with the versioning possibilities, is the “Stage” tag.</p>
+<p>With it, we can assign if a model is in Staging or Production phase. To change it, we simply click on the version we want to edit and select the correspondent stage. Notice how we also have the schema, source run info and also tags we can associate to our model. I’ll put my model on “Staging”.</p>
+<p>It’s also worth to notice that changing the stage will trigger some actions in MLflow. For instance, when we transition a model to “Staging” a prompt shows up asking if you want that other models that get to “Staging” go to “Archived”.</p>
+<p><img src="/assets/img/mlflow-quickstart/model-versioning.webp" alt="Model Versioning" /></p>
+<p>Trasitioning registered model version to Staging
+With our model registered, we can call it easily to predict on data.</p>
+<h2 id="calling-a-model">Calling a Model</h2>
+<p>To call a model you need to basically pass a URI string to mlflow. There are many options to do so, I chose one that seemed the most clean and intuitive to me. Feel free to check out other options on the <a href="https://mlflow.org/docs/latest/api_reference/python_api/mlflow.sklearn.html#mlflow.sklearn.load_model"><strong>docs</strong></a>.</p>
+<p>To call my model to predict on data, I can simply do:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">model</span> <span class="o">=</span> <span class="n">mlflow</span><span class="p">.</span><span class="n">sklearn</span><span class="p">.</span><span class="nf">load_model</span><span class="p">(</span><span class="sh">'</span><span class="s">models:/dt_amz_prices/staging</span><span class="sh">'</span><span class="p">)</span>
+
+<span class="c1"># Given that the data corresponds to the Schema in the model
+</span><span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="p">.</span><span class="nf">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+</code></pre></div></div>
+<p>And the trained model will run. That’s it. MLflow enables us to easily compare, share, store and use a lot different models for any given ML problem.</p>
+<p>This has been, of course, a simplified scenario that I used to grasp how its basic functions work. We could, very easily, also serve this registered model as an API. However, this is beyond the scope of this text.</p>
+<h2 id="final-thoughts">Final Thoughts</h2>
+<p>This text is a product of my personal studies to understand MLflow. I’ve used it to solve a quite simple ML problem. This was done as a way to understand how its functionalities help Data Scientists experiment in a more orderly and structured fashion.</p>
+<p>I’ve covered 3 of the 5 components of the tool and tried out how they can be used in a project setting. In my honest opinion, MLflow is something I am strongly considering to adopt as a standard for my own work. This is because of the following reasons:</p>
+<ul>
+ <li>Structure: I can test various models, with various configurations really easily, in a ordered way that I know where what is;</li>
+ <li>Easy comparability between runs: I don’t have to build extra layers of code to keep track and compare all the experiments I run. The chart mode helps a lot for model selection and comparison;</li>
+ <li>Replicability: It’s easy to call any model, not only the registered, without the fuss of opening other files and replicating the code (given the data preprocessing is the same);</li>
+ <li>Transparency : At all times we can look at parameters, features, inputs, outputs and artefacts from every model. If in a team setting you can see who did what;</li>
+ <li>UI: The UI is a major facilitator. It is clean, simple and self explanatory. This helps a lot to navigate problems with many possible solutions.
+I hope this text helped you understand the main strenghts I’ve come to experience using MLflow.</li>
+</ul>
+<hr />
+<h2 id="acknowledgements-and-links">Acknowledgements and links</h2>
+<ul>
+ <li>For the full code of the project, check out my Repo on <a href="https://github.com/bglucca/test_mlflow"><strong>GitHub</strong></a>.</li>
+ <li>Check out the <a href="https://mlflow.org/docs/latest/index.html"><strong>MLflow docs</strong></a> for further and more in-depth information.</li>
+ <li>The data for the project came from this dataset on Kaggle.
+If you liked the text, leave some claps, a comment and feel free to check out my personal page <a href="https://bglucca.github.io"><strong>here</strong></a></li>
+</ul>
+</article>
+		</div>
+	</main><nav aria-label="Navigation" class="container-lg chulapa-pagination  ">
+ <ul class="col-lg-8 offset-lg-2 pagination chulapa-pagination-round px-0 ">
+   <li class="page-item text-left mr-0 ">
+      <a class="page-link border-0 px-4" href="https://bglucca.github.io/20230807_customer-segmentation/" tabindex="-1">
+	  <i class="fa fa-chevron-left" aria-hidden="true"></i><span class="sr-only">Previous</span>
+	  </a>
+   </li>
+   <li class="page-item border-0 disabled text-left ml-0 mr-auto d-none d-md-inline ">
+     <p class="page-link chulapa-label">You’ve got mail! Machine Le...</p>
+   </li>
+   <li class="page-item border-0 disabled text-left ml-0 mr-auto d-none d-sm-inline d-md-none ">
+     <p class="page-link chulapa-label">You’ve got mai...</p>
+   </li>
+	 <li class="page-item disabled mx-auto invisible">
+	  <p class="page-link">|</p>
+	 </li>	
+	 <li class="page-item border-0 disabled text-right mr-0 ml-auto d-none d-sm-inline d-md-none invisible">
+	   <p class="page-link chulapa-label"></p>
+	 </li>
+	 <li class="page-item border-0 disabled text-right mr-0 ml-auto d-none d-md-inline invisible">
+	   <p class="page-link chulapa-label"></p>
+	 </li>
+   <li class="page-item text-right ml-0 invisible">
+      <a class="page-link border-0 px-4" href="#">
+	  <i class="fa fa-chevron-right" aria-hidden="true"></i><span class="sr-only">Next</span></a>
+   </li>
+ </ul>
+</nav>
+<div class="container-lg my-1">
+ <div class="row">
+   <div class="col-lg-8 offset-lg-2 col">
+      <i class="fas fa-tag mr-1 fa-xs" aria-hidden="true"></i>
+      <a href="https://bglucca.github.io/tags#MLOps" class="badge chulapa-pill-bg-primary p-category" rel="tag" >MLOps</a>
+      <a href="https://bglucca.github.io/tags#MLFlow" class="badge chulapa-pill-bg-primary p-category" rel="tag" >MLFlow</a>
+      <a href="https://bglucca.github.io/tags#Monitoring" class="badge chulapa-pill-bg-primary p-category" rel="tag" >Monitoring</a>
+     </div>
+   </div>
+</div>
+<!-- Compatible with Jekyll v3 and v4, pure Jekyll group by -->
+  <!-- Footer -->
+ <footer class="footer-chulapa text-center mt-0 pt-3">
+   <div class="container">
+     <div class="row">
+       <div class="col-xl-10 offset-xl-1"><div role="navigation" class="d-flex flex-wrap justify-content-center"><a href="https://github.com/dieghernan/bglucca" title="footerGithub" class="chulapa-footer-sociallink lead"><span class="fa-stack fa-lg" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span><span class="sr-only">Github</span>
+            </a><a href="https://www.linkedin.com/in/luccabgomes/" title="footerLinkedIn" class="chulapa-footer-sociallink lead"><span class="fa-stack fa-lg" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span><span class="sr-only">LinkedIn</span>
+            </a><a href="https://medium.com/@luccagomes" title="footerMedium" class="chulapa-footer-sociallink lead"><span class="fa-stack fa-lg" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fab fa-medium fa-stack-1x fa-inverse"></i>
+              </span><span class="sr-only">Medium</span>
+            </a></div><p class="mt-2 mb-3">© 2025 Lucca Bevilacqua <br> Cover photo by <a href="https://unsplash.com/pt-br/@jontyson?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jon Tyson</a> at <a href="https://unsplash.com/pt-br/fotografias/cabo-revestido-branco-FnaXzE_wEwU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+          <!-- Do not remove this in order to give  attributions -->
+         <p class="chulapa-footer-brand">Powered by <a href="https://dieghernan.github.io/chulapa"> <span class="chulapa">Chulapa</span> Jekyll Theme</a><br><b>Towards</b> skin by <a href="https://github.com/dieghernan">dieghernan</a></p>
+          <!-- End  attributions -->
+       </div>
+     </div>
+ </div>
+</footer>
+<!-- Footer -->
+<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/gh/dieghernan/chulapa@master/assets/js/chulapa_script.js"></script>
+	<!-- start custom scripts to be placed at the bottom of the page -->
+<!-- end custom bottom scripts -->
+	</body>
+</html>

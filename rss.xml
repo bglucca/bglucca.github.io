@@ -1,1921 +1,905 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
 	<channel>
-		<title>Chulapa 101 | Chulapa Jekyll Theme starter pack</title>
+		<title>My DS Journey | My learnings and experiences as a Data Scientist</title>
 		<generator>(c) Chulapa Jekyll Theme RSS generator</generator>
-		<link>https://dieghernan.github.io/</link>
-		<description>Chulapa Jekyll Theme starter pack</description>
+		<link>https://bglucca.github.io/</link>
+		<description>Sharing my experiences and opinions as a data professional</description>
 		<language>en-US</language>
-		<copyright>(c) 2025, Your Name</copyright>	
-		<pubDate>Thu, 14 Aug 2025 08:59:20 +0000</pubDate>
-		<lastBuildDate>Thu, 14 Aug 2025 08:59:20 +0000</lastBuildDate>
+		<copyright>(c) 2025, Lucca Bevilacqua</copyright>	
+		<pubDate>Sun, 07 Sep 2025 18:33:19 +0000</pubDate>
+		<lastBuildDate>Sun, 07 Sep 2025 18:33:19 +0000</lastBuildDate>
 		<category>blog</category>
 		<ttl>60</ttl>
-		<atom:link href="https://dieghernan.github.io/rss.xml" rel="self" type="application/rss+xml" />
+		<atom:link href="https://bglucca.github.io/rss.xml" rel="self" type="application/rss+xml" />
 		<image>
-			<title>Chulapa 101 | Chulapa Jekyll Theme starter pack</title>
+			<title>My DS Journey | My learnings and experiences as a Data Scientist</title>
 			<url></url>
-			<link>https://dieghernan.github.io/</link>
-			<description>Chulapa Jekyll Theme starter pack</description>
+			<link>https://bglucca.github.io/</link>
+			<description>Sharing my experiences and opinions as a data professional</description>
 		</image><item>
-			<title>Current skin</title>
+			<title>MLflow 101 - My Quickstart</title>
 			<description>
 				<![CDATA[	
- 				<h3>Showing al the different Bootstrap components available</h3>
-    		<p>9 min.</p>
-				<div><p>This is a demo page showing the different components of Bootstrap and how they look on this site under the current configuration.</p>
+ 				<h3>A gentle introduction to MLFlow and its applications with Hyperparameter tuning</h3>
+    		<p>11 min.</p>
+				<div><p>If you’ve been working with Data Science I’m sure that at some point you needed to try a lot of different things to solve a problem. At the same time, you also needed to keep track of the performance of what you tried to do.</p>
 
-<nav aria-label="Navigation" class="container-lg chulapa-pagination  ">
-  <ul class="col-lg-8 offset-lg-2 pagination chulapa-pagination-round px-0 ">
-    <li class="page-item text-left mr-0 ">
-      <a class="page-link border-0 px-4" href="https://dieghernan.github.io/20191127_acueduct-of-segovia/" tabindex="-1">
-	  <i class="fa fa-chevron-left" aria-hidden="true"></i><span class="sr-only">Previous</span>
-	  </a>
-    </li>
-    <li class="page-item border-0 disabled text-left ml-0 mr-auto d-none d-md-inline ">
-      <p class="page-link chulapa-label">The Acueduct of Segovia</p>
-    </li>
-    <li class="page-item border-0 disabled text-left ml-0 mr-auto d-none d-sm-inline d-md-none ">
-      <p class="page-link chulapa-label">The Acueduct o...</p>
-    </li>
-	  <li class="page-item disabled mx-auto invisible">
-	   <p class="page-link">|</p>
-	  </li>	
-	  <li class="page-item border-0 disabled text-right mr-0 ml-auto d-none d-sm-inline d-md-none invisible">
-	    <p class="page-link chulapa-label"></p>
-	  </li>
-	  <li class="page-item border-0 disabled text-right mr-0 ml-auto d-none d-md-inline invisible">
-	    <p class="page-link chulapa-label"></p>
-	  </li>
-    <li class="page-item text-right ml-0 invisible">
-      <a class="page-link border-0 px-4" href="#">
-	  <i class="fa fa-chevron-right" aria-hidden="true"></i><span class="sr-only">Next</span></a>
-    </li>
-  </ul>
-</nav>
+<h2 id="projects-experiments--spreadsheets">Projects, experiments &amp; Spreadsheets</h2>
+<p>Probably at some point you, like me, fired up an Excel spreadsheet and tried to manually keep track of things. This often results in chaotic organization both in the project folder as well as the spreadsheet itself.</p>
 
-<div class="container-lg my-1">
-  <div class="row">
-    <div class="col-lg-8 offset-lg-2 col">
-      <i class="far fa-folder-open fa-xs" aria-hidden="true"></i>
-      <a href="https://dieghernan.github.io/categories#skins" class="badge chulapa-pill-bg-secondary p-category" rel="tag">skins</a>
-      </div>
-    </div>
-</div>
+<p>It is hard to keep track of all possible things that can run differently in an experiement. Preprocessing steps for specific models, the models themselves, the parameters,…</p>
 
-<div class="container-lg my-1">
-  <div class="row">
-    <div class="col-lg-8 offset-lg-2 col">
-      <i class="fas fa-tag mr-1 fa-xs" aria-hidden="true"></i>
-      <a href="https://dieghernan.github.io/tags#skin" class="badge chulapa-pill-bg-primary p-category" rel="tag">skin</a>
-      
-      <a href="https://dieghernan.github.io/tags#bootstrap" class="badge chulapa-pill-bg-primary p-category" rel="tag">bootstrap</a>
-      
-      <a href="https://dieghernan.github.io/tags#current-theme" class="badge chulapa-pill-bg-primary p-category" rel="tag">current-theme</a>
-      
-      <a href="https://dieghernan.github.io/tags#header-hero" class="badge chulapa-pill-bg-primary p-category" rel="tag">header-hero</a>
-      
-      <a href="https://dieghernan.github.io/tags#image" class="badge chulapa-pill-bg-primary p-category" rel="tag">image</a>
-      
-      <a href="https://dieghernan.github.io/tags#demo" class="badge chulapa-pill-bg-primary p-category" rel="tag">demo</a>
-      </div>
-    </div>
-</div>
+<p>MLflow comes in to help sort this kind of thing. It is a platform built to organize, facilitate experimentation, streamline and serve models to production. Basically a platform to manage ML lifecycle.</p>
 
-<!-- snippets/bootstrapdemo.html -->
-<!-- Taken from Bootswatch: Free themes for Bootstrap  https://bootswatch.com/ -->
-<style>
-  .bs-docs-section {
-    margin-top: 4em;
-  }
+<p><em>Quick stop before we move forward, you can read this on <a href="https://medium.com/@luccagomes/making-browsing-airbnb-easier-through-data-science-bf96e2a72e0c"><strong>Medium</strong></a> as well</em></p>
 
-  .bs-docs-section .page-header h1 {
-    padding: 2rem 0;
-    font-size: 3rem;
-  }
+<h2 id="a-brief-intro-to-ml-flow">A (Brief) Intro to ML Flow</h2>
+<p>As of this writing, MLflow has 5 components in total. For this quick guide I’ll use only a few of the available ones (highlighted below), which are:</p>
 
-  .bs-component {
-    position: relative;
-  }
+<ul>
+  <li><strong>Tracking</strong></li>
+  <li><strong>Models</strong></li>
+  <li><strong>Model Registry</strong></li>
+  <li>Projects</li>
+  <li>Recipes</li>
+</ul>
 
-  .bs-component+.bs-component {
-    margin-top: 1rem;
-  }
+<p>The <strong>Tracking</strong> module acts pretty much as a logger, but for everything model related: What model is being used, which parameters are configured in the run, outputs (even tabular and images), etc.</p>
 
-  .bs-component .card {
-    margin-bottom: 1rem;
-  }
+<p>Tracking has many “flavors” — how common ML/AI libraries such as sklearn, Keras, H2O are named — to help store important data and metadata of commonly used libs.</p>
 
-  .bs-component .modal {
-    position: relative;
-    top: auto;
-    right: auto;
-    left: auto;
-    bottom: auto;
-    z-index: 1;
-    display: block;
-  }
+<p><strong>Models</strong> is a form of wrapping a model after training. It encapsulates a model in such a way the model can be saved, containerized or accessed easily to be ran in other environments or easily called.</p>
 
-  .bs-component .modal-dialog {
-    width: 90%;
-  }
+<p><strong>Model Registry</strong> is the logical next step of the Models wrapper. It enables to register models that are useful and will be used in production. By registering the models, we can perform version management to them. This makes it easier to organize and register the production pipeline of a model.</p>
 
-  .bs-component .popover {
-    position: relative;
-    display: inline-block;
-    width: 220px;
-    margin: 20px;
-  }
-</style>
+<p>MLflow tracks, throughout the components, basically 3 things:</p>
 
-<div class="bs-docs-section clearfix">
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="page-header">
-        <h2 id="navbars">Navbars</h2>
-      </div>
-      <div class="bs-component">
-        <!-- Chulapa classic navbar expanding in lg or above --><nav class="navbar navbar-expand-lg sticky-top navbar-chulapa border border-light my-2">
-          <div class="container-fluid mx-md-2">
-            <a class="navbar-brand font-weight-bold" href="https://dieghernan.github.io/">Default</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarToggler">
-              <ul class="navbar-nav ml-auto"><li class="nav-item">
-                  <a class="nav-link " href="https://dieghernan.github.io/blog/">Blog</a>
-                </li><li class="nav-item">
-                  <a class="nav-link " href="https://dieghernan.github.io/cheatsheets">Cheatsheets</a>
-                </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle " href="#" id="Extras" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Extras</a>
-                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="Extras"><a class="dropdown-item " href="https://dieghernan.github.io/tags">Tags</a><a class="dropdown-item " href="https://dieghernan.github.io/categories">Categories</a><a class="dropdown-item " href="https://dieghernan.github.io/archive">Archive</a><a class="dropdown-item " href="https://dieghernan.github.io/current-skin">Current skin</a></div>
-                </li><li class="nav-item">
-                  <a class="nav-link " href="https://dieghernan.github.io/chulapa/docs/01-install">Docs</a>
-                </li><li class="nav-item">
-                  <a class="nav-link " href="https://github.com/dieghernan/chulapa-101/generate">Use this template</a>
-                </li><li class="nav-item">
-                  <a class="nav-link " href="https://dieghernan.github.io/search">
-                    <span class="d-md-none p-0 pr-1">Search</span>
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                    <span class="sr-only">Search</span>
-                  </a>
-                </li></ul>
-            </div></div>
-        </nav>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarColor01">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="text" placeholder="Search" />
-              <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-            </form>
-          </div>
-        </nav>
-      </div>
-      <div class="bs-component">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarColor02">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="text" placeholder="Search" />
-              <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-            </form>
-          </div>
-        </nav>
-      </div>
-      <div class="bs-component">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarColor03">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="text" placeholder="Search" />
-              <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-            </form>
-          </div>
-        </nav>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="bs-docs-section">
-  <div class="page-header">
-    <div class="row">
-      <div class="col-lg-12">
-        <h2 id="buttons">Buttons</h2>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-12">
-      <p class="bs-component">
-        <button type="button" class="btn btn-primary">Primary</button>
-        <button type="button" class="btn btn-secondary">Secondary</button>
-        <button type="button" class="btn btn-success">Success</button>
-        <button type="button" class="btn btn-info">Info</button>
-        <button type="button" class="btn btn-warning">Warning</button>
-        <button type="button" class="btn btn-danger">Danger</button>
-        <button type="button" class="btn btn-link">Link</button>
-        <button type="button" class="btn btn-dark">Dark</button>
-        <button type="button" class="btn btn-light">Light</button>
-      </p>
-      <p class="bs-component">
-        <button type="button" class="btn btn-primary disabled">Primary</button>
-        <button type="button" class="btn btn-secondary disabled">Secondary</button>
-        <button type="button" class="btn btn-success disabled">Success</button>
-        <button type="button" class="btn btn-info disabled">Info</button>
-        <button type="button" class="btn btn-warning disabled">Warning</button>
-        <button type="button" class="btn btn-danger disabled">Danger</button>
-        <button type="button" class="btn btn-link disabled">Link</button>
-      </p>
-      <p class="bs-component">
-        <button type="button" class="btn btn-outline-primary">Primary</button>
-        <button type="button" class="btn btn-outline-secondary">Secondary</button>
-        <button type="button" class="btn btn-outline-success">Success</button>
-        <button type="button" class="btn btn-outline-info">Info</button>
-        <button type="button" class="btn btn-outline-warning">Warning</button>
-        <button type="button" class="btn btn-outline-danger">Danger</button>
-      </p>
-      <div class="bs-component">
-        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-          <button type="button" class="btn btn-primary">Primary</button>
-          <div class="btn-group" role="group">
-            <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-              <a class="dropdown-item" href="#">Dropdown link</a>
-              <a class="dropdown-item" href="#">Dropdown link</a>
-            </div>
-          </div>
-        </div>
-        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-          <button type="button" class="btn btn-success">Success</button>
-          <div class="btn-group" role="group">
-            <button id="btnGroupDrop2" type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-            <div class="dropdown-menu" aria-labelledby="btnGroupDrop2">
-              <a class="dropdown-item" href="#">Dropdown link</a>
-              <a class="dropdown-item" href="#">Dropdown link</a>
-            </div>
-          </div>
-        </div>
-        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-          <button type="button" class="btn btn-info">Info</button>
-          <div class="btn-group" role="group">
-            <button id="btnGroupDrop3" type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-            <div class="dropdown-menu" aria-labelledby="btnGroupDrop3">
-              <a class="dropdown-item" href="#">Dropdown link</a>
-              <a class="dropdown-item" href="#">Dropdown link</a>
-            </div>
-          </div>
-        </div>
-        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-          <button type="button" class="btn btn-danger">Danger</button>
-          <div class="btn-group" role="group">
-            <button id="btnGroupDrop4" type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-            <div class="dropdown-menu" aria-labelledby="btnGroupDrop4">
-              <a class="dropdown-item" href="#">Dropdown link</a>
-              <a class="dropdown-item" href="#">Dropdown link</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="bs-component">
-        <button type="button" class="btn btn-primary btn-lg">Large button</button>
-        <button type="button" class="btn btn-primary">Default button</button>
-        <button type="button" class="btn btn-primary btn-sm">Small button</button>
-      </div>
-    </div>
-  </div>
-  <div class="row my-2">
-    <div class="col-lg-12">
-      <p class="bs-component">
-        <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-      </p>
-      <div class="bs-component" style="margin-bottom: 15px;">
-        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-          <label class="btn btn-primary active">
-            <input type="checkbox" checked="" autocomplete="off" /> Active </label>
-          <label class="btn btn-primary">
-            <input type="checkbox" autocomplete="off" /> Check </label>
-          <label class="btn btn-primary">
-            <input type="checkbox" autocomplete="off" /> Check </label>
-        </div>
-      </div>
-      <div class="bs-component" style="margin-bottom: 15px;">
-        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-          <label class="btn btn-primary active">
-            <input type="radio" name="options" id="option1" autocomplete="off" checked="" /> Active </label>
-          <label class="btn btn-primary">
-            <input type="radio" name="options" id="option2" autocomplete="off" /> Radio </label>
-          <label class="btn btn-primary">
-            <input type="radio" name="options" id="option3" autocomplete="off" /> Radio </label>
-        </div>
-      </div>
-      <div class="bs-component">
-        <div class="btn-group-vertical">
-          <button type="button" class="btn btn-primary">Button</button>
-          <button type="button" class="btn btn-primary">Button</button>
-          <button type="button" class="btn btn-primary">Button</button>
-          <button type="button" class="btn btn-primary">Button</button>
-          <button type="button" class="btn btn-primary">Button</button>
-          <button type="button" class="btn btn-primary">Button</button>
-        </div>
-      </div>
-      <div class="bs-component" style="margin-bottom: 15px;">
-        <div class="btn-group" role="group" aria-label="Basic example">
-          <button type="button" class="btn btn-secondary">Left</button>
-          <button type="button" class="btn btn-secondary">Middle</button>
-          <button type="button" class="btn btn-secondary">Right</button>
-        </div>
-      </div>
-      <div class="bs-component" style="margin-bottom: 15px;">
-        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-          <div class="btn-group mr-2" role="group" aria-label="First group">
-            <button type="button" class="btn btn-secondary">1</button>
-            <button type="button" class="btn btn-secondary">2</button>
-            <button type="button" class="btn btn-secondary">3</button>
-            <button type="button" class="btn btn-secondary">4</button>
-          </div>
-          <div class="btn-group mr-2" role="group" aria-label="Second group">
-            <button type="button" class="btn btn-secondary">5</button>
-            <button type="button" class="btn btn-secondary">6</button>
-            <button type="button" class="btn btn-secondary">7</button>
-          </div>
-          <div class="btn-group" role="group" aria-label="Third group">
-            <button type="button" class="btn btn-secondary">8</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="bs-docs-section">
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="page-header">
-        <h2 id="typography">Typography</h2>
-      </div>
-    </div>
-  </div>
-  <!-- Headings -->
-  <div class="row">
-    <div class="col-lg-4">
-      <div class="bs-component">
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-        <h5>Heading 5</h5>
-        <h6>Heading 6</h6>
-        <h4> Heading <small class="text-muted">with muted text</small>
-        </h4>
-        <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-      </div>
-    </div>
-    <div class="col-lg-4">
-      <div class="bs-component">
-        <h3>Example body text</h3>
-        <p>Nullam quis risus eget <a href="#">urna mollis ornare</a> vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula. </p>
-        <p>
-          <small>This line of text is meant to be treated as fine print.</small>
-        </p>
-        <p>The following is <strong>rendered as bold text</strong>. </p>
-        <p>The following is <em>rendered as italicized text</em>. </p>
-        <p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>. </p>
-      </div>
-    </div>
-    <div class="col-lg-4">
-      <div class="bs-component">
-        <h3>Emphasis classes</h3>
-        <p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
-        <p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-        <p class="text-secondary">Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-        <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
-        <p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
-        <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
-        <p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-      </div>
-    </div>
-  </div>
-  <!-- Blockquotes -->
-  <div class="row">
-    <div class="col-lg-12">
-      <h3 id="type-blockquotes">Blockquotes</h3>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-4">
-      <div class="bs-component">
-        <blockquote class="blockquote">
-          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite>
-          </footer>
-        </blockquote>
-      </div>
-    </div>
-    <div class="col-lg-4">
-      <div class="bs-component">
-        <blockquote class="blockquote text-center">
-          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite>
-          </footer>
-        </blockquote>
-      </div>
-    </div>
-    <div class="col-lg-4">
-      <div class="bs-component">
-        <blockquote class="blockquote text-right">
-          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite>
-          </footer>
-        </blockquote>
-      </div>
-    </div>
-  </div>
-  <!-- Syntax Highlight -->
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="page-header">
-        <h3 id="syntax">Syntax Highlight</h3>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="bs-component">
-        <h4>Python</h4>
-        <div class="highlight"><pre class="highlight"><code id="clipboard_code1"><span class="nd">@requires_authorization</span>
-          <span class="k">def</span> <span class="nf">somefunc</span><span class="p">(</span><span class="n">param1</span><span class="o">=</span><span class="sh">''</span><span class="p">,</span> <span class="n">param2</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
-              <span class="sa">r</span><span class="sh">'''</span><span class="s">A docstring</span><span class="sh">'''</span>
-              <span class="k">if</span> <span class="n">param1</span> <span class="o">&gt;</span> <span class="n">param2</span><span class="p">:</span> <span class="c1"># interesting
-          </span>        <span class="k">print</span> <span class="sh">'</span><span class="s">Gre</span><span class="se">\'</span><span class="s">ater</span><span class="sh">'</span>
-              <span class="nf">return </span><span class="p">(</span><span class="n">param2</span> <span class="o">-</span> <span class="n">param1</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">+</span> <span class="mb">0b10</span><span class="n">l</span><span class="p">)</span> <span class="ow">or</span> <span class="bp">None</span>
-          
-          <span class="k">class</span> <span class="nc">SomeClass</span><span class="p">:</span>
-              <span class="k">pass</span>
-          
-          <span class="o">&gt;&gt;&gt;</span> <span class="n">message</span> <span class="o">=</span> <span class="sh">'''</span><span class="s">interpreter
-          </span><span class="gp">...</span> <span class="n">prompt</span><span class="sh">'''</span>
-          
-          </code></pre></div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="bs-docs-section">
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="page-header">
-        <h2 id="tables">Tables</h2>
-      </div>
-      <div class="bs-component table-responsive">
-        <h3 id="tables-contextual">Contextual classes</h3>
-        <table class="table table-hover table-responsive w-100 d-block d-table">
-          <thead>
-            <tr>
-              <th scope="col">Type</th>
-              <th scope="col">Column heading</th>
-              <th scope="col">Column heading</th>
-              <th scope="col">Column heading</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="table-active">
-              <th scope="row">Active</th>
-              <td>Column content</td>
-              <td>Column content</td>
-              <td>Column content</td>
-            </tr>
-            <tr>
-              <th scope="row">Default</th>
-              <td>Column content</td>
-              <td>Column content</td>
-              <td>Column content</td>
-            </tr>
-            <tr class="table-primary">
-              <th scope="row">Primary</th>
-              <td>Column content</td>
-              <td>Column content</td>
-              <td>Column content</td>
-            </tr>
-            <tr class="table-secondary">
-              <th scope="row">Secondary</th>
-              <td>Column content</td>
-              <td>Column content</td>
-              <td>Column content</td>
-            </tr>
-            <tr class="table-success">
-              <th scope="row">Success</th>
-              <td>Column content</td>
-              <td>Column content</td>
-              <td>Column content</td>
-            </tr>
-            <tr class="table-danger">
-              <th scope="row">Danger</th>
-              <td>Column content</td>
-              <td>Column content</td>
-              <td>Column content</td>
-            </tr>
-            <tr class="table-warning">
-              <th scope="row">Warning</th>
-              <td>Column content</td>
-              <td>Column content</td>
-              <td>Column content</td>
-            </tr>
-            <tr class="table-info">
-              <th scope="row">Info</th>
-              <td>Column content</td>
-              <td>Column content</td>
-              <td>Column content</td>
-            </tr>
-            <tr class="table-light">
-              <th scope="row">Light</th>
-              <td>Column content</td>
-              <td>Column content</td>
-              <td>Column content</td>
-            </tr>
-            <tr class="table-dark">
-              <th scope="row">Dark</th>
-              <td>Column content</td>
-              <td>Column content</td>
-              <td>Column content</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div>
-        <h3 id="tables-stripped">Stripped rows</h3>
-        <table class="table table-striped table-responsive w-100 d-block d-table">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Larry</td>
-              <td>the Bird</td>
-              <td>@twitter</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="bs-component table-responsive">
-        <h3 id="tables-bordered">Bordered table</h3>
-        <table class="table table-bordered table-responsive w-100 d-block d-table">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Larry</td>
-              <td>the Bird</td>
-              <td>@twitter</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div>
-        <h3 id="base">Base table</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>Header</th>
-              <th>Header</th>
-              <th>Header</th>
-              <th>Header</th>
-              <th>Header</th>
-              <th>Header</th>
-              <th>Header</th>
-              <th>Header</th>
-              <th>Header</th>
-              <th>Header</th>
-              <th>Header</th>
-              <th>Header</th>
-              <th>Header</th>
-              <th>Header</th>
-              <th>Header</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-            </tr>
-            <tr>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-            </tr>
-            <tr>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <!-- /example -->
-    </div>
-  </div>
-</div>
-<div class="bs-docs-section">
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="page-header">
-        <h2 id="forms">Forms</h2>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-6">
-      <div class="bs-component">
-        <form>
-          <fieldset>
-            <legend>Legend</legend>
-            <div class="form-group row">
-              <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
-              <div class="col-sm-10">
-                <input type="text" readonly="" class="form-control-plaintext" id="staticEmail" value="email@example.com" />
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
-            </div>
-            <div class="form-group">
-              <label for="exampleSelect1">Example select</label>
-              <select class="form-control" id="exampleSelect1">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="exampleSelect2">Example multiple select</label>
-              <select multiple="" class="form-control" id="exampleSelect2">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="exampleTextarea">Example textarea</label>
-              <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-            </div>
-            <div class="form-group">
-              <label for="exampleInputFile">File input</label>
-              <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp" />
-              <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
-            </div>
-            <fieldset class="form-group">
-              <legend>Radio buttons</legend>
-              <div class="form-check">
-                <label class="form-check-label">
-                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked="" /> Option one is this and that&mdash;be sure to include why it's great </label>
-              </div>
-              <div class="form-check">
-                <label class="form-check-label">
-                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2" /> Option two can be something else and selecting it will deselect option one </label>
-              </div>
-              <div class="form-check disabled">
-                <label class="form-check-label">
-                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled="" /> Option three is disabled </label>
-              </div>
-            </fieldset>
-            <fieldset class="form-group">
-              <legend>Checkboxes</legend>
-              <div class="form-check">
-                <label class="form-check-label">
-                  <input class="form-check-input" type="checkbox" value="" checked="" /> Option one is this and that&mdash;be sure to include why it's great </label>
-              </div>
-              <div class="form-check disabled">
-                <label class="form-check-label">
-                  <input class="form-check-input" type="checkbox" value="" disabled="" /> Option two is disabled </label>
-              </div>
-            </fieldset>
-            <fieldset class="form-group">
-              <legend>Sliders</legend>
-              <label for="customRange1">Example range</label>
-              <input type="range" class="custom-range" id="customRange1" />
-            </fieldset>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </fieldset>
-        </form>
-      </div>
-    </div>
-    <div class="col-lg-4 offset-lg-1">
-      <form class="bs-component">
-        <div class="form-group">
-          <fieldset disabled="">
-            <label class="control-label" for="disabledInput">Disabled input</label>
-            <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled="" />
-          </fieldset>
-        </div>
-        <div class="form-group">
-          <fieldset>
-            <label class="control-label" for="readOnlyInput">Readonly input</label>
-            <input class="form-control" id="readOnlyInput" type="text" placeholder="Readonly input here…" readonly="" />
-          </fieldset>
-        </div>
-        <div class="form-group has-success">
-          <label class="form-control-label" for="inputSuccess1">Valid input</label>
-          <input type="text" value="correct value" class="form-control is-valid" id="inputValid" />
-          <div class="valid-feedback">Success! You've done it.</div>
-        </div>
-        <div class="form-group has-danger">
-          <label class="form-control-label" for="inputDanger1">Invalid input</label>
-          <input type="text" value="wrong value" class="form-control is-invalid" id="inputInvalid" />
-          <div class="invalid-feedback">Sorry, that username's taken. Try another?</div>
-        </div>
-        <div class="form-group">
-          <label class="col-form-label col-form-label-lg" for="inputLarge">Large input</label>
-          <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" id="inputLarge" />
-        </div>
-        <div class="form-group">
-          <label class="col-form-label" for="inputDefault">Default input</label>
-          <input type="text" class="form-control" placeholder="Default input" id="inputDefault" />
-        </div>
-        <div class="form-group">
-          <label class="col-form-label col-form-label-sm" for="inputSmall">Small input</label>
-          <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" id="inputSmall" />
-        </div>
-        <div class="form-group">
-          <label class="control-label">Input addons</label>
-          <div class="form-group">
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text">$</span>
-              </div>
-              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" />
-              <div class="input-group-append">
-                <span class="input-group-text">.00</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </form>
-      <div class="bs-component">
-        <fieldset>
-          <legend>Custom forms</legend>
-          <div class="form-group">
-            <div class="custom-control custom-radio">
-              <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked="" />
-              <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
-            </div>
-            <div class="custom-control custom-radio">
-              <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" />
-              <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
-            </div>
-            <div class="custom-control custom-radio">
-              <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" disabled="" />
-              <label class="custom-control-label" for="customRadio3">Disabled custom radio</label>
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="customCheck1" checked="" />
-              <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
-            </div>
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="customCheck2" disabled="" />
-              <label class="custom-control-label" for="customCheck2">Disabled custom checkbox</label>
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="custom-control custom-switch">
-              <input type="checkbox" class="custom-control-input" id="customSwitch1" checked="" />
-              <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
-            </div>
-            <div class="custom-control custom-switch">
-              <input type="checkbox" class="custom-control-input" disabled="" id="customSwitch2" />
-              <label class="custom-control-label" for="customSwitch2">Disabled switch element</label>
-            </div>
-          </div>
-          <div class="form-group">
-            <select class="custom-select">
-              <option selected="">Open this select menu</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <div class="input-group mb-3">
-              <div class="custom-file">
-                <input type="file" class="custom-file-input" id="inputGroupFile02" />
-                <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
-              </div>
-              <div class="input-group-append">
-                <span class="input-group-text">Upload</span>
-              </div>
-            </div>
-          </div>
-        </fieldset>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="bs-docs-section">
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="page-header">
-        <h2 id="navs">Navs</h2>
-      </div>
-    </div>
-  </div>
-  <div class="row" style="margin-bottom: 2rem;">
-    <div class="col-lg-6">
-      <h3 id="nav-tabs">Tabs</h3>
-      <div class="bs-component">
-        <ul class="nav nav-tabs">
-          <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#profile">Profile</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
-            </div>
-          </li>
-        </ul>
-        <div id="myTabContent" class="tab-content">
-          <div class="tab-pane fade show active" id="home">
-            <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
-          </div>
-          <div class="tab-pane fade" id="profile">
-            <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
-          </div>
-          <div class="tab-pane fade" id="dropdown1">
-            <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.</p>
-          </div>
-          <div class="tab-pane fade" id="dropdown2">
-            <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-6">
-      <h3 id="nav-pills">Pills</h3>
-      <div class="bs-component">
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Active</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
-      </div>
-      <br />
-      <div class="bs-component">
-        <ul class="nav nav-pills flex-column">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Active</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-6">
-      <h3 id="nav-breadcrumbs">Breadcrumbs</h3>
-      <div class="bs-component">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item active">Home</li>
-        </ol>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="#">Home</a>
-          </li>
-          <li class="breadcrumb-item active">Library</li>
-        </ol>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="#">Home</a>
-          </li>
-          <li class="breadcrumb-item">
-            <a href="#">Library</a>
-          </li>
-          <li class="breadcrumb-item active">Data</li>
-        </ol>
-      </div>
-    </div>
-    <div class="col-lg-6">
-      <h3 id="pagination">Pagination</h3>
-      <div class="bs-component">
-        <div>
-          <ul class="pagination">
-            <li class="page-item disabled">
-              <a class="page-link" href="#">&laquo;</a>
-            </li>
-            <li class="page-item active">
-              <a class="page-link" href="#">1</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">2</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">3</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">4</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">5</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">&raquo;</a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <ul class="pagination pagination-lg">
-            <li class="page-item disabled">
-              <a class="page-link" href="#">&laquo;</a>
-            </li>
-            <li class="page-item active">
-              <a class="page-link" href="#">1</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">2</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">3</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">&raquo;</a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <ul class="pagination pagination-sm">
-            <li class="page-item disabled">
-              <a class="page-link" href="#">&laquo;</a>
-            </li>
-            <li class="page-item active">
-              <a class="page-link" href="#">1</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">2</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">3</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">4</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">5</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">&raquo;</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="bs-docs-section">
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="page-header">
-        <h2 id="indicators">Indicators</h2>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-12">
-      <h3>Alerts</h3>
-      <div class="bs-component">
-        <div class="alert alert-dismissible alert-warning">
-          <button type="button" class="close" data-dismiss="alert">&times;</button>
-          <h4 class="alert-heading">Warning!</h4>
-          <p class="mb-0">Best check yo self, you're not looking too good. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, <a href="#" class="alert-link">vel scelerisque nisl consectetur et</a>. </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-4">
-      <div class="bs-component">
-        <div class="alert alert-dismissible alert-danger">
-          <button type="button" class="close" data-dismiss="alert">&times;</button>
-          <strong>Oh snap!</strong>
-          <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4">
-      <div class="bs-component">
-        <div class="alert alert-dismissible alert-success">
-          <button type="button" class="close" data-dismiss="alert">&times;</button>
-          <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4">
-      <div class="bs-component">
-        <div class="alert alert-dismissible alert-info">
-          <button type="button" class="close" data-dismiss="alert">&times;</button>
-          <strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important.
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-4">
-      <div class="bs-component">
-        <div class="alert alert-dismissible alert-primary">
-          <button type="button" class="close" data-dismiss="alert">&times;</button>
-          <strong>Oh snap!</strong>
-          <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4">
-      <div class="bs-component">
-        <div class="alert alert-dismissible alert-secondary">
-          <button type="button" class="close" data-dismiss="alert">&times;</button>
-          <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4">
-      <div class="bs-component">
-        <div class="alert alert-dismissible alert-light">
-          <button type="button" class="close" data-dismiss="alert">&times;</button>
-          <strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important.
-        </div>
-      </div>
-    </div>
-  </div>
-  <div>
-    <h3>Badges</h3>
-    <div class="bs-component" style="margin-bottom: 40px;">
-      <span class="badge badge-primary">Primary</span>
-      <span class="badge badge-secondary">Secondary</span>
-      <span class="badge badge-success">Success</span>
-      <span class="badge badge-danger">Danger</span>
-      <span class="badge badge-warning">Warning</span>
-      <span class="badge badge-info">Info</span>
-      <span class="badge badge-light">Light</span>
-      <span class="badge badge-dark">Dark</span>
-    </div>
-    <div class="bs-component">
-      <span class="badge badge-pill badge-primary">Primary</span>
-      <span class="badge badge-pill badge-secondary">Secondary</span>
-      <span class="badge badge-pill badge-success">Success</span>
-      <span class="badge badge-pill badge-danger">Danger</span>
-      <span class="badge badge-pill badge-warning">Warning</span>
-      <span class="badge badge-pill badge-info">Info</span>
-      <span class="badge badge-pill badge-light">Light</span>
-      <span class="badge badge-pill badge-dark">Dark</span>
-    </div>
-  </div>
-</div>
-<div class="bs-docs-section">
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="page-header">
-        <h2 id="images">Images</h2>
-      </div>
-    </div>
-  </div>
-  <div class="bs-docs-section">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <img src="https://picsum.photos/seed/53/100/120" class="mx-auto border border-primary d-inline" alt="..." />
-         <img src="https://picsum.photos/seed/60/100" class="mx-auto rounded-circle border border-primary d-inline" alt="..." />
-        <img src="https://picsum.photos/seed/70/150/120" class="mx-auto rounded-pill border border-primary d-inline" alt="..." />
-        <img src="https://picsum.photos/seed/77/120" class="mx-auto rounded-0 border border-primary d-inline" alt="..." />
-      </div>
-    </div>
-  </div>
-</div>
-<div class="bs-docs-section">
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="page-header">
-        <h2 id="progress">Progress</h2>
-      </div>
-      <h3 id="progress-basic">Basic</h3>
-      <div class="bs-component">
-        <div class="progress">
-          <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-      </div>
-      <h3 id="progress-alternatives">Contextual alternatives</h3>
-      <div class="bs-component">
-        <div class="progress">
-          <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <div class="progress">
-          <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <div class="progress">
-          <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <div class="progress">
-          <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-      </div>
-      <h3 id="progress-multiple">Multiple bars</h3>
-      <div class="bs-component">
-        <div class="progress">
-          <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-          <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-          <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-      </div>
-      <h3 id="progress-striped">Striped</h3>
-      <div class="bs-component">
-        <div class="progress">
-          <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <div class="progress">
-          <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <div class="progress">
-          <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <div class="progress">
-          <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <div class="progress">
-          <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-      </div>
-      <h4 id="progress-animated">Animated</h4>
-      <div class="bs-component">
-        <div class="progress">
-          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="bs-docs-section">
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="page-header">
-        <h2 id="containers">Containers</h2>
-      </div>
-      <div class="bs-component">
-        <div class="jumbotron">
-          <h2 class="display-3">Hello, world!</h2>
-          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-          <hr class="my-4" />
-          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-          <p class="lead">
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-12">
-      <h3 id="list-groups">List groups</h3>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-6">
-      <div class="bs-component">
-        <ul class="list-group">
-          <li class="list-group-item d-flex justify-content-between align-items-center"> Cras justo odio <span class="badge badge-primary badge-pill">14</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center"> Dapibus ac facilisis in <span class="badge badge-primary badge-pill">2</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center"> Morbi leo risus <span class="badge badge-primary badge-pill">1</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="col-lg-6">
-      <div class="bs-component">
-        <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action active"> Cras justo odio </a>
-          <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in </a>
-          <a href="#" class="list-group-item list-group-item-action disabled">Morbi leo risus </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row mt-2">
-    <div class="col-lg-12">
-      <div class="bs-component">
-        <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
-            <div class="d-flex w-100 justify-content-between">
-              <h6 class="mb-1">List group item heading</h6>
-              <small>3 days ago</small>
-            </div>
-            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-            <small>Donec id elit non mi porta.</small>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-            <div class="d-flex w-100 justify-content-between">
-              <h6 class="mb-1">List group item heading</h6>
-              <small class="text-muted">3 days ago</small>
-            </div>
-            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-            <small class="text-muted">Donec id elit non mi porta.</small>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-12">
-      <h3 id="cards">Cards</h3>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-6">
-      <div class="bs-component">
-        <h4 id="cards-bg">Background</h4>
-        <div class="card bg-primary mb-3">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <h5 class="card-title">Primary card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-        <div class="card bg-secondary mb-3">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <h5 class="card-title">Secondary card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-        <div class="card text-white bg-success mb-3">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <h5 class="card-title">Success card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-        <div class="card text-white bg-danger mb-3">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <h5 class="card-title">Danger card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-        <div class="card text-white bg-warning mb-3">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <h5 class="card-title">Warning card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-        <div class="card text-white bg-info mb-3">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <h5 class="card-title">Info card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-        <div class="card bg-light mb-3">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <h5 class="card-title">Light card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-        <div class="card text-white bg-dark mb-3">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <h5 class="card-title">Dark card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="bs-component">
-        <h4 id="cards-out">Outline</h4>
-        <div class="card text-primary border-primary mb-3">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <h5 class="card-title">Primary card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-        <div class="card text-secondary border-secondary mb-3">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <h5 class="card-title">Secondary card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-        <div class="card text-success border-success mb-3">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <h5 class="card-title">Success card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-        <div class="card text-danger border-danger mb-3">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <h5 class="card-title">Danger card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-        <div class="card text-warning border-warning mb-3">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <h5 class="card-title">Warning card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-        <div class="card text-info border-info mb-3">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <h5 class="card-title">Info card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-        <div class="card border-light mb-3">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <h5 class="card-title">Light card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-        <div class="card border-dark mb-3">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <h5 class="card-title">Dark card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-<div class="row">
-  <div class="col-lg-12">
-    <div class="bs-component">
-      <div class="card mb-3 border border-primary">
-        <img src="https://picsum.photos/seed/17/750/325" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-      <div class="card mb-3 border border-primary">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-        <img src="https://picsum.photos/seed/57/750/325" class="card-img-bottom" alt="..." />
-      </div>
-    </div>
-  </div>
-</div>
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="bs-component">
-        <div class="card mb-3">
-          <h3 class="card-header">Card header</h3>
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <h6 class="card-subtitle text-muted">Support card subtitle</h6>
-          </div>
-          <svg xmlns="http://www.w3.org/2000/svg" class="d-block user-select-none" width="100%" height="200" aria-label="Placeholder: Image cap" focusable="false" role="img" preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" style="font-size:1.125rem;text-anchor:middle">
-            <rect width="100%" height="100%" fill="#868e96"></rect>
-            <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-          </svg>
-          <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Cras justo odio</li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Vestibulum at eros</li>
-          </ul>
-          <div class="card-body">
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
-          </div>
-          <div class="card-footer text-muted"> 2 days ago </div>
-        </div>
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="bs-docs-section">
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="page-header">
-        <h2 id="dialogs">Dialogs</h2>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <h3>Popovers</h3>
-      <div class="bs-component" style="margin-bottom: 3em;">
-        <button type="button" class="btn btn-secondary" title="Popover Title" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Left</button>
-        <button type="button" class="btn btn-secondary" title="Popover Title" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Top</button>
-        <button type="button" class="btn btn-secondary" title="Popover Title" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
-                sagittis lacus vel augue laoreet rutrum faucibus.">Bottom</button>
-        <button type="button" class="btn btn-secondary" title="Popover Title" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Right</button>
-      </div>
-      <h3>Tooltips</h3>
-      <div class="bs-component" style="margin-bottom: 3em;">
-        <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Left</button>
-        <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Top</button>
-        <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Bottom</button>
-        <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Right</button>
-      </div>
-      <h3>Toasts</h3>
-      <div class="bs-component">
-        <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
-          <div class="toast-header">
-            <strong class="mr-auto">Bootstrap</strong>
-            <small>11 mins ago</small>
-            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="toast-body"> Hello, world! This is a toast message. </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<h2 id="chulapa-comp">
-  <span class="chulapa">Chulapa</span> components
-</h2>
+<ol>
+  <li>Models: model objects that can be agnostic or belong to a certain flavor of ML/AI library;</li>
+  <li>Parameters: Constant values related to the models (e.g. the weights of a Neural Network);</li>
+  <li>Artifacts: Every sort of file generated in a run. You can, for instance, save an image (like the plot of a DecisionTree) or a table.</li>
+</ol>
 
-</div>
-				]]>
-			</description>
-			<link>https://dieghernan.github.io/20201231_current-skin/</link>
-			<category>posts</category>
-		    <category>bootstrap</category><category>current-theme</category><category>demo</category><category>header-hero</category><category>image</category><category>skin</category><media:title type="html"><![CDATA[Current skin ]]></media:title>
-      <media:content url="https://picsum.photos/id/1018/2000/2000" medium="image"/>
-      <media:thumbnail url="https://picsum.photos/id/1018/2000/2000" /><guid isPermaLink="true">https://dieghernan.github.io/20201231_current-skin/</guid>
-      <pubDate>Thu, 31 Dec 2020 00:00:00 +0000</pubDate>
-		</item><item>
-			<title>The Acueduct of Segovia</title>
-			<description>
-				<![CDATA[	
- 				<h3>20 centuries ago</h3>
-    		<p>1 min.</p>
-				<div><p>The <strong>Aqueduct of Segovia</strong> (Spanish: <em>Acueducto de Segovia</em>; more accurately, the aqueduct bridge) is a Roman aqueduct in Segovia, Spain. It is one of the best-preserved elevated Roman aqueducts and the foremost symbol of Segovia, as evidenced by its presence on the city’s coat of arms.</p>
-</div>
-				]]>
-			</description>
-			<link>https://dieghernan.github.io/20191127_acueduct-of-segovia/</link>
-			<category>posts</category>
-		    <category>downtown</category><category>image</category><category>landscape</category><category>project-links</category><category>trips</category><category>wikipedia</category><media:title type="html"><![CDATA[The Acueduct of Segovia ]]></media:title>
-      <media:content url="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Acueducto_Segovia_noche.JPG/1024px-Acueducto_Segovia_noche.JPG" medium="image"/>
-      <media:thumbnail url="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Acueducto_Segovia_noche.JPG/1024px-Acueducto_Segovia_noche.JPG" /><guid isPermaLink="true">https://dieghernan.github.io/20191127_acueduct-of-segovia/</guid>
-      <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
-		</item><item>
-			<title>A landing page</title>
-			<description>
-				<![CDATA[	
- 				<h3>With image header</h3>
-    		<p>1 min.</p>
-				<div><p>A simple landing page with an image on top. Transparencies (<code class="language-plaintext highlighter-rouge">png</code>) works better on this combination.</p>
-</div>
-				]]>
-			</description>
-			<link>https://dieghernan.github.io/20190803_landing-page/</link>
-			<category>posts</category>
-		    <category>demo</category><category>example</category><category>guest-author</category><category>image</category><category>layout</category><media:title type="html"><![CDATA[A landing page ]]></media:title>
-      <media:content url="https://dieghernan.github.io/chulapa/assets/img/site/transparent.png" medium="image"/>
-      <media:thumbnail url="https://dieghernan.github.io/chulapa/assets/img/site/transparent.png" /><guid isPermaLink="true">https://dieghernan.github.io/20190803_landing-page/</guid>
-      <pubDate>Sat, 03 Aug 2019 00:00:00 +0000</pubDate>
-		</item><item>
-			<title>Dean Village</title>
-			<description>
-				<![CDATA[	
- 				
-    		<p>1 min.</p>
-				<div><blockquote>
-  <p><strong>Dean Village</strong> (from <em>dene</em>, meaning ‘<em>deep valley</em>’) is a former village immediately northwest of the city centre of Edinburgh, Scotland. It was known as the “Water of Leith Village” and was the centre of a successful grain milling area for more than 800 years. At one time there were no fewer than eleven working mills there, driven by the strong currents of the Water of Leith.</p>
+<p>These objects are tracked in a <em>run</em> level within an <em>experiment</em>. An <em>experiment</em> is a general environment for MLflow to store information. A run happens within an environment. A run is pretty much the name MLflow gives to an algorithm execution.</p>
 
-  <p class="blockquote-footer">From <a href="https://en.wikipedia.org/wiki/Dean_Village">Wikipedia</a></p>
-</blockquote>
+<p>To centralize all components and facilitate usage, MLflow has a really intuitive UI that can be easily started from the terminal.</p>
 
-<p>That was a blockquote with a footer added via kramdown. See <a href="https://getbootstrap.com/docs/4.5/content/typography/">Bootstrap Typography</a> 
-to understand <code class="language-plaintext highlighter-rouge">.blockquote-footer</code> class.
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Well_Court%2C_Dean_Village%2C_Edinburgh_%2844485996381%29.jpg/800px-Well_Court%2C_Dean_Village%2C_Edinburgh_%2844485996381%29.jpg" alt="Dean Village" /></p>
-</div>
-				]]>
-			</description>
-			<link>https://dieghernan.github.io/20190502_dean-village/</link>
-			<category>posts</category>
-		    <category>bootstrap</category><category>demo</category><category>downtown</category><category>edinburgh</category><category>image</category><category>kramdown</category><category>landscape</category><category>trips</category><category>wikipedia</category><media:title type="html"><![CDATA[Dean Village ]]></media:title>
-      <media:content url="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Well_Court%2C_Dean_Village%2C_Edinburgh_%2844485996381%29.jpg/800px-Well_Court%2C_Dean_Village%2C_Edinburgh_%2844485996381%29.jpg" medium="image"/>
-      <media:thumbnail url="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Well_Court%2C_Dean_Village%2C_Edinburgh_%2844485996381%29.jpg/800px-Well_Court%2C_Dean_Village%2C_Edinburgh_%2844485996381%29.jpg" /><guid isPermaLink="true">https://dieghernan.github.io/20190502_dean-village/</guid>
-      <pubDate>Thu, 02 May 2019 00:00:00 +0000</pubDate>
-		</item><item>
-			<title>Urban art</title>
-			<description>
-				<![CDATA[	
- 				<h3>Creativity is everywhere</h3>
-    		<p>1 min.</p>
-				<div><p>Urban artists can use anything as a canvas to express their art</p>
+<p>MLflow can store all its files and artifacts locally. But, you can use a DB such as PostgreSQL to log the artifacts. For my tests I left it saving the data locally. In this case, MLflow generates a <code class="language-plaintext highlighter-rouge">mlruns</code> folder in the directory of the project that I supress in the repo using <code class="language-plaintext highlighter-rouge">.gitignore</code>.</p>
 
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Madrid_-_Graffiti_11.jpg/407px-Madrid_-_Graffiti_11.jpg" alt="Grunge is not dead" /></p>
+<h2 id="a-quick-problem-for-a-quick-start">A Quick Problem for a Quick Start</h2>
+<p>To try out MLflow in practice I used a basic dataset to solve a straightfoward problem. I’ve used data sourced from Amazon made available in Kaggle to <strong>predict the sales</strong> amount for certain groceries in the UK. You can find the data <a href="https://www.kaggle.com/datasets/dalmacyali1905/amazon-uk-grocery-dataset-unsupervised-learning/data">here</a>.</p>
 
-<p class="caption">Picture by <a href="https://commons.m.wikimedia.org/wiki/User:Zarateman">Zarateman</a></p>
-</div>
-				]]>
-			</description>
-			<link>https://dieghernan.github.io/20181109_urban_art/</link>
-			<category>posts</category>
-		    <category>downtown</category><category>image</category><category>street</category><category>urban art</category><media:title type="html"><![CDATA[Urban art ]]></media:title>
-      <media:content url="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Madrid_-_Graffiti_11.jpg/407px-Madrid_-_Graffiti_11.jpg" medium="image"/>
-      <media:thumbnail url="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Madrid_-_Graffiti_11.jpg/407px-Madrid_-_Graffiti_11.jpg" /><guid isPermaLink="true">https://dieghernan.github.io/20181109_urban_art/</guid>
-      <pubDate>Fri, 09 Nov 2018 00:00:00 +0000</pubDate>
-		</item><item>
-			<title>Flake it till you make it</title>
-			<description>
-				<![CDATA[	
- 				<h3>Excerpt from Soulshaping by Jeff Brown</h3>
-    		<p>2 min.</p>
-				<div><p>Under what circumstances should we step off a path? When is it essential that we finish what we start? If I bought a bag of peanuts and had an allergic reaction, no one would fault me if I threw it out. If I ended a relationship with a woman who hit me, no one would say that I had a commitment problem. But if I walk away from a seemingly secure route because my soul has other ideas, I am a flake?</p>
+<p>The main focus of this test is to understand and use MLflow. So, for this purpose, only basic data cleaning was performed. Let’s get into it.</p>
 
-<p>The truth is that no one else can definitively know the path we are here to walk. It’s tempting to listen—many of us long for the omnipotent other—but unless they are genuine psychic intuitives, they can’t know. All others can know is their own truth, and if they’ve actually done the work to excavate it, they will have the good sense to know that they cannot genuinely know anyone else’s. Only soul knows the path it is here to walk. Since you are the only one living in your temple, only you can know its scriptures and interpretive structure.</p>
+<p>First things first, let’s get a sense of the data at hand. We have data for over 6.000 products that contain some features regarding the product itself as well as its performance in the marketplace (e.g. price, sales, revenue, …). See an example below:</p>
 
-<p>At the heart of the struggle are two very different ideas of success—survival-driven and soul-driven. For survivalists, success is security, pragmatism, power over others. Success is the absence of material suffering, the nourishing of the soul be damned. It is an odd and ironic thing that most of the material power in our world often resides in the hands of younger souls. Still working in the egoic and material realms, they love the sensations of power and focus most of their energy on accumulation. Older souls tend not to be as materially driven. They have already played the worldly game in previous lives and they search for more subtle shades of meaning in this one—authentication rather than accumulation. They are often ignored by the culture at large, although they really are the truest warriors.</p>
+<p><img src="/assets/img/mlflow-quickstart/data-excerpt.webp" alt="Raw Data Excerpt" /></p>
 
-<p>A soulful notion of success rests on the actualization of our innate image. Success is simply the completion of a soul step, however unsightly it may be. We have finished what we started when the lesson is learned. What a fear-based culture calls a wonderful opportunity may be fruitless and misguided for the soul. Staying in a passionless relationship may satisfy our need for comfort, but it may stifle the soul. Becoming a famous lawyer is only worthwhile if the soul demands it. It is an essential failure if you are called to be a monastic this time around. If you need to explore and abandon ten careers in order to stretch your soul toward its innate image, then so be it. Flake it till you make it.</p>
-</div>
-				]]>
-			</description>
-			<link>https://dieghernan.github.io/20150226_flake-it-till-you-make-it/</link>
-			<category>posts</category>
-		    <category>manuscript</category><category>random</category><guid isPermaLink="true">https://dieghernan.github.io/20150226_flake-it-till-you-make-it/</guid>
-      <pubDate>Thu, 26 Feb 2015 00:00:00 +0000</pubDate>
-		</item><item>
-			<title>Test markdown</title>
-			<description>
-				<![CDATA[	
- 				<h3>Each post also has a subtitle</h3>
-    		<p>1 min.</p>
-				<div><p>You can write regular <a href="http://markdowntutorial.com/">markdown</a> here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to <a href="http://markdowntutorial.com/">take 5 minutes to learn how to write in markdown</a> - it’ll teach you how to transform regular text into bold/italics/headings/tables/etc.</p>
+<p>We fetch the raw data and after some cleaning, feature engineering and subsetting we end up with a little over 5.000 products with the following features:</p>
 
-<p><strong>Here is some bold text</strong></p>
+<p><img src="/assets/img/mlflow-quickstart/processed-data-excerpt.webp" alt="Processed Data Excerpt" /></p>
 
-<h2 id="here-is-a-secondary-heading">Here is a secondary heading</h2>
+<p>With this data, we can start running models for the sales column. Keep in mind not all the features in the picture above will be used. I’ll be using a simple Linear Regression as a baseline for comparison with other models (and to help show the power of MLflow down the road).</p>
 
-<p>Here’s a useless table:</p>
+<h2 id="using-mlflow">Using MLflow</h2>
+<p>MLflow can be installed as a library in your pip or conda environment. So you can bring up a terminal and run:</p>
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: left">Number</th>
-      <th style="text-align: left">Next number</th>
-      <th style="text-align: left">Previous number</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">Five</td>
-      <td style="text-align: left">Six</td>
-      <td style="text-align: left">Four</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Ten</td>
-      <td style="text-align: left">Eleven</td>
-      <td style="text-align: left">Nine</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Seven</td>
-      <td style="text-align: left">Eight</td>
-      <td style="text-align: left">Six</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Two</td>
-      <td style="text-align: left">Three</td>
-      <td style="text-align: left">One</td>
-    </tr>
-  </tbody>
-</table>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>mlflow
 
-<p>How about a yummy crepe?</p>
+<span class="c"># or, if using Anaconda/Miniconda:</span>
 
-<p><img src="http://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg" alt="Crepe" /></p>
-
-<p>Here’s a code chunk:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
+conda <span class="nb">install</span> <span class="nt">-c</span> conda-forge 
 </code></pre></div></div>
 
-<p>And here is the same code with syntax highlighting:</p>
+<p>I’ll be using sklearn. I can simply import mlflow to use it in my code. With it imported I can use the following logic to track my models:</p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">foo</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">return</span><span class="p">(</span><span class="nx">x</span> <span class="o">+</span> <span class="mi">5</span><span class="p">);</span>
-<span class="p">}</span>
-<span class="nf">foo</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Other imports #
+</span><span class="kn">import</span> <span class="n">mlflow</span>
+
+<span class="n">mlflow</span><span class="p">.</span><span class="nf">autolog</span><span class="p">()</span>
+
+<span class="c1">### Data ingestion ###
+### Sklearn stuff ###
+</span>
+<span class="c1"># Baseline Model
+</span><span class="k">with</span> <span class="n">mlflow</span><span class="p">.</span><span class="nf">start_run</span><span class="p">()</span> <span class="k">as</span> <span class="n">run</span><span class="p">:</span>
+
+    <span class="n">lr</span><span class="p">.</span><span class="nf">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+    <span class="n">y_pred</span> <span class="o">=</span> <span class="n">lr</span><span class="p">.</span><span class="nf">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+    <span class="n">mse</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span> <span class="o">*</span> <span class="nf">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">squared</span> <span class="o">=</span> <span class="bp">False</span><span class="p">)</span>
+    <span class="n">mae</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span> <span class="o">*</span> <span class="nf">mean_absolute_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+    <span class="n">r2</span> <span class="o">=</span> <span class="nf">r2_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+
+    <span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">Logging Baseline Linear Regression Results</span><span class="sh">'</span><span class="p">)</span>
+    <span class="n">mlflow</span><span class="p">.</span><span class="nf">log_metrics</span><span class="p">({</span><span class="sh">'</span><span class="s">Neg. RMSE</span><span class="sh">'</span><span class="p">:</span><span class="n">mse</span><span class="p">,</span>
+                        <span class="sh">'</span><span class="s">Neg. MAE</span><span class="sh">'</span><span class="p">:</span><span class="n">mae</span><span class="p">,</span>
+                        <span class="sh">'</span><span class="s">R2</span><span class="sh">'</span><span class="p">:</span><span class="n">r2</span><span class="p">})</span>
 </code></pre></div></div>
-</div>
-				]]>
-			</description>
-			<link>https://dieghernan.github.io/20150220_test-markdown/</link>
-			<category>posts</category>
-		    <category>exciting-stuff</category><category>markdown</category><guid isPermaLink="true">https://dieghernan.github.io/20150220_test-markdown/</guid>
-      <pubDate>Fri, 20 Feb 2015 00:00:00 +0000</pubDate>
-		</item><item>
-			<title>To be</title>
-			<description>
-				<![CDATA[	
- 				<h3>… or not to be?</h3>
-    		<p>1 min.</p>
-				<div><p>To be, or not to be–that is the question:
-Whether ‘tis nobler in the mind to suffer
-The slings and arrows of outrageous fortune
-Or to take arms against a sea of troubles
-And by opposing end them. To die, to sleep–
-No more–and by a sleep to say we end
-The heartache, and the thousand natural shocks
-That flesh is heir to. ‘Tis a consummation
-Devoutly to be wished. To die, to sleep–
-To sleep–perchance to dream: ay, there’s the rub,
-For in that sleep of death what dreams may come
-When we have shuffled off this mortal coil,
-Must give us pause. There’s the respect
-That makes calamity of so long life.
-For who would bear the whips and scorns of time,
-Th’ oppressor’s wrong, the proud man’s contumely
-The pangs of despised love, the law’s delay,
-The insolence of office, and the spurns
-That patient merit of th’ unworthy takes,
-When he himself might his quietus make
-With a bare bodkin? Who would fardels bear,
-To grunt and sweat under a weary life,
-But that the dread of something after death,
-The undiscovered country, from whose bourn
-No traveller returns, puzzles the will,
-And makes us rather bear those ills we have
-Than fly to others that we know not of?
-Thus conscience does make cowards of us all,
-And thus the native hue of resolution
-Is sicklied o’er with the pale cast of thought,
-And enterprise of great pitch and moment
-With this regard their currents turn awry
-And lose the name of action. – Soft you now,
-The fair Ophelia! – Nymph, in thy orisons
-Be all my sins remembered.</p>
-</div>
-				]]>
-			</description>
-			<link>https://dieghernan.github.io/20150213_hamlet-monologue/</link>
-			<category>posts</category>
-		    <category>manuscript</category><category>wikipedia</category><guid isPermaLink="true">https://dieghernan.github.io/20150213_hamlet-monologue/</guid>
-      <pubDate>Fri, 13 Feb 2015 00:00:00 +0000</pubDate>
-		</item><item>
-			<title>Dear diary</title>
-			<description>
-				<![CDATA[	
- 				
-    		<p>1 min.</p>
-				<div><p>What is it with that Mary girl?  Dragging me to school every day. As if I had a choice.  What you don’t hear in those nursery rhymes is that she starves me if I don’t go to school with her; it’s the only way I can stay alive!  I’m thinking about being adopted by Little Bo Peep, sure I may get lost, but anything is better than being with Mary and those little brats at school (shudder, shudder).</p>
-</div>
-				]]>
-			</description>
-			<link>https://dieghernan.github.io/20150127_dear-diary/</link>
-			<category>posts</category>
-		    <category>diary</category><category>manuscript</category><category>random</category><category>school</category><guid isPermaLink="true">https://dieghernan.github.io/20150127_dear-diary/</guid>
-      <pubDate>Tue, 27 Jan 2015 00:00:00 +0000</pubDate>
-		</item><item>
-			<title>Soccer</title>
-			<description>
-				<![CDATA[	
- 				<h3>Best sport ever!</h3>
-    		<p>1 min.</p>
-				<div><p>From Wikipedia:</p>
 
-<p>Association football, more commonly known as football or soccer,[2] is a sport played between two teams of eleven players with a spherical ball. It is played by 250 million players in over 200 countries, making it the world’s most popular sport.[3][4][5][6] The game is played on a rectangular field with a goal at each end. The object of the game is to score by getting the ball into the opposing goal.</p>
+<p><em>Note: keep in mind that MLflow has .autolog() methods for common flavors, but they work best up to certain versions. Check if your lib version is fully supported by autolog, if you’re going to use it. It won’t break your code necessairly, but it can lead to problems.</em></p>
 
-<p>The goalkeepers are the only players allowed to touch the ball with their hands or arms while it is in play and then only in their penalty area. Outfield players mostly use their feet to strike or pass the ball, but may use their head or torso to strike the ball instead. The team that scores the most goals by the end of the match wins. If the score is level at the end of the game, either a draw is declared or the game goes into extra time and/or a penalty shootout depending on the format of the competition. The Laws of the Game were originally codified in England by The Football Association in 1863. Association football is governed internationally by the International Federation of Association Football (FIFA; French: Fédération Internationale de Football Association) which organises a World Cup every four years.[7]</p>
+<p>I associate the code to my experiment with my <code class="language-plaintext highlighter-rouge">mlflow.autolog()</code> call. It automatically identifies I’m using sklearn (but I could use <code class="language-plaintext highlighter-rouge">mlflow.sklearn.autolog()</code>).</p>
+
+<p>Then, I use a context to call <code class="language-plaintext highlighter-rouge">mlflow.start_run()</code> to start a run in the experiment. The run in the snippet above is for the baseline <code class="language-plaintext highlighter-rouge">LinearRegression()</code>.</p>
+
+<p>If you opt to start a run outside of a context, just make sure you end the run explicitly after.</p>
+
+<p>By calling <code class="language-plaintext highlighter-rouge">.fit()</code>, MLflow automatically identifies the command and logs training metrics. I will also manually log using <code class="language-plaintext highlighter-rouge">mlflow.log_metrics()</code>. Within that run the Negative RMSE, Negative MAE and R2 scores are logged. This is done to enable comparison with test performance with other models.</p>
+
+<p>The reason to use Negative RMSE and MAE and not their positive (and most usual) counterparts is that I want to perform Hyperparameter Tuning with <code class="language-plaintext highlighter-rouge">GridSearchCV</code>. To work within the search, these metrics need to be negative.</p>
+
+<p>For the GridSearch, we use the same block used for the Linear Regression. The only change is to call the Cross Validation object instead of the model when we run <code class="language-plaintext highlighter-rouge">.fit()</code> and <code class="language-plaintext highlighter-rouge">.predict()</code>. MLflow will automatically handle what happens on the backend and will log the runs apropriately for the CV case.</p>
+
+<h2 id="tracker">Tracker</h2>
+<p>Now, let’s see how this looks after running in the mlflow UI. To start it just bring up a terminal window in the environment you have it installed and type:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mlflow ui
+</code></pre></div></div>
+
+<p>This will prompt you with a local IP adress where the UI was served to. You can open it in your browser to find the following page:</p>
+
+<p class="caption"><img src="/assets/img/mlflow-quickstart/mlflow-ui.webp" alt="MLFlow UI" />
+Initial screen of MLflow</p>
+
+<p>After running the models this is what we have. On the left, we have a list with all experiments. In this case we only have one called “Default” (automatic name assigned by MLflow, you can change it).</p>
+
+<p>Using mlflow with autolog out of the gate will associate the runs to this experiment. You can build different experiments in the ui or through the API within the code.</p>
+
+<p>On the right, we have a list of all of our runs. Each run gets one of the assigned names. One for the baseline model (ambitious-carp), one for the 3 other models I’ve used, these with Hyperparameter Tuning.</p>
+
+<p>Notice how the <code class="language-plaintext highlighter-rouge">GridSearchCV</code> objects will have a “+” to their left. If we expand, we will have the <strong>5 best performing combinations in the GridSearch!</strong> The top-level run, that encapsulates all the other runs, will be the best estimator. This would be equivalent to a <code class="language-plaintext highlighter-rouge">.best_estimator_</code> call within sklearn.</p>
+
+<p>Now with the models tracked, using the chart tab, we can can visually answer 2 questions:</p>
+
+<ul>
+  <li>Do the models outperform the baseline?</li>
+  <li>Which model performed the best?</li>
+</ul>
+
+<p class="caption"><img src="/assets/img/mlflow-quickstart/metric-graph.webp" alt="Metric Graph" />
+Example of Metric Graph by Run in MLflow</p>
+
+<p>Using the Negative MAE as example, we can see one of the strenghts of MLflow. All of our models, even the ones with tuned hyperparameters, can be easily compared side by side for any of the metrics we logged.</p>
+
+<p>This view enables us to answer both questions above. We do actually outperform de baseline (last deep-red bar), and we see that the second model (name: unequaled-horse) is the one that performs the best. This is true for all 3 metrics we’ve tracked.</p>
+
+<p>Let’s then take a deeper look into the best model by simply clicking on its name on the list. We will this way access the second component.</p>
+
+<h2 id="model">Model</h2>
+<p class="caption"><img src="/assets/img/mlflow-quickstart/model-page.webp" alt="Metric Graph" />
+Detail of a run</p>
+
+<p>This is the page that describes a run, that contains a model object. Notice how it has a lot of attributes: The data used to train and evaluate it, the parameters, the metrics tracked and the artifacts.</p>
+
+<p>The “artifacts” section is what actually holds the model container. MLflow shows us how is the schema for the data used in the model and how we call the model to make predictions, with code snippets. We will do that just in a bit.</p>
+
+<p>First, I will register the model to see how the <strong>Model Registry</strong> works. We can register a model by simply clicking on the “Register Model” button and giving it a name. After it’s registered, we can access the “Models” tab in the UI.</p>
+
+<h2 id="registry">Registry</h2>
+
+<p class="caption"><img src="/assets/img/mlflow-quickstart/registry-page.webp" alt="Registry Page" />
+Details of a registered model</p>
+
+<p>The initial screen of the registry will be a list of the <strong>registered</strong> models and their names. By clicking on a model, the screen above pops up.</p>
+
+<p>Notice how a model will have versions. The first version we generate is, naturally, Version 1. To generate a second version of a model, just log a model with the same name it has in the registry.</p>
+
+<p>We can also add a description and information about who generated it. But what is really interesting here, along with the versioning possibilities, is the “Stage” tag.</p>
+
+<p>With it, we can assign if a model is in Staging or Production phase. To change it, we simply click on the version we want to edit and select the correspondent stage. Notice how we also have the schema, source run info and also tags we can associate to our model. I’ll put my model on “Staging”.</p>
+
+<p>It’s also worth to notice that changing the stage will trigger some actions in MLflow. For instance, when we transition a model to “Staging” a prompt shows up asking if you want that other models that get to “Staging” go to “Archived”.</p>
+
+<p><img src="/assets/img/mlflow-quickstart/model-versioning.webp" alt="Model Versioning" /></p>
+
+<p>Trasitioning registered model version to Staging
+With our model registered, we can call it easily to predict on data.</p>
+
+<h2 id="calling-a-model">Calling a Model</h2>
+<p>To call a model you need to basically pass a URI string to mlflow. There are many options to do so, I chose one that seemed the most clean and intuitive to me. Feel free to check out other options on the <a href="https://mlflow.org/docs/latest/api_reference/python_api/mlflow.sklearn.html#mlflow.sklearn.load_model"><strong>docs</strong></a>.</p>
+
+<p>To call my model to predict on data, I can simply do:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">model</span> <span class="o">=</span> <span class="n">mlflow</span><span class="p">.</span><span class="n">sklearn</span><span class="p">.</span><span class="nf">load_model</span><span class="p">(</span><span class="sh">'</span><span class="s">models:/dt_amz_prices/staging</span><span class="sh">'</span><span class="p">)</span>
+
+<span class="c1"># Given that the data corresponds to the Schema in the model
+</span><span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="p">.</span><span class="nf">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>And the trained model will run. That’s it. MLflow enables us to easily compare, share, store and use a lot different models for any given ML problem.</p>
+
+<p>This has been, of course, a simplified scenario that I used to grasp how its basic functions work. We could, very easily, also serve this registered model as an API. However, this is beyond the scope of this text.</p>
+
+<h2 id="final-thoughts">Final Thoughts</h2>
+<p>This text is a product of my personal studies to understand MLflow. I’ve used it to solve a quite simple ML problem. This was done as a way to understand how its functionalities help Data Scientists experiment in a more orderly and structured fashion.</p>
+
+<p>I’ve covered 3 of the 5 components of the tool and tried out how they can be used in a project setting. In my honest opinion, MLflow is something I am strongly considering to adopt as a standard for my own work. This is because of the following reasons:</p>
+
+<ul>
+  <li>Structure: I can test various models, with various configurations really easily, in a ordered way that I know where what is;</li>
+  <li>Easy comparability between runs: I don’t have to build extra layers of code to keep track and compare all the experiments I run. The chart mode helps a lot for model selection and comparison;</li>
+  <li>Replicability: It’s easy to call any model, not only the registered, without the fuss of opening other files and replicating the code (given the data preprocessing is the same);</li>
+  <li>Transparency : At all times we can look at parameters, features, inputs, outputs and artefacts from every model. If in a team setting you can see who did what;</li>
+  <li>UI: The UI is a major facilitator. It is clean, simple and self explanatory. This helps a lot to navigate problems with many possible solutions.
+I hope this text helped you understand the main strenghts I’ve come to experience using MLflow.</li>
+</ul>
+
+<hr />
+
+<h2 id="acknowledgements-and-links">Acknowledgements and links</h2>
+<ul>
+  <li>For the full code of the project, check out my Repo on <a href="https://github.com/bglucca/test_mlflow"><strong>GitHub</strong></a>.</li>
+  <li>Check out the <a href="https://mlflow.org/docs/latest/index.html"><strong>MLflow docs</strong></a> for further and more in-depth information.</li>
+  <li>The data for the project came from this dataset on Kaggle.
+If you liked the text, leave some claps, a comment and feel free to check out my personal page <a href="https://bglucca.github.io"><strong>here</strong></a></li>
+</ul>
 </div>
 				]]>
 			</description>
-			<link>https://dieghernan.github.io/20150119_soccer/</link>
+			<link>https://bglucca.github.io/20231012_mlflow-quickstart/</link>
 			<category>posts</category>
-		    <category>exciting-stuff</category><category>random</category><category>wikipedia</category><guid isPermaLink="true">https://dieghernan.github.io/20150119_soccer/</guid>
-      <pubDate>Mon, 19 Jan 2015 00:00:00 +0000</pubDate>
+		    <category>MLFlow</category><category>MLOps</category><category>Monitoring</category><media:title type="html"><![CDATA[MLflow 101 - My Quickstart ]]></media:title>
+      <media:content url="https://bglucca.github.io/assets/img/mlflow-quickstart/cover-image.jpg" medium="image"/>
+      <media:thumbnail url="https://bglucca.github.io/assets/img/mlflow-quickstart/cover-image.jpg" /><guid isPermaLink="true">https://bglucca.github.io/20231012_mlflow-quickstart/</guid>
+      <pubDate>Thu, 12 Oct 2023 00:00:00 +0000</pubDate>
 		</item><item>
-			<title>Pirates arrrr</title>
+			<title>You’ve got mail! Machine Learning for Customer Segmentation.</title>
+			<description>
+				<![CDATA[	
+ 				<h3>Using Data Science to better understand the customers for a mail-order company and predicting their marketing actions’ response.</h3>
+    		<p>26 min.</p>
+				<div><h1 id="table-of-contents">Table of Contents</h1>
+<ul id="markdown-toc">
+  <li><a href="#who-should-i-reach-out-to-and-where-arethey" id="markdown-toc-who-should-i-reach-out-to-and-where-arethey">Who should I reach out to? And where are they?</a></li>
+  <li><a href="#initial-eda" id="markdown-toc-initial-eda">Initial EDA</a></li>
+  <li><a href="#building-customer-segmentation" id="markdown-toc-building-customer-segmentation">Building Customer Segmentation</a></li>
+  <li><a href="#predicting-customerresponse" id="markdown-toc-predicting-customerresponse">Predicting Customer Response</a></li>
+  <li><a href="#conclusions" id="markdown-toc-conclusions">Conclusions</a></li>
+</ul>
+
+<p><strong>Disclaimer: This article and data for the development of the code are part of my submission Udacity’s Data Science Nanodegree program.</strong></p>
+
+<h2 id="who-should-i-reach-out-to-and-where-arethey">Who should I reach out to? And where are they?</h2>
+<p>These are common questions to every sort of business. Especially B2C companies that reach out directly to consumers. Thankfully, Data Science can help us better pinpoint the niches within possible markets/ population.</p>
+
+<p>In this specific article, we will be covering data for Arvato-Bertelsmann. The data provided belongs to a mix of german general population demographic data and data from one of the company’s clients: an organics mail-order comapny.</p>
+
+<p>This is a two-part analysis. The first part will be an unsupervised cluster generation and interpretation of the census data vs current customers. This helps us understand <strong>which characteristics better define our customer base.</strong></p>
+
+<p>The second part will be a supervised learning problem to predict responses to marketing actions. This can help us predict which people have the highest probability of becoming customers after marketing efforts.</p>
+
+<p>To answer these questions, we have 4 tables:</p>
+<ul>
+  <li>2 .csv files with demographic data. One is the general population data, the other is the customer base.</li>
+  <li>2 other .csv files with the Mailout information. One is the training data and the other was supposed to be the test data. But for this article, only the training data will be used.</li>
+</ul>
+
+<p><strong><em>Note: The test data for mailout information was supposed to be used as part of a Kaggle competition entry that no longer exists. This is why only the training data was used, since it has labels for scoring and model evaluation.</em></strong></p>
+
+<p>There were also 2 auxiliary tables that represented a documentation regarding the available variables and how to interpret the encodings of categorical variables.</p>
+
+<p>All files use “;” as the separator between values.</p>
+
+<p>An observation at stage is necessary: Due to terms and conditions of the data, the data cannot be shared and thus will not be found anywhere except within the Udacity Data Science Nanodegree context.</p>
+
+<p>With all the context set, lets get into the analyses. The methodology is the following: We first do an Exploratory Analysis of the Data and check for its consistency. This way, we can define any preprocessing steps to get the best out of our data.</p>
+
+<p>Then, we go to the unsupervised stage, where we try to build segments that might help us understand the companies customer base.</p>
+
+<p>At last, we move to the modelling, where we attempt to build a model to predict wether a person answers to a mailout campaign or not.</p>
+
+<p><em>Before we continue, this article is also available on my <a href="https://medium.com/@luccagomes/youve-got-mail-machine-learning-for-customer-segmentation-2c90d9b9d58d"><strong>Medium</strong></a>, if you like it better</em></p>
+
+<h2 id="initial-eda">Initial EDA</h2>
+<p>The general census data contains 891221 rows by 366 columns. The variables are divided into different groups, where each one means a different thing. For instance there is a group regarding automobile ownership information, other blocks regard the surroundings of the respondent.</p>
+
+<p>The rows represent one respondent’s responses. Each respondent is represented by an anonym ID called “LNR” in the database.</p>
+
+<h3 class="no_toc" id="fixing-cameo_columns">Fixing CAMEO_ columns</h3>
+<p>There are 3 columns in the data (<em>CAMEO_DEUG_2015, CAMEO_INTL_2015 and CAMEO_DEU_2015</em>) that raise a warning about mixed types in Data. This happens because the values “X” or “XX” show up on them, when they should be numeric types (<em>int</em> or <em>float</em>). Since there is no description on the documentation of what these values are supposed to be and since they are different to the possible values in the columns, they were replaced as NaNs.</p>
+
+<h3 class="no_toc" id="fixing-documentation-removing-undocumented-columns">Fixing Documentation - Removing undocumented columns</h3>
+<p>Another problem found was that not all columns were in the documentation, on either of the two auxiliary files. This generated 3 scenarios:</p>
+<ul>
+  <li>The naming of the column was incorrect, but it was in fact documented (salvageable);</li>
+  <li>The column name was self-explanatory enough to be associated to other columns that had similar encodings and names (salvageable);</li>
+  <li>The column was, effectively, missing from the documentation (unsalvageable).</li>
+</ul>
+
+<p>The most critical case would be the last one. When we don’t have a clear meaning to the feature we can’t assure its usefullness. Therefore, columns considered unsalvageable were dropped.</p>
+
+<p>The steps taken to set the not found columns were:</p>
+<ol>
+  <li>Get column names not in the documentation</li>
+  <li>A first automatic attempt to match columns by appending common strings to the names</li>
+  <li>A second manual verification to see if the names coincide heavily with other columns in the docs and, therefore, we can infer the meaning of the not found columns.</li>
+  <li>The columns not found after these two steps, were dropped.</li>
+</ol>
+
+<p>31 columns were dropped by this process.</p>
+
+<p>Also, with the documentation now fully representing the data, the files could be used to:</p>
+
+<ul>
+  <li>Correlate the column names to their data types (float, int,…) and variable type (numeric, interval, nominal or binary)</li>
+  <li>Correlate the column names to the variable group they belonged to</li>
+  <li>Correlate the column names to their respective NaN values that could be encoded differently</li>
+</ul>
+
+<p>To build these correlations, especially variable type, changes were made manually to the files or new files were created in a format that made fetching the documentation’s information in an easier manner.</p>
+
+<h3 class="no_toc" id="nan-handling">NaN Handling</h3>
+<p>Given the (now fixed) documentation on the value of the columns, we can extract information from the documentation to replace values that map from “unknown” to NaN.</p>
+
+<p>By ingesting this information and considering that strings that contain “unknown” in the meaning of the encoding represent NaNs, we can build a dictionary for each column to map its corresponding NaN values using pandas’ <code class="language-plaintext highlighter-rouge">.replace()</code> method:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df_attributes</span><span class="p">[[</span><span class="sh">'</span><span class="s">Attribute</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">Description</span><span class="sh">'</span><span class="p">]]</span> <span class="o">=</span> <span class="n">df_attributes</span><span class="p">[[</span><span class="sh">'</span><span class="s">Attribute</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">Description</span><span class="sh">'</span><span class="p">]].</span><span class="nf">fillna</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="sh">'</span><span class="s">ffill</span><span class="sh">'</span><span class="p">)</span>
+
+<span class="c1"># Assuming, from manual inspection from the 'Values' Spreadsheet, that NaNs are represented with substrings in Meaning col
+</span><span class="n">nan_val_df</span> <span class="o">=</span> <span class="n">df_attributes</span><span class="p">[</span><span class="n">df_attributes</span><span class="p">[</span><span class="sh">'</span><span class="s">Meaning</span><span class="sh">'</span><span class="p">].</span><span class="nb">str</span><span class="p">.</span><span class="nf">contains</span><span class="p">(</span><span class="sh">'</span><span class="s">unknown</span><span class="sh">'</span><span class="p">,</span><span class="n">regex</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span><span class="n">na</span>  <span class="o">=</span> <span class="bp">False</span><span class="p">)].</span><span class="nf">copy</span><span class="p">()</span>
+
+<span class="n">nan_val_df</span><span class="p">[</span><span class="sh">'</span><span class="s">Value</span><span class="sh">'</span><span class="p">]</span> <span class="o">=</span> <span class="n">nan_val_df</span><span class="p">[</span><span class="sh">'</span><span class="s">Value</span><span class="sh">'</span><span class="p">].</span><span class="nb">str</span><span class="p">.</span><span class="nf">replace</span><span class="p">(</span><span class="sh">'</span><span class="s">\s</span><span class="sh">'</span><span class="p">,</span><span class="sh">''</span><span class="p">,</span> <span class="n">regex</span> <span class="o">=</span> <span class="bp">True</span><span class="p">)</span>
+
+<span class="n">nan_val_df</span><span class="p">[</span><span class="sh">'</span><span class="s">Value</span><span class="sh">'</span><span class="p">]</span> <span class="o">=</span> <span class="n">nan_val_df</span><span class="p">[</span><span class="sh">'</span><span class="s">Value</span><span class="sh">'</span><span class="p">].</span><span class="nb">str</span><span class="p">.</span><span class="nf">split</span><span class="p">(</span><span class="sh">'</span><span class="s">,</span><span class="sh">'</span><span class="p">)</span>
+
+<span class="n">nan_val_map</span> <span class="o">=</span> <span class="nf">dict</span><span class="p">(</span><span class="nf">zip</span><span class="p">(</span><span class="n">nan_val_df</span><span class="p">[</span><span class="sh">'</span><span class="s">Attribute</span><span class="sh">'</span><span class="p">],</span> <span class="n">nan_val_df</span><span class="p">[</span><span class="sh">'</span><span class="s">Value</span><span class="sh">'</span><span class="p">]))</span>
+
+<span class="c1"># Reshaping the dictionary for .replace
+</span><span class="n">nested_nan_map</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">nan_val_map</span><span class="p">.</span><span class="nf">items</span><span class="p">():</span>
+    <span class="n">nested_nan_map</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="nf">int</span><span class="p">(</span><span class="n">val</span><span class="p">):</span><span class="n">np</span><span class="p">.</span><span class="n">nan</span> <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">v</span><span class="p">}</span>
+
+<span class="c1"># Mapping values to NaN
+</span><span class="n">census</span> <span class="o">=</span> <span class="n">census</span><span class="p">.</span><span class="nf">replace</span><span class="p">(</span><span class="n">nested_nan_map</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 class="no_toc" id="column-elimination-nan-proportion">Column Elimination - NaN Proportion</h3>
+<p>After mapping the NaNs to each column, we can check for high incidence of NaNs column-wise.</p>
+
+<p>Columns with a high percentage of NaN values can be discarted because they probably do not provide any sort of valuable information regarding the general properties of the population, which makes building inferences/ insights around them risky.</p>
+
+<p class="caption"><img src="/assets/img/customer-segmentation/column-nan-proportion.webp" alt="NaN Proportion" />
+Columns with a proportion of NaNs above the threshold, would be dropped.</p>
+
+<p>Columns with a proportion of NaNs above the threshold, would be dropped.The proportion threshold is a somewhat arbitrary definition. The plot above helps us understand the reasoning to why select 30% as the maximum threshold to drop a column.</p>
+
+<p>If a threshold of proportion of NaNs ≤ 30% is chosen, we drop 9 columns that do not meet this criterion and manage to retain other columns in which we can impute values. Having in mind that the amount of columns that would be dropped if a 50% threshold was selected is 8 and that the cut for 20% might be too conservative, 30% was deemed as an appropriate cut.</p>
+
+<h3 class="no_toc" id="numeric-variables-distributions">Numeric Variables Distributions</h3>
+<p>With unused columns dropped and types appropriately fixed, we can look into some of the distributions to get some insight on the variables.</p>
+
+<p>Broadly speaking, the numerical variables either needed no transformations or required to be binarized. One variable needed to be dropped.</p>
+
+<p class="caption">In general, numerical variables are left-skewed as shown below:
+<img src="/assets/img/customer-segmentation/box-plot.webp" alt="NaN Proportion" />
+Box-Plot of numerical distributions’ examples</p>
+
+<p><em>Note: The fliers (dots beyond whiskers) were ommitted to help the visualization</em></p>
+
+<p>Two variables needed to be binarized: ANZ_HH_TITEL and ANZ_KINDER. This was because they had, respectively, <strong>86.43%</strong> and <strong>82.05% of zeroes in them</strong>. On top of that, both of them showed a dominance in low discrete values. These aspects makes it really hard to consider these variables as numeric when approaching any problem. Therefore, they were binarized to represent wether or not they had that attribute.</p>
+
+<p>GEBURTSJAHR was the dropped variable. It had 44.02% of YoB as 0. Therefore, from every 10 answers, 4 wouldn’t have a YoB. Since we also have a variable that represents the age category of the respondents (ALTERSKATEGORIE). This variable was dropped.</p>
+
+<p>The binarization occurred on the preprocess stage, which will be covered in the coming section.</p>
+
+<h3 class="no_toc" id="categorical-variables-distributions">Categorical Variables Distributions</h3>
+<p>Categorical variables were more looked into especially for the interval variables. Some variables presented too many categories that not necessairly were informative, such as below:</p>
+
+<p><img src="/assets/img/customer-segmentation/cat-var-plot.webp" alt="Categorical variable distribution example" /></p>
+
+<p>Taking the example above, the consumption variable for banking shows how the answers gravitate between the 0, 3 and 6 values. Accounting other categories could make the space of options too sparse and the combinations of variables would make it even sparser. Keep in mind that there are 36 columns like the one showed above just for its group.</p>
+
+<p>So the next step was to identify the columns that showed this sparsity and reduce it by reducing the number of bins. This affected mainly columns from 2 groups:</p>
+
+<ul>
+  <li>125 x 125 Grid columns (case illustrated above): from 7 categories, reduced to 4</li>
+  <li>D19 columns in the “Household” group: 3 types of columns were identified which had respectively 10, 7 and 10 groups that were reducet to 3, 4 and 3 possible values</li>
+</ul>
+
+<p>The specifics of these alterations will be covered below in the “Preprocessing” stage</p>
+
+<h3 class="no_toc" id="cleaning-the-data-defining-preprocessing-steps">Cleaning the Data - Defining Preprocessing Steps</h3>
+<p>The approach for defining the preprocessing will use as baseline the general population demographic data. This is to ensure that no bias from the customer base or mailout base affect the conclusions or steps taken to clean the data.</p>
+
+<p>The idea is that cleaning steps that apply to the general population, should apply to its subsets since the same variables are present across all files and that all the files are technically a subset of the general population.</p>
+
+<h4 class="no_toc" id="dropping-emptyrows">Dropping empty rows</h4>
+<p>Rows that are filled with too many NaNs mean that they might be rows with a lot of imputation. What this results is that we will have rows in which a person might be described a lot by general values of the variables (mean, median, mode, etc.). This automatically might deliver bias to our analysis.</p>
+
+<p>The individuals with highly imputed responses will actually be an “average” (or other imputed value of choice) of all variables. This assumption is not reasonable if most of the data of that response isn’t from that person. We would end up having some “average” individuals</p>
+
+<p>The graph below shows a distribution of amount of rows by proportion of data missing in them. Notice how approximately 10% of the data (orange shaded area) has more than half of their information compromised by NaN values.</p>
+
+<p class="caption"><img src="/assets/img/customer-segmentation/distribution-nan-proportion.webp" alt="Distribution NaN Proportion" />
+Distribution of proportion of NaN values in the data’s rows</p>
+
+<p>Considering the information the graph displays, rows with more than 30% of its data missing will be discarted.</p>
+
+<h4 class="no_toc" id="re-encoding-the-relevant-numerical-variables-tobinary">Re-encoding the relevant numerical variables to binary</h4>
+<p>As noted in the ETL, some numerical variables had to be encoded to binary. Using a simple <code class="language-plaintext highlighter-rouge">np.where</code> is enough to encode the variables the way we need them to.</p>
+
+<h4 class="no_toc" id="fixing-objectcolumns">Fixing Object columns</h4>
+<p>Some columns are in the <code class="language-plaintext highlighter-rouge">object</code> format. This is not inherently a problem. But some columns could benefit from not being <code class="language-plaintext highlighter-rouge">object</code>:</p>
+
+<ul>
+  <li>The OST_WEST_KZ is actually a binary column</li>
+  <li>The CAMEO_DEU_2015 column could be interpreted as an interval variable.</li>
+</ul>
+
+<p>The fix to OST_WEST_KZ is straightfoward, the column values were mapped to 0 and 1. The CAMEO_DEU_2015 column had 1 integer value mapped to each one of the columns’ possible values. The smaller integer values account for the higher income classifications, the higher account for the lower incomes.</p>
+
+<h4 class="no_toc" id="imputations">Imputations</h4>
+<p>The imputation strategy used was separated in two:</p>
+<ul>
+  <li>Mode for any categorical variable (interval, nominal or binary variables)</li>
+  <li>Mean for numerical</li>
+</ul>
+
+<h4 class="no_toc" id="reencoding-d19columns">Reencoding D19 Columns</h4>
+<p>As mentioned in the ETL stage, some columns that start with the “D19” prefix could be reencoded after inspecting their distributions to reduce sparsity in the categories. This led to 4 reencodes:</p>
+
+<ul>
+  <li>Columns from the “125 x 125 Grid” that refered to consumption frequency of a group of goods. They were re-encoded into 4 groups: No transactions, consumed within 12 months, consumed within 24 months and Prospects (&gt; 24 months)</li>
+  <li>Columns from the “Household” that refered to the actuality of the last transaction: Activity within the last 12 months, activity older than 12 months, no activity</li>
+  <li>Columns from the “Household” that refered to the transaction activity in the last months (12 or 24): No transactions, low activity, increased activity, high activity</li>
+  <li>Columns from the “Household” that refered to the percentage of transactions made online: 0% online, 100% online, mixed online-offline (values between 0% and 100%)</li>
+</ul>
+
+<p>All re-encodes were made assigning an int value to each category but always mantaining the logical order of the variable. This was made so that the variables could be interpreted as interval and not simple nominal variables, since they contain an inherent order.</p>
+
+<p>After the ETL and Preprocessing notebooks, all relevant steps were turned into a .py file so that all steps could be equally applied across all files.</p>
+
+<h2 id="building-customer-segmentation">Building Customer Segmentation</h2>
+<p>With the data now cleaned and preprocessed, we can start building our segmentation. This part uses the general census data and the consumer census data. The question we want to answer at this stage is:</p>
+
+<p><strong>Do the possible consumers find themselves in specific segments of the general population?</strong></p>
+
+<p>In a more technical fashion: <strong>Given the existance of clusters in the general public data, can the consumers be found more often in specific clusters?</strong></p>
+
+<h3 class="no_toc" id="strategy-approaching-theproblem">Strategy - Approaching the problem</h3>
+<p>Given the main question at this stage, the approach had to cover (mainly):</p>
+<ol>
+  <li>A Dataset with a high amount of features (300+, possibly more after One-hot encoding the nominal variables);</li>
+  <li>A Dataset with mixed-typed data (categorical and numerical);</li>
+  <li>A Dataset with a high amount of rows (~800.000 on the general population data);</li>
+  <li>Establish a comparison between general population and consumers, given the clusters formed around general population data. Consumer data should not “leak” to form the clusters, since we aim to build clusters around the general population and see how the consumer data “fits” into this reality.</li>
+</ol>
+
+<p>To solve the 1. topic, we would usually go with using a dimensionality reduction method such as PCA. However, given the constraint of the mixed data (topic 2.), <strong>we should not use PCA</strong>. Using PCA directly on a mixed-data context, would not generate mathematically correct (and thus interpretable) results.</p>
+
+<p>We can look use alternative approaches such as Factorial Analysis of Mixed Data (FAMD). This approach is a form of generalizing Factorial Analysis to a mixed-data setting. The result is similar to PCA. For a more technical and in-depth look into the strategy <a href="https://towardsdatascience.com/famd-how-to-generalize-pca-to-categorical-and-numerical-data-2ddbeb2b9210/"><strong>this article</strong></a> explains the theory and implementation of the method.</p>
+
+<p>FAMD outputs something similar to PCA. This covers the first two main points, handling the amount of features and mixed data. Now for the last two, the solution is pretty straightfoward.</p>
+
+<p>To enable our model to train clusters on the general population and to assign them to the consumer base, we can use clustering methods that will generate centroids. This makes it possible to assign customers to the nearest centroids of the general population. This works because customer data will have the same features as the general population table.</p>
+
+<p>Considering the output of FAMD is a fully numerical table, we can use the well-known K-Means algorithm. But since we need to process 800k + rows across hundreds of columns (which might make some setups runs a little slow), we can use sklearn’s <code class="language-plaintext highlighter-rouge">cluster.MiniBatchKMeans</code> that handles confortably the amount of data to give us the results we need.</p>
+
+<h3 class="no_toc" id="famd">FAMD</h3>
+<p>To get the data ready for the FAMD, we create a function to basically One-Hot Encode nominal variables, and weigh these variables accordingly. We also use sklearn’s <code class="language-plaintext highlighter-rouge">StandardScaler</code> to handle the numerical attributes accordingly. For this work, interval variables will be considered as numerical attributes and will be handled like numericals.</p>
+
+<p>The FAMD approach used is a manual one (find more about it in the article linked in the previous section). This means that after applying these transformations, we use PCA on the transformed data. The preprocessed data for FAMD, in the end, ends up with 396 features.</p>
+
+<p>So to select the amount of Components we will have, we define an acceptable threshold for the amount of variance we want to keep and then make the transformations. The graph below shows that for a threshold of 95% of variance, selecting 225 components satisfy this criterion.</p>
+
+<p><img src="/assets/img/customer-segmentation/explained-variance.webp" alt="Explained Variance by Number of Components" /></p>
+
+<p>Starting from a higher amount of components and following with bigger steps was a deliberate approach to save processing time.</p>
+
+<h3 class="no_toc" id="mini-batchk-means">Mini Batch K-Means</h3>
+<p>With the transformed data after the FAMD process, we can train the Mini Batch K-Means algorithm and use the elbow method to choose an appropriate amount of clusters:</p>
+
+<p><img src="/assets/img/customer-segmentation/elbow-plot.webp" alt="Elbow plot" /></p>
+
+<p>From the graph above, we could select k = 14 as a reasonable amount of clusters for our problem.
+With the trained FAMD and K-Means objects trained on the overall census data, we now use them on the customer data to then classify data from both files to clusters.</p>
+
+<h3 class="no_toc" id="adjusting-customerdata">Adjusting Customer Data</h3>
+<p>To use customer data as intended, we run the same preprocessing we did for the general data and then we will simply use the <code class="language-plaintext highlighter-rouge">.transform()</code> from the PCA object and <code class="language-plaintext highlighter-rouge">.predict()</code> from the model, both fitted on general population data, to use the customer data.</p>
+
+<p>Neither the PCA or model are re-fitted on customer data to avoid that the customer’s characteristics, which could be differently distributed than the general population, affect the estimates of the cluster centroids or generates Components different from the general population. We want to classify customers according to general population groups and not to consider them jointly.</p>
+
+<p>The code to reuse the customer data with the objects trained on general data will look, generally, like this:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">customers</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="nf">read_parquet</span><span class="p">(</span><span class="n">CUSTOMER_PATH</span><span class="p">)</span>
+
+<span class="c1"># Preprocessing function
+</span><span class="n">customers</span> <span class="o">=</span> <span class="nf">prep_data_famd</span><span class="p">(</span><span class="n">customers</span><span class="p">,</span> <span class="n">nominal_vars</span><span class="p">,</span> <span class="n">binary_vars</span><span class="p">,</span> <span class="n">num_cols</span><span class="p">)</span>
+
+<span class="c1"># Dropping specific columns that aren't used in clustering
+</span><span class="n">X_cust</span> <span class="o">=</span> <span class="n">customers</span><span class="p">.</span><span class="nf">drop</span><span class="p">(</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="sh">'</span><span class="s">LNR</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">CUSTOMER_GROUP</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">ONLINE_PURCHASE</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">PRODUCT_GROUP</span><span class="sh">'</span><span class="p">])</span>
+
+<span class="c1"># Are there columns that do not match between the frames?
+</span><span class="n">na_cols</span> <span class="o">=</span> <span class="nf">set</span><span class="p">(</span><span class="n">census</span><span class="p">.</span><span class="n">columns</span><span class="p">)</span> <span class="o">-</span> <span class="nf">set</span><span class="p">(</span><span class="n">customers</span><span class="p">.</span><span class="n">columns</span><span class="p">)</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">Categories not in customer data but are in census: </span><span class="si">{</span><span class="n">na_cols</span><span class="si">}</span><span class="sh">'</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">na_cols</span><span class="p">:</span>
+    
+    <span class="n">X_cust</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">assert</span> <span class="nf">set</span><span class="p">(</span><span class="n">census</span><span class="p">.</span><span class="n">columns</span><span class="p">.</span><span class="nf">drop</span><span class="p">(</span><span class="sh">'</span><span class="s">LNR</span><span class="sh">'</span><span class="p">))</span> <span class="o">==</span> <span class="nf">set</span><span class="p">(</span><span class="n">X_cust</span><span class="p">.</span><span class="n">columns</span><span class="p">)</span>
+
+<span class="n">X_cust</span> <span class="o">=</span> <span class="n">pca</span><span class="p">.</span><span class="nf">transform</span><span class="p">(</span><span class="n">X_cust</span><span class="p">[</span><span class="n">census</span><span class="p">.</span><span class="n">columns</span><span class="p">.</span><span class="nf">drop</span><span class="p">(</span><span class="sh">'</span><span class="s">LNR</span><span class="sh">'</span><span class="p">)])</span> <span class="c1"># Order needs to be the same
+</span>
+<span class="c1"># Assigning clusters to responses
+</span><span class="n">customers</span><span class="p">[</span><span class="sh">'</span><span class="s">cluster</span><span class="sh">'</span><span class="p">]</span> <span class="o">=</span> <span class="n">kmeans_model</span><span class="p">.</span><span class="nf">predict</span><span class="p">(</span><span class="n">X_cust</span><span class="p">)</span>
+
+<span class="n">census</span><span class="p">[</span><span class="sh">'</span><span class="s">cluster</span><span class="sh">'</span><span class="p">]</span> <span class="o">=</span> <span class="n">kmeans_model</span><span class="p">.</span><span class="nf">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 class="no_toc" id="results">Results</h3>
+<p>This process gives us the following distribution in each dataset of responses for k = 14 clusters:
+<img src="/assets/img/customer-segmentation/customer-clustering-results.webp" alt="Customer Clustering" /></p>
+
+<p>There are clear differences in some clusters! We can see clusters that clearly contain more customer responses than general population responses. Especially the 1, 6, 8, 9 and 11 clusters are clusters that contain a higher proportion of customers.</p>
+
+<p>This already gives us an insight: <strong>If we want to find new customers similar to the current customer base, we should target the clusters with a notably larger proportion of responses then the general population. I.e. the clusters mentioned above.</strong></p>
+
+<p>We can go one step further and dig a little bit deeper on the interpretation of the clusters. We will first understand around which components the cluster is more heavily centered around and then look a little into some of the main variables that compose the component.</p>
+
+<p>Let’s take the cluster 11 as an example, since it contains the highest overall proportion of customers in it. More specifically, let’s look into the 3 main components of the cluster.</p>
+
+<p class="caption"><img src="/assets/img/customer-segmentation/cluster-11-components.webp" alt="Cluster 11 main components" />
+Main components for cluster 11</p>
+
+<p>The cluster is heavily centered at high values in the 0 component, backed up by other components. Here, only the 3 top components will be shown for brevity and as to draw a concrete example of interpretation of the information. But, this analysis could be extended to how many components we would like and all clusters.</p>
+
+<p>Let’s look at the top 10 features in each component 0, 3 and 1:</p>
+<h4 class="no_toc" id="component-0">Component 0</h4>
+<p class="caption"><img src="/assets/img/customer-segmentation/comp-0-main-feat.webp" alt="Component 0 main features" />
+Main features in Component 0</p>
+
+<p>For component 0 we can draw that it has a heavy weight on Economic Class (CAMEO_DEUG_2015, CAMEO_DEU_2015) and distance to nearest city centre (BALLRAUM). Both indicators are <strong>inversely proportional</strong> to the weight of the component.</p>
+
+<p>These features are interval variables. They have an interpretation that the bigger their value, the <strong>lower the income</strong> (for CAMEO_… columns) or the <strong>farther from the center</strong> the respondent is (BALLRAUM).
+In, general, this component could refer to:</p>
+<ul>
+  <li><strong>indiviual income</strong></li>
+  <li><strong>distance to urban centers.</strong></li>
+</ul>
+
+<h4 class="no_toc" id="component-3">Component 3</h4>
+<p class="caption"><img src="/assets/img/customer-segmentation/comp-3-main-feat.webp" alt="Component 3 main features" />
+Main features in Component 3</p>
+
+<p>Component 3 seems more balanced in terms of feature impact that component 0. However, a lot of the variables in the component are from the same group (<em>SEMIO_…</em>) and we have a big contribution of the <em>KONSUMNAEHE</em> variable. The component is proportional to this variable. The bigger its value, the further the respondent is from Point of Sale (PoS).</p>
+
+<p>The <em>SEMIO_</em> variables refer to the mindset of the respondent. Note that the <em>SEMIO_FAM</em> variable has an opposite signal on the effect than the other <em>SEMIO_</em> variables. This means in practice that the component grows proportionally to <em>SEMIO_FAM</em>, but grows inversely proportionally to the others.</p>
+
+<p>The <em>SEMIO</em> variables have highest affinities (stronger mindset) on lower values. So, for this component, the higher the family mindset, more positive is the component. But, the higher the other mindsets, the more negative it is.</p>
+
+<p>There are also the <em>RELAT_AB</em> and <em>MOBI_REGIO</em> variables, that are about unemployment rates on the surroundings of the respondents and mobility profile of the respondent.</p>
+
+<p>Therefore, we can say that this component refers to:</p>
+<ul>
+  <li><strong>The geographical distance of the respondent to a PoS, and;</strong></li>
+  <li><strong>The mindset (affinities) of the respondent, towards some themes.</strong></li>
+  <li><strong>And has some relation to the respondents’ surroudings employment rates and their mobility profile</strong></li>
+</ul>
+
+<h4 class="no_toc" id="component-1">Component 1</h4>
+<p class="caption"><img src="/assets/img/customer-segmentation/comp-1-main-feat.webp" alt="Component 1 main features" />
+Main features in Component 1</p>
+
+<p>Component 1 shows a heavy contribution of the <em>PLZ_HHZ</em> variable, being inversely proportional to it. We can also see that other <em>SEMIO_</em> Features contribute to the component, as well as <em>FINANZ_</em> and <em>CJT_</em> variables.</p>
+
+<p><em>HHZ</em> is about housing density on the surroundings of the respondents. The higher the variable’s value, more dense is the region.</p>
+
+<p>The <em>FINANZ_</em> variables are about how the respondent handles money (finances)</p>
+
+<p>CJT is about Customer Journey Tipology. This means how the customer behaves regarding advertisement consumption and types of Channels used for purchases.</p>
+
+<p>Therefore, we can infer that this component is about:</p>
+<ul>
+  <li><strong>If the respondent lives in densly populated regions;</strong></li>
+  <li><strong>How the respondents handle their finances (some attributes);</strong></li>
+  <li><strong>How the respondents see the world (different themes than Component 3)</strong></li>
+  <li><strong>And how they consume ads and which channels they use.</strong></li>
+</ul>
+
+<p>These examples are to illustrate how we could interpret these results towards understanding what is that drives certain clusters. Of course that transformation processes such as FAMD and PCA will add a complexity layer to the interpretation of these informations, since we will have compositions of original features being used.</p>
+
+<p>However, even so we can grasp to some extent what is that drives the components and, consequently, the clusters.
+After the clustering, we move on the prediction of responses (interaction) to marketing campaigns.</p>
+
+<h2 id="predicting-customerresponse">Predicting Customer Response</h2>
+<p>At this stage we have a different question then that one posed in the segmentation stage:</p>
+
+<p><strong>Can we predict better then a naïve approach the customers that might or might not respond to marketing campaigns?</strong></p>
+
+<p>For this task we will actually use the Test mailout dataset only. This is because its the only dataset that contains labels for predictions.</p>
+
+<h3 class="no_toc" id="strategy-approaching-theproblem-1">Strategy - Approaching the problem</h3>
+<p>Differently from the segmentation phase, when we were handling with an unsupervised problem, now we have a Supervised Classification Machine Learning problem. This means we have labels that we can match correct predictions to. However, the dataset at hand has its specifities.</p>
+
+<p>The labels we are trying to predict come from a column named <em>RESPONSE</em>. It is a binary target. 0 stands for no response, where 1 stands for a response by that individual.</p>
+
+<p>We need to keep in mind that we are dealing with an <strong>unbalaced target</strong>. This means that the response variable is heavily populated by one of the values. This case, 0. The graph belows illustrates the situation:</p>
+
+<p><img src="/assets/img/customer-segmentation/dataset-unbalance.webp" alt="Dataset unbalance plot" /></p>
+
+<p>In total, after preprocessing, we are left with 435 positive responses versus approx. 34.5k of negative (absence) responses. This means we have about a 1.2% response rate. The remaining 98.8% are people that didn’t respond to the campaign.</p>
+
+<p>It is important to keep in mind that for such an extreme unbalance <strong>accuracy is not an option for a good metric in this case.</strong> It is a biased metric when we are handling unbalanced datasets.</p>
+
+<p>In short, it is very easy to get a good result for accuracy in an unbalanced setting, since <strong>it accounts both True Positives (TP) and True Negatives (TN) as successes</strong>. For a more detailed explanation check <a href="https://machinelearningmastery.com/failure-of-accuracy-for-imbalanced-class-distributions/">this article</a>.</p>
+
+<p>So we need a strategy that:</p>
+<ol>
+  <li>Handles unbalanced data;</li>
+  <li>Uses a metric that quantifies effectively the success of the model;</li>
+  <li>Performs better than a baseline naïve approach.</li>
+</ol>
+
+<p>As to topic 1. we have some options. We can use methods that weigh the response variable according to its occurance or we can use artificial sampling methods like SMOTE or Downsampling, both available in <code class="language-plaintext highlighter-rouge">imblearn</code>.</p>
+
+<p>Working always from the least to the most complex, testing with methods that weighed the response variable worked well. So this approach was selected.</p>
+
+<p>About topic 2. the solution proposed is using the well known <strong>Area Under the Curve for the ROC Operator (ROC-AUC score)</strong>. This will take into consideration the occurance of the Recall (how many relevant instances we classified correctly) versus the False Positive Rate (how often we misclassified an instance as being a respondent, when it wasn’t).</p>
+
+<p>The third and final topic can only be known for certain known after modelling and comparing results to the test data. So, let’s get into it.</p>
+
+<h3 class="no_toc" id="modelling">Modelling</h3>
+<p>To avoid Data Leakage (i.e. test data being used in training) and thus preventing that the model gets information from data it should not have, sklearn’s <code class="language-plaintext highlighter-rouge">Pipeline</code> will be used.</p>
+
+<p>The approach selected for better handling the data unbalance was hyperparameter tuning. By default, a lot of algorithms have options to handle this kind of problem.</p>
+
+<p>For the problem at hand, 4 models were used:</p>
+<ul>
+  <li>Logistic Regression - Baseline value for comparison (simplest model)</li>
+  <li>Decision Tree</li>
+  <li>Random Forest</li>
+  <li>XGBoost</li>
+</ul>
+
+<p>For the first 3 models, there is the <code class="language-plaintext highlighter-rouge">class_weight</code> parameter that sklearn has available for usage. For XGBoost, the <code class="language-plaintext highlighter-rouge">scale_pos_weight</code> was used to achieve a similar effect on the XGBoost API.</p>
+
+<p>Also, given that the problem had interval variables (categorical variables with an ordinal relationship) they were approached in two different ways: first, using them as numerical variables; second, using them as ordinal variables. For the first case, these variables were handled as numeric. For the second, they were handled by an <code class="language-plaintext highlighter-rouge">OneHotEncoder</code>.</p>
+
+<p>In general, the numerical variables were Standardized because, although not needed by the methods, we would be able to test the models with regularization.</p>
+
+<p>Also, considering the unbalance, all Cross Validations for results were made with <code class="language-plaintext highlighter-rouge">StratifiedKFold</code> to assure target balance.</p>
+
+<h3 class="no_toc" id="results-testdata">Results - Test Data</h3>
+<p>We want to first compare what strategy we will use: encode or not the interval variables. This is because variables of this type are the majority of the data. How we use them can impact the results.</p>
+
+<p>Secondly, we want to see if the models we choose will have results good enough to justify Hyperparameter Tuning. We will compare the results from the other models to Logistic Regression performance.</p>
+
+<p>To start we split the train and test data. Then, setting up the pipelines with initial versions of the models, we run them <strong>only using the training data</strong> inside cross_validation and evaluate the comparative performance of the models. The results are the following:</p>
+
+<p><strong>For the interval variables being used as numeric:</strong>
+<img src="/assets/img/customer-segmentation/model-perf-graph-case-1.webp" alt="Model Performance Across folds - Interval variable are numeric" /></p>
+
+<p><img src="/assets/img/customer-segmentation/model-perf-avg-case-1.webp" alt="Average model performance - Interval variable are numeric" /></p>
+
+<p><strong>For the interval variables being one-hot encoded</strong>:
+<img src="/assets/img/customer-segmentation/model-perf-graph-case-2.webp" alt="Model Performance Across folds - Interval variable are categorical" /></p>
+
+<p><img src="/assets/img/customer-segmentation/model-perf-avg-case-2.webp" alt="Average model performance - Interval variable are categorical" /></p>
+
+<p>On a first glance, the models seem to overfit. However, we must consider we have a heavy unbalance at hand. So, what can actually be happening is that we don’t have enough samples to generalize well to test data. This means that this heavy difference of results could be result of the amount of available information.</p>
+
+<p>Also, on this first run, the models aren’t with any sort of hyperparameter tuning. This can heavily affect the results. Tree depth or regularization, for instance, are parameters that affect a lot these kinds of models.</p>
+
+<p>All the models outperform the Logistic Regression on test data.</p>
+
+<p>Also, the strategy of using interval variables as One Hot Encoded features seem to wield better results. However, the results are only slightly better. So, as a counterproof, we will run both strategies for all models to tune hyperparameters.</p>
+
+<p><em>IMPORTANT: In this past section “test data” refers to a subset of training data!</em></p>
+
+<p>When we run the final models against the actual test data, we can assess if they actually overfit or yield bad results.</p>
+
+<h3 class="no_toc" id="hyperparameter-tuning">Hyperparameter Tuning</h3>
+<p>With the results from before, we will do hyperparameter tuning for the Decision Tree, Random Forest and XGBoost in both cases of usage of the interval variables. The tuning took place with the following parameters:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">dt_params</span> <span class="o">=</span> <span class="p">{</span><span class="sh">'</span><span class="s">DT__max_depth</span><span class="sh">'</span><span class="p">:[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">],</span>
+             <span class="sh">'</span><span class="s">DT__min_samples_split</span><span class="sh">'</span><span class="p">:[</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">10</span><span class="p">],</span>
+             <span class="sh">'</span><span class="s">DT__min_samples_leaf</span><span class="sh">'</span><span class="p">:[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">]}</span>
+
+<span class="n">rf_params</span> <span class="o">=</span> <span class="p">{</span><span class="sh">'</span><span class="s">RF__n_estimators</span><span class="sh">'</span><span class="p">:[</span><span class="mi">100</span><span class="p">,</span><span class="mi">200</span><span class="p">],</span>
+             <span class="sh">'</span><span class="s">RF__max_depth</span><span class="sh">'</span><span class="p">:[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]}</span>
+
+<span class="n">xgb_params</span> <span class="o">=</span> <span class="p">{</span><span class="sh">'</span><span class="s">XGB__n_estimators</span><span class="sh">'</span><span class="p">:[</span><span class="mi">100</span><span class="p">,</span><span class="mi">150</span><span class="p">],</span>
+              <span class="sh">'</span><span class="s">XGB__max_depth</span><span class="sh">'</span><span class="p">:[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span>
+              <span class="sh">'</span><span class="s">XGB__learning_rate</span><span class="sh">'</span><span class="p">:[</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.2</span><span class="p">],</span>
+              <span class="sh">'</span><span class="s">XGB__alpha</span><span class="sh">'</span><span class="p">:[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mf">2.5</span><span class="p">]}</span>
+</code></pre></div></div>
+
+<p>For the tuning, only training data was used and the Stratified K-fold cross validation was kept.</p>
+
+<p>Mean AUC-Score results for the interval variables used as numerical:
+<img src="/assets/img/customer-segmentation/hyper-tuning-results-case-1.webp" alt="Hyperparameter tuning results - Interval variable are categorical" /></p>
+
+<p>Mean AUC-Score results for the interval variables used as categorical:
+<img src="/assets/img/customer-segmentation/hyper-tuning-results-case-2.webp" alt="Hyperparameter tuning results - Interval variable are categorical" /></p>
+
+<p>From the scores, we get that in general the variables used as categorical (One-Hot Encoded) yielded better results. However, the difference in results are still really close. To assure we don’t discard useful models, they will be tested on the test data to see their generalization power.</p>
+
+<h3 class="no_toc" id="final-run-results-on-testdata">Final Run: Results on test data</h3>
+<p>Now, running the models with data never seen we can actually assess if there is indeed overfitting taking place or not. If the results on test data never seen is a lot lower than on the training stages, then overfiitting might be a possibility.
+Results for the interval variables used as numerical:
+<img src="/assets/img/customer-segmentation/results-case-1.webp" alt="Final Results - Interval variable are categorical" /></p>
+
+<p>Results for the interval variables used as categorical:
+<img src="/assets/img/customer-segmentation/results-case-2.webp" alt="Final Results - Interval variable are categorical" /></p>
+
+<p>From the results the model that best generalizes to the test data is the <strong>Random Forest with One-Hot Encoded interval variables</strong>. We can also see that the results are similar to those obtained on the predictions over the training data. This points that the difference might not be necessarily overfitting, but actually the model’s capability to generalize well to the data at hand.</p>
+
+<p>However, the results point to a better performance when comparing any model to a naïve Logistic Regression.</p>
+
+<h2 id="conclusions">Conclusions</h2>
+<p>We can see that <strong>it was possible to predict the respondents using ML approaches successfully</strong>. All models outperformed a naïve Logistic Regression baseline.</p>
+
+<p>The best model had the following variables as the most important for predicting results:
+<img src="/assets/img/customer-segmentation/feat-importance-preds.webp" alt="Feature importance for predictions" /></p>
+
+<p>We can notice that informations regarding car ownership (KBA13<em>…) and some general counts of the households (ANZ</em>…) appear often.</p>
+
+<p>From these results, we could potentially <strong>use this model to pinpoint which customers could be targeted by future marketing endeavors.</strong></p>
+
+<p>Some improvements could be thought of for future development cycles such as:</p>
+<ul>
+  <li>Feature selection, removing highly correlated features to increase perfomance and reduce any redundancies the models might capture.</li>
+  <li>Rerunning the clustering with selected features. This might enable us to cluster without recurring to FAMD method and thus making the interpretation of the cluster easier.</li>
+  <li>Rerunning the models with more data available: given the unbalance, to improve the models generalization capabilities, using more data would be optimal to achieve substantially better results.</li>
+</ul>
+
+<hr />
+
+<h1 id="thanks-forreading">Thanks for reading!</h1>
+<p>Here is the <a href="https://github.com/bglucca/ArvatoCustomerSegmentation/tree/main"><strong>repo</strong></a> for the project.<br />
+This article is also available on <a href="https://medium.com/@luccagomes/youve-got-mail-machine-learning-for-customer-segmentation-2c90d9b9d58d"><strong>Medium</strong></a>.<br />
+If you have any feedback or just want to get in touch, DM on LinkedIn.</p>
+</div>
+				]]>
+			</description>
+			<link>https://bglucca.github.io/20230807_customer-segmentation/</link>
+			<category>posts</category>
+		    <category>Case Study</category><category>Customer Segmentation</category><category>Machine Learning</category><category>Supervised Learning</category><category>Unsupervised Learning</category><media:title type="html"><![CDATA[You've got mail! Machine Learning for Customer Segmentation. ]]></media:title>
+      <media:content url="https://bglucca.github.io/assets/img/customer-segmentation/cover-image.webp" medium="image"/>
+      <media:thumbnail url="https://bglucca.github.io/assets/img/customer-segmentation/cover-image.webp" /><guid isPermaLink="true">https://bglucca.github.io/20230807_customer-segmentation/</guid>
+      <pubDate>Mon, 07 Aug 2023 00:00:00 +0000</pubDate>
+		</item><item>
+			<title>Browsing AirBnb using Data Science</title>
 			<description>
 				<![CDATA[	
  				
-    		<p>1 min.</p>
-				<div><p>Piracy is typically an act of robbery or criminal violence at sea. The term can include acts committed on land, in the air, or in other major bodies of water or on a shore. It does not normally include crimes committed against persons traveling on the same vessel as the perpetrator (e.g. one passenger stealing from others on the same vessel). The term has been used throughout history to refer to raids across land borders by non-state agents.</p>
+    		<p>7 min.</p>
+				<div><p>I consider myself somewhat of a regular traveler. That’s why I often look for places to stay in AirBnb. But, when I fire it up, the options are countless.
+Don’t get me wrong, the filters on the site are great and I always liked it. But as a Data Scientist, I wonder if even with some simple Data Analysis navigating AirBnB could be made easier.</p>
+
+<p>That’s why I asked myself if I could use Rio de Janeiro’s (my hometown and a popular tourist city) AirBnB data to:</p>
+<ol>
+  <li>Find out if I could narrow my search by looking directly into the cheapest zones and cheapest neighbourhoods into each zone.</li>
+  <li>Discover natural listing groups (i.e., clusters) based on their declared characteristics so that, if I wanted to, I could look into the group that suited me the most for a trip.</li>
+  <li>Find out which are the most (and least) common ammenities I should expect when looking into listings in Rio.</li>
+</ol>
+
+<p>Let’s get into it.</p>
+
+<p><em>Quick stop before we move forward, you can read this on <a href="https://medium.com/@luccagomes/making-browsing-airbnb-easier-through-data-science-bf96e2a72e0c"><strong>Medium</strong></a> as well</em></p>
+
+<h2 id="sometimes-i-dont-want-to-spend-thatmuch">Sometimes I don’t want to spend that much</h2>
+<p>Price is an easy go-to filter. But that isn’t the only factor to take into consideration in a travel. You might wonder about distance to touristical spots, public transportation or even if you are cutting a good deal for that region… Location matters.</p>
+
+<p>So to get a glimpse of that, we can try check out the prices by neighbourhood and even by city zone and see if they vary and, if so, we can rank them from cheapest to most expensive.</p>
+
+<p>The data I had at hand didn’t contain city zone information. But we won’t let that stop us. With an easy scrape using Pandas <code class="language-plaintext highlighter-rouge">read_html</code> method on this <a href="https://pt.wikipedia.org/wiki/Lista_de_bairros_da_cidade_do_Rio_de_Janeiro">Wikipedia page</a>, we can get the city zone data to populate our table.</p>
+
+<p>So first let’s take a look into the price distribution for each city zone:</p>
+
+<p class="caption"><img src="/assets/img/rio_airbnb/price-distribution-by-region.png" alt="Price Distribution per Zone" />
+This is a caption</p>
+
+<p><em>Note: y-axes are not shared between plots</em></p>
+
+<p>We can see that generally price is a right-skewed distribution and that zones have effective differences in their distribution behaviour. For instance the south zone peaks more to the left then the north zone. West zone has a fatter tail.</p>
+
+<p>This gives us two informations: We can group regions and use a comparison metric since it most probably will wield different results. Given the distribution, the median will be used. This results in:</p>
+
+<p><img src="/assets/img/rio_airbnb/price-median-by-zone.png" alt="Zone Medians" /></p>
+
+<p>So when looking for a place to stay, listings on the North and Central regions might be more price-friendly.</p>
+
+<p>We can dig a little bit deeper and even, for each zone, list the neighbourhoods within each region that have the cheapest prices:</p>
+
+<p><img src="/assets/img/rio_airbnb/price-median-detail.png" alt="Neighbourhood Medians" /></p>
+
+<p>This is where some domain knowledge kicks in, though. Especially on the West Zone, the cheapest lisitings are really far away from the downtown or touristical spots.</p>
+
+<p>But we have considerable price differences even within the cheapest/ expensive regions. So bringing this geographical layer on top of prices (and vice-versa) might facilitate users navigating through listings.</p>
+
+<h2 id="but-what-if-im-looking-for-something-in-specific">But what if I’m looking for something in specific?</h2>
+<p>Maybe location doesn’t matter as much if your priority is to first find listings suitable to your needs. That’s where clustering comes in. We can find natural groups of listings with similar features for someone can look into without the need to filter variable by variable.</p>
+
+<p>The variables that describe a listing can be interpreted essentially as categorical. It can be argued that something like the amount of bathrooms a listing has is continuous/numerical, but on the sample it was rare to have more than 3 bathrooms in an AirBnb listing, for example.</p>
+
+<p class="caption"><img src="/assets/img/rio_airbnb/bathroom-var-count.png" alt="Bathrooms Count" />
+Count of listings for the bathroom variable. Note that from 3 bathrooms onward, there are few listings that contain more baths. There are even listings with no bathrooms!</p>
+
+<p>What we see for bathrooms happens generally for the other variables that describe listings as well.<br />
+This limits our approach to categorical variable clustering methods. For this one, I will be using KModes. But you could use some variation like Gower Distance + Hierarchical Clustering.</p>
+
+<p>After selecting our desired variables: Room Type, Number of Persons Accomodated, Bathrooms, Bedrooms and minimum accepted nights we can use our methods’ cost-function to set up an elbow-method plot and define our n for our clusters.</p>
+
+<p><img src="/assets/img/rio_airbnb/elbow-plot.png" alt="Elbow Plot" /></p>
+
+<p>It looks like n = 8 is a nice enough amount of clusters. The rate in which the cost falls after that slows down heavily. When we run it we get the following clusters (using their centroid as reference):</p>
+
+<p class="caption"><img src="/assets/img/rio_airbnb/cluster-centroids.png" alt="Cluster Centroid" />
+Clusters</p>
+
+<p>Centroids, in this case, are the most-frequent value for each feature.<br />
+It is normal that most clusters are centered around Entire rooms/ apts in Entire Rental Units. These values dominate the dataset, having more than 50% of listing associated to them.</p>
+
+<p>The biggest differences come from the “size” of the listings and the minimum nights. With size I want to express how many people they accommodate and the amount of bathrooms, bedrooms, etc. that a listing has.</p>
+
+<p>If users were to search for listings in a city, the clusters could be a good starting point for showing them listings more aligned with their needs.</p>
+
+<h2 id="what-if-i-want-wifi-in-myroom">What if I want WiFi in my room?</h2>
+<p>Sometimes you want certain amenities. Sometimes you expect a room to have some basic things. So, it is only natural to try to find out what are the most common and rare amenities in listings. That way, users could know what to expect (or not to) for the listings in the city.</p>
+
+<p>To start off answering our final question, we look into the the amenities field available in the dataset. It is a somewhat tricky feature. It is a whole string that should’ve been a list. So it is a list contained within a string and a simple .split() won’t cut it.</p>
+
+<p>With a little bit of RegEx and text cleaning, we get our data to a list format. The only thing left to do is some text cleaning especially for WiFi. Since it’s is an important aspect nowadays, we do some special cleaning for it. WiFi values have multiple values like:</p>
+
+<p><img src="/assets/img/rio_airbnb/wifi-writing.png" alt="WiFi writing" /></p>
+
+<p class="caption">Multiple different forms to write that a listing has WiFi</p>
+
+<p>With the cleaning handled, we can use the <code class="language-plaintext highlighter-rouge">.explode()</code> method to turn our lists into rows and make our analysis easier.</p>
+
+<p>We get a total of 2788 unique amenities. But, considering each amenity is only listed once per listing, we can use <code class="language-plaintext highlighter-rouge">.value_counts()</code> on top of our exploded dataset to get the number of listings each amenity was cited in. This allows us to approach the problem using a Pareto logic. That is, a low number of amenities will show up with high frequency.</p>
+
+<p><img src="/assets/img/rio_airbnb/amenities-pareto.png" alt="Ammenities Pareto" /></p>
+
+<p>We can see that even by making a cut as small as 10% on the proportion of listings an amenity shows up in, we already reduce the amount of amenities from 2788 to 56.</p>
+
+<p>I chose to work with this this 56 amenities subset. Considering that there might be a lot of amenities that will show up sparsely or are super specific, we cannot simply select the overall least cited amenities. This could lead to unnecessary/ wrong information.</p>
+
+<p>For instance, it is safe to assume that a refrigerator from a specific brand (which exists on the data) is not an amenity someone would actively look for. Even the least common amenities must be contained in a group within reason.</p>
+
+<p>With that in mind we get that:</p>
+
+<p><img src="/assets/img/rio_airbnb/amenities-ranking-top.png" alt="Top Ammenities" /></p>
+
+<p>Are the most common amenities, so you can expect them to occur in a lot of the listings. Need WiFi? You’ll probably have it covered. No need to worry about it.</p>
+
+<p>On the other hand:
+<img src="/assets/img/rio_airbnb/amenities-ranking-bottom.png" alt="Bottom Ammenities" /></p>
+
+<p>Are the least common amenities within that subset. So if for instance a beachfront view is a must for you when coming to Rio, you might only have more niched options available.</p>
+
+<hr />
+
+<h2 id="conclusions">Conclusions</h2>
+<p>All things considered, all 3 analyses show relatively simple ways data could be incorporated to facilitate decision-making within the platform for the users. If we get back to our starting questions:</p>
+<ol>
+  <li>We can narrow our search for cheap listings by adding a geographical layer to our data. This could be even further explored if we incorporated more data like proximity to tourist sights or restaurants concentration , for instance.</li>
+  <li>It is possible to segregate listings based on their declared characteristics like amount of beds, rooms, etc. using a relatively simple clustering algorithm. This might be helpful to present to users more focused listing groups in-line with their needs without the need to manually set filters.</li>
+  <li>From more than 2000 amenities we can get a subset of 56 significant amenities that could allow a user to catch a glimpse of what they could expect in a lot of the listings or not. That way, expectations can easily be set.</li>
+</ol>
+
+<p>Naturally, all three paths could be enhanced with more work put into them. But the conclusions show how already on the current state we can create value to an user by answering key-questions and focusing of efficient analysis methods.</p>
+
+<hr />
+
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p>The full notebook and data can be found on my <a href="https://github.com/bglucca/RioAirBnb?tab=readme-ov-file"><strong>GitHub</strong></a>.<br />
+Data for AirBnB was collected from <a href="https://insideairbnb.com/explore/"><strong>Inside AirBnb</strong></a>.<br />
+For more references into K-Modes, I recommend visiting <a href="https://github.com/nicodv/kmodes"><strong>nicodv’s GitHub</strong></a> that contains not only the implementation of the algorithm but references to the Theory behind it.<br />
+This work was done as a submission to Udacity’s Data Science Nanodegree Program.</p>
 </div>
 				]]>
 			</description>
-			<link>https://dieghernan.github.io/20150115_pirates/</link>
+			<link>https://bglucca.github.io/20221112_rio-airbnb/</link>
 			<category>posts</category>
-		    <category>pirates</category><category>random</category><category>wikipedia</category><guid isPermaLink="true">https://dieghernan.github.io/20150115_pirates/</guid>
-      <pubDate>Thu, 15 Jan 2015 00:00:00 +0000</pubDate>
-		</item><item>
-			<title>First post!</title>
-			<description>
-				<![CDATA[	
- 				
-    		<p>1 min.</p>
-				<div><p>This is my first post, how exciting!</p>
-</div>
-				]]>
-			</description>
-			<link>https://dieghernan.github.io/20150104_first-post/</link>
-			<category>posts</category>
-		    <category>exciting-stuff</category><category>random</category><guid isPermaLink="true">https://dieghernan.github.io/20150104_first-post/</guid>
-      <pubDate>Sun, 04 Jan 2015 00:00:00 +0000</pubDate>
+		    <category>Case Study</category><category>Data Analysis</category><category>Data Science</category><category>EDA</category><category>Unsupervised Learning</category><media:title type="html"><![CDATA[Browsing AirBnb using Data Science ]]></media:title>
+      <media:content url="https://bglucca.github.io/assets/img/rio_airbnb/cover-image.jpg" medium="image"/>
+      <media:thumbnail url="https://bglucca.github.io/assets/img/rio_airbnb/cover-image.jpg" /><guid isPermaLink="true">https://bglucca.github.io/20221112_rio-airbnb/</guid>
+      <pubDate>Sat, 12 Nov 2022 00:00:00 +0000</pubDate>
 		</item></channel>
 </rss>
