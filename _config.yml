@@ -105,7 +105,7 @@ navbar:
     img     :  # An small image, try 30x30px
   nav:
   - title   : About me
-    url     : /aboutme/
+    url     : /aboutme
   - title   : Blog # Label
     url     : /blog/ # url	
   # - title   : Cheatsheets
@@ -135,7 +135,7 @@ footer:
   links:
     - label : Github # Label
       icon  : fab fa-github # Fontawesome 5 icon
-      url   : https://github.com/dieghernan/bglucca # A link or email: https://twitter.com/jack, mail@example.com
+      url   : https://github.com/bglucca # A link or email: https://twitter.com/jack, mail@example.com
     - label: "LinkedIn"
       icon: "fab fa-linkedin"
       url:  "https://www.linkedin.com/in/luccabgomes/"
