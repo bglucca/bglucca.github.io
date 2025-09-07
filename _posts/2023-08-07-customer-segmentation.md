@@ -15,6 +15,10 @@ author:
       icon: "fab fa-linkedin"
 ---
 
+# Table of Contents
+* This line is needed, but won't appear. Replace '*' with '1' to create a numbered list.
+{:toc}
+
 **Disclaimer: This article and data for the development of the code are part of my submission Udacity's Data Science Nanodegree program.**
 
 ## Who should I reach out to? And where are they?
@@ -52,9 +56,11 @@ The general census data contains 891221 rows by 366 columns. The variables are d
 The rows represent one respondent's responses. Each respondent is represented by an anonym ID called "LNR" in the database.
 
 ### Fixing CAMEO_ columns
+{:.no_toc}
 There are 3 columns in the data (*CAMEO_DEUG_2015, CAMEO_INTL_2015 and CAMEO_DEU_2015*) that raise a warning about mixed types in Data. This happens because the values "X" or "XX" show up on them, when they should be numeric types (*int* or *float*). Since there is no description on the documentation of what these values are supposed to be and since they are different to the possible values in the columns, they were replaced as NaNs.
 
 ### Fixing Documentation - Removing undocumented columns
+{:.no_toc}
 Another problem found was that not all columns were in the documentation, on either of the two auxiliary files. This generated 3 scenarios:
 - The naming of the column was incorrect, but it was in fact documented (salvageable);
 - The column name was self-explanatory enough to be associated to other columns that had similar encodings and names (salvageable);
@@ -79,6 +85,7 @@ Also, with the documentation now fully representing the data, the files could be
 To build these correlations, especially variable type, changes were made manually to the files or new files were created in a format that made fetching the documentation's information in an easier manner.
 
 ### NaN Handling
+{:.no_toc}
 Given the (now fixed) documentation on the value of the columns, we can extract information from the documentation to replace values that map from "unknown" to NaN.
 
 By ingesting this information and considering that strings that contain "unknown" in the meaning of the encoding represent NaNs, we can build a dictionary for each column to map its corresponding NaN values using pandas' `.replace()` method:
@@ -105,6 +112,7 @@ census = census.replace(nested_nan_map)
 ~~~
 
 ### Column Elimination - NaN Proportion
+{:.no_toc}
 After mapping the NaNs to each column, we can check for high incidence of NaNs column-wise.
 
 Columns with a high percentage of NaN values can be discarted because they probably do not provide any sort of valuable information regarding the general properties of the population, which makes building inferences/ insights around them risky.
@@ -118,6 +126,7 @@ Columns with a proportion of NaNs above the threshold, would be dropped.The pro
 If a threshold of proportion of NaNs ≤ 30% is chosen, we drop 9 columns that do not meet this criterion and manage to retain other columns in which we can impute values. Having in mind that the amount of columns that would be dropped if a 50% threshold was selected is 8 and that the cut for 20% might be too conservative, 30% was deemed as an appropriate cut.
 
 ### Numeric Variables Distributions
+{:.no_toc}
 With unused columns dropped and types appropriately fixed, we can look into some of the distributions to get some insight on the variables.
 
 Broadly speaking, the numerical variables either needed no transformations or required to be binarized. One variable needed to be dropped.
@@ -136,6 +145,7 @@ GEBURTSJAHR was the dropped variable. It had 44.02% of YoB as 0. Therefore, from
 The binarization occurred on the preprocess stage, which will be covered in the coming section.
 
 ### Categorical Variables Distributions
+{:.no_toc}
 Categorical variables were more looked into especially for the interval variables. Some variables presented too many categories that not necessairly were informative, such as below:
 
 ![Categorical variable distribution example](/assets/img/customer-segmentation/cat-var-plot.webp)
@@ -150,11 +160,13 @@ So the next step was to identify the columns that showed this sparsity and reduc
 The specifics of these alterations will be covered below in the "Preprocessing" stage
 
 ### Cleaning the Data - Defining Preprocessing Steps
+{:.no_toc}
 The approach for defining the preprocessing will use as baseline the general population demographic data. This is to ensure that no bias from the customer base or mailout base affect the conclusions or steps taken to clean the data.
 
 The idea is that cleaning steps that apply to the general population, should apply to its subsets since the same variables are present across all files and that all the files are technically a subset of the general population.
 
 #### Dropping empty rows
+{:.no_toc}
 Rows that are filled with too many NaNs mean that they might be rows with a lot of imputation. What this results is that we will have rows in which a person might be described a lot by general values of the variables (mean, median, mode, etc.). This automatically might deliver bias to our analysis.
 
 The individuals with highly imputed responses will actually be an "average" (or other imputed value of choice) of all variables. This assumption is not reasonable if most of the data of that response isn't from that person. We would end up having some "average" individuals
@@ -168,9 +180,11 @@ Distribution of proportion of NaN values in the data’s rows
 Considering the information the graph displays, rows with more than 30% of its data missing will be discarted.
 
 #### Re-encoding the relevant numerical variables to binary
+{:.no_toc}
 As noted in the ETL, some numerical variables had to be encoded to binary. Using a simple `np.where` is enough to encode the variables the way we need them to.
 
 #### Fixing Object columns
+{:.no_toc}
 Some columns are in the `object` format. This is not inherently a problem. But some columns could benefit from not being `object`:
 
 - The OST_WEST_KZ is actually a binary column
@@ -179,11 +193,13 @@ Some columns are in the `object` format. This is not inherently a problem. But s
 The fix to OST_WEST_KZ is straightfoward, the column values were mapped to 0 and 1. The CAMEO_DEU_2015 column had 1 integer value mapped to each one of the columns' possible values. The smaller integer values account for the higher income classifications, the higher account for the lower incomes.
 
 #### Imputations
+{:.no_toc}
 The imputation strategy used was separated in two:
 - Mode for any categorical variable (interval, nominal or binary variables)
 - Mean for numerical
 
 #### Reencoding D19 Columns
+{:.no_toc}
 As mentioned in the ETL stage, some columns that start with the "D19" prefix could be reencoded after inspecting their distributions to reduce sparsity in the categories. This led to 4 reencodes:
 
 - Columns from the "125 x 125 Grid" that refered to consumption frequency of a group of goods. They were re-encoded into 4 groups: No transactions, consumed within 12 months, consumed within 24 months and Prospects (> 24 months)
@@ -203,6 +219,7 @@ With the data now cleaned and preprocessed, we can start building our segmentati
 In a more technical fashion: **Given the existance of clusters in the general public data, can the consumers be found more often in specific clusters?**
 
 ### Strategy - Approaching the problem
+{:.no_toc}
 Given the main question at this stage, the approach had to cover (mainly):
 1. A Dataset with a high amount of features (300+, possibly more after One-hot encoding the nominal variables);
 2. A Dataset with mixed-typed data (categorical and numerical);
@@ -220,6 +237,7 @@ To enable our model to train clusters on the general population and to assign th
 Considering the output of FAMD is a fully numerical table, we can use the well-known K-Means algorithm. But since we need to process 800k + rows across hundreds of columns (which might make some setups runs a little slow), we can use sklearn's `cluster.MiniBatchKMeans` that handles confortably the amount of data to give us the results we need.
 
 ### FAMD
+{:.no_toc}
 To get the data ready for the FAMD, we create a function to basically One-Hot Encode nominal variables, and weigh these variables accordingly. We also use sklearn's `StandardScaler` to handle the numerical attributes accordingly. For this work, interval variables will be considered as numerical attributes and will be handled like numericals.
 
 The FAMD approach used is a manual one (find more about it in the article linked in the previous section). This means that after applying these transformations, we use PCA on the transformed data. The preprocessed data for FAMD, in the end, ends up with 396 features.
@@ -231,6 +249,7 @@ So to select the amount of Components we will have, we define an acceptable thre
 Starting from a higher amount of components and following with bigger steps was a deliberate approach to save processing time.
 
 ### Mini Batch K-Means
+{:.no_toc}
 With the transformed data after the FAMD process, we can train the Mini Batch K-Means algorithm and use the elbow method to choose an appropriate amount of clusters:
 
 ![Elbow plot](/assets/img/customer-segmentation/elbow-plot.webp)
@@ -239,6 +258,7 @@ From the graph above, we could select k = 14 as a reasonable amount of clusters 
 With the trained FAMD and K-Means objects trained on the overall census data, we now use them on the customer data to then classify data from both files to clusters.
 
 ### Adjusting Customer Data
+{:.no_toc}
 To use customer data as intended, we run the same preprocessing we did for the general data and then we will simply use the `.transform()` from the PCA object and `.predict()` from the model, both fitted on general population data, to use the customer data.
 
 Neither the PCA or model are re-fitted on customer data to avoid that the customer's characteristics, which could be differently distributed than the general population, affect the estimates of the cluster centroids or generates Components different from the general population. We want to classify customers according to general population groups and not to consider them jointly.
@@ -274,6 +294,7 @@ census['cluster'] = kmeans_model.predict(X)
 ~~~
 
 ### Results
+{:.no_toc}
 This process gives us the following distribution in each dataset of responses for k = 14 clusters:
 ![Customer Clustering](/assets/img/customer-segmentation/customer-clustering-results.webp)
 
@@ -293,6 +314,7 @@ The cluster is heavily centered at high values in the 0 component, backed up by 
 
 Let's look at the top 10 features in each component 0, 3 and 1:
 #### Component 0
+{:.no_toc}
 ![Component 0 main features](/assets/img/customer-segmentation/comp-0-main-feat.webp)
 Main features in Component 0
 {:.caption}
@@ -305,6 +327,7 @@ In, general, this component could refer to:
 - **distance to urban centers.**
 
 #### Component 3
+{:.no_toc}
 ![Component 3 main features](/assets/img/customer-segmentation/comp-3-main-feat.webp)
 Main features in Component 3
 {:.caption}
@@ -323,6 +346,7 @@ Therefore, we can say that this component refers to:
 - **And has some relation to the respondents' surroudings employment rates and their mobility profile**
 
 #### Component 1
+{:.no_toc}
 ![Component 1 main features](/assets/img/customer-segmentation/comp-1-main-feat.webp)
 Main features in Component 1
 {:.caption}
@@ -355,6 +379,7 @@ At this stage we have a different question then that one posed in the segmentati
 For this task we will actually use the Test mailout dataset only. This is because its the only dataset that contains labels for predictions.
 
 ### Strategy - Approaching the problem
+{:.no_toc}
 Differently from the segmentation phase, when we were handling with an unsupervised problem, now we have a Supervised Classification Machine Learning problem. This means we have labels that we can match correct predictions to. However, the dataset at hand has its specifities.
 
 The labels we are trying to predict come from a column named *RESPONSE*. It is a binary target. 0 stands for no response, where 1 stands for a response by that individual.
@@ -383,6 +408,7 @@ About topic 2. the solution proposed is using the well known **Area Under the Cu
 The third and final topic can only be known for certain known after modelling and comparing results to the test data. So, let's get into it.
 
 ### Modelling
+{:.no_toc}
 To avoid Data Leakage (i.e. test data being used in training) and thus preventing that the model gets information from data it should not have, sklearn's `Pipeline` will be used.
 
 The approach selected for better handling the data unbalance was hyperparameter tuning. By default, a lot of algorithms have options to handle this kind of problem.
@@ -402,6 +428,7 @@ In general, the numerical variables were Standardized because, although not need
 Also, considering the unbalance, all Cross Validations for results were made with `StratifiedKFold` to assure target balance.
 
 ### Results - Test Data
+{:.no_toc}
 We want to first compare what strategy we will use: encode or not the interval variables. This is because variables of this type are the majority of the data. How we use them can impact the results.
 
 Secondly, we want to see if the models we choose will have results good enough to justify Hyperparameter Tuning. We will compare the results from the other models to Logistic Regression performance.
@@ -431,6 +458,7 @@ Also, the strategy of using interval variables as One Hot Encoded features seem 
 When we run the final models against the actual test data, we can assess if they actually overfit or yield bad results.
 
 ### Hyperparameter Tuning
+{:.no_toc}
 With the results from before, we will do hyperparameter tuning for the Decision Tree, Random Forest and XGBoost in both cases of usage of the interval variables. The tuning took place with the following parameters:
 ~~~python
 dt_params = {'DT__max_depth':[2,3,5,6],
@@ -457,6 +485,7 @@ Mean AUC-Score results for the interval variables used as categorical:
 From the scores, we get that in general the variables used as categorical (One-Hot Encoded) yielded better results. However, the difference in results are still really close. To assure we don't discard useful models, they will be tested on the test data to see their generalization power.
 
 ### Final Run: Results on test data
+{:.no_toc}
 Now, running the models with data never seen we can actually assess if there is indeed overfitting taking place or not. If the results on test data never seen is a lot lower than on the training stages, then overfiitting might be a possibility.
 Results for the interval variables used as numerical:
 ![Final Results - Interval variable are categorical](/assets/img/customer-segmentation/results-case-1.webp)
